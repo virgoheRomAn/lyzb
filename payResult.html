@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html class="overflow-hidden">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>礼仪之邦-支付结果</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/u-disk-style.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body class="overflow-hidden">
+<div class="collect-bar register-bar footprint-bar">
+    <h2 class="header-box pos-abs-tl">
+        <a class="go-back-btn sprite-icon" href="javascript:;"></a>
+        支付结果
+        <span id="sureBtn" class="has-text">完成</span>
+    </h2>
+
+    <div class="collect-cont">
+        <div id="wrapper">
+            <div id="scroller">
+                <div class="pay-result-bar">
+                    <div class="result-tips"><span class="show-time">10</span>秒后将跳转到订单列表页</div>
+                    <!--支付失败-->
+                    <div class="result-fail" style="display: none;">
+                        <div class="result-bar">
+                            <img src="img/result-fail.png">
+                            <span>支付失败!</span>
+                        </div>
+                    </div>
+                    <!--支付成功-->
+                    <div class="result-success">
+                        <div class="result-bar">
+                            <img src="img/result-success.png">
+                            <span>支付成功!</span>
+                        </div>
+                        <label class="result-money">82.80元</label>
+                    </div>
+                </div>
+                <!--只有支付成功才会出现的成功显示结果-->
+                <div class="result-success-cont">
+                    <div class="pay-intro no-border">
+                        <h2><span>商品总额</span><label>¥72.80</label></h2>
+
+                        <p><span>- 优惠券</span><label>¥0.00</label></p>
+
+                        <p><span>+ 运费</span><label>¥10.00</label></p>
+                    </div>
+                    <div class="pay-information">
+                        <span>如果您有任何问题，可以联系客服</span>
+                        <span>服务时间：9:00-20:30(工作日) 9:00-18:00(节假日)</span>
+                        <a href="tel:400-637-6367">客服热线：400-637-6367</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="grade-disk order-disk" id="disk" style="display: none;">
+    <div class="disk-container">
+        <div class="order-disk-title">
+            <h2>
+                <img src="img/specialImg/order-disk-title.png">
+                <a class=" disk-close" href="javascript:;" onclick="goLottery();">关闭</a>
+            </h2>
+        </div>
+        <div class="order-disk-cont">
+            <label>
+                <img src="img/specialImg/order-disk-bg.png">
+                <a class="disk-ensure" href="javascript:;" onclick="goLottery();">马上去抽奖</a>
+            </label>
+        </div>
+    </div>
+</div>
+
+<!--2017-03-07 下载弹窗-->
+<div class="u-disk-box" id="uDiskBox">
+    <div class="u-disk-container u-disk-order">
+        <div class="u-disk-title-bar">
+            <span class="u-title-img"><img src="img/uDIskImg/u-disk-headImg.png"></span>
+            <a class="u-close-btn" href="javascript:;" data-handle="close">X</a>
+        </div>
+        <div class="u-disk-cont-bar">
+            <div class="u-cont-container">
+                <div class="u-tips-bar">
+                    <span class="u-tips">为方便您查询订单并享受更多优惠 <br>请下载集食惠APP<br> 或关注集食惠微信公众号</span>
+                </div>
+                <div class="u-handle-bar">
+                    <a class="u-btn active" href="#">前往下载</a>
+                    <a class="u-btn" href="#" data-handle="close">以后再说</a>
+                    <a class="u-btn" href="#" data-handle="close">不在提醒</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/box.js"></script>
+<script src="js/public.js"></script>
+<script>
+
+    var _result = true;  //false失败。true成功
+    var _time = _result ? 10 : 3;  //倒计时。成功10秒，失败3秒
+    function goLottery() {
+        document.getElementById('disk').style.display = 'none';
+        //倒计时
+        publicFuns.countDown(".show-time", _time, function () {
+            //倒计时结束的回调
+            console.log("请记得跳转页面哦！");
+        });
+    }
+
+    $(function () {
+        var myScroll = publicFuns.newIScroll("#wrapper");
+
+        //关闭弹窗
+        $("a[data-handle='close']").click(function(){
+            $("#uDiskBox").fadeOut();
+            goLottery();
+        });
+    });
+</script>
+</body>
+</html>

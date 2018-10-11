@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html class="overflow-hidden">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>礼仪之邦-登录</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/public.css?a=000"/>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body class="overflow-hidden">
+<div class="register-bar">
+    <div id="wrapper" style="background: #f5f5f5;">
+        <div id="scroller" style="background: #f5f5f5; padding-bottom: 90px;">
+            <div class="login-banner">
+                <div class="header-goBack">
+                    <a class="close-login" href="register.html"></a>
+                </div>
+
+                <div class="login-banner-bg"><img src="img/login-banner.png"></div>
+            </div>
+            <div class="register-cont mar-t10 mar-b10">
+                <ul>
+                    <li>
+                        <i class="register-icon icon-user sprite-icon"></i>
+
+                        <div class="register-input line-heavy less-padding">
+                            <input id="userName" data-waring="用户名/邮箱/手机号" placeholder="用户名/邮箱/手机号" value="" type="text">
+                            <span id="clearCont" class="pos-abs-tr clear-btn"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="register-icon icon-paw sprite-icon"></i>
+
+                        <div class="register-input line-heavy less-padding">
+                            <input id="paw" data-waring="请输入密码" placeholder="请输入密码" value="" type="password"
+                                   maxlength="20">
+                            <span id="showPaw" class="pos-abs-tr show-btn active"></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="write-code" style="display: none;">
+                <i class="register-icon icon-code sprite-icon"></i>
+
+                <div class="register-input line-heavy less-padding">
+                    <input type="text" data-waring="请输入图形验证码" placeholder="请输入图形验证码" value="">
+                    <span class="pos-abs-tr"><img src="img/login-code-img.png"></span>
+                </div>
+            </div>
+            <div class="login-btn active mar-b10" id="loginBtn"><a href="javascript:;">登录</a></div>
+            <div class="forget-tips pad-l20 pad-r20">
+                <a class="register-fast float-left" href="register.html">快速注册</a>
+                <a class="forget-pass float-right" href="forget.html">忘记密码</a>
+            </div>
+            <!--<div class="login-tips" style="position: static; top: auto; left: auto;">
+                <span>还没有账号？</span>
+                <a href="register.html">立即注册</a>
+            </div>-->
+        </div>
+    </div>
+
+    <div class="login-fast list-row none-space pos-fix">
+        <div class="login-title">
+            <p><span>其他方式登陆</span></p>
+        </div>
+        <ul class="clearfix row-2 login-fast-type">
+            <li>
+                <a href="javascript:;">
+                    <i class="change-sprite-icon change-qq-icon"></i>
+                    <span>QQ</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <i class="change-sprite-icon change-wx-icon"></i>
+                    <span>微信</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/box.js"></script>
+<script src="js/public.js"></script>
+<script src="js/form-register.js"></script>
+<script>
+    $(function () {
+        var myScroll = publicFuns.newIScroll("#wrapper");
+
+        //弹出输入验证码输入框
+        //正式环境在  密码或账号错误3次之后调用
+        $(".write-code").slideDown(function () {
+            myScroll.refresh();
+        });
+
+        //清空输入
+        $("#clearCont").click(function () {
+            publicFuns.clearText($(this).prev());
+        });
+
+        $(".register-input").click(function (e) {
+            if (e.target.tagName.toLocaleLowerCase() != "span" && e.target.tagName.toLocaleLowerCase() != "label") {
+                $(this).find("input").focus();
+            }
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html class="overflow-hidden">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>礼仪之邦-总部拼团</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body class="overflow-hidden">
+<div class="main-box shopDetails-bar" style="padding-bottom: 88px; background: #f5f5f5;">
+    <div class="shopDetails-content">
+        <div id="wrapper">
+            <div id="scroller">
+                <div class="shopDetails-main">
+                    <!--头部-->
+                    <header class="header-bar shopDetails-header">
+                        <div class="swiper-container header-banner">
+                            <div class="swiper-wrapper imgBasicCls">
+                                <div class="swiper-slide"><a href="#"><img src="img/product-img1.jpg"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="img/product-img2.jpg"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="img/product-img3.jpg"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="img/product-img4.jpg"></a></div>
+                            </div>
+                            <div class="swiper-pagination header-banner-pagination"></div>
+                        </div>
+                        <a id="goBackBtn" class="opacity-btn go-back-btn" href="javascript:;"><i
+                                class="shop-sprite-icon"></i></a>
+                        <a id="shareBtn" class="opacity-btn share-btn shop-sprite-icon" href="javascript:;"><i
+                                class="shop-sprite-icon"></i></a>
+
+                        <div class="show-shop-type">
+                            <span>浓郁果香</span>
+                            <span class="active">香味纯正</span>
+                            <span>鲜嫩多汁</span>
+                        </div>
+
+                        <div class="shop-intro">
+                            <!--成功失败二选一-->
+                            <!--<i class="group-tips-img"><img src="img/group-success.png"></i>-->
+                            <i class="group-tips-img"><img src="img/group-failure.png"></i>
+
+                            <div class="spellGroup-time">
+                                <label>距离拼团结束</label>
+
+                                <div class="pull-right" id="limitTime">
+                                    <span class="timeDay"></span>天<span class="timeHour"></span>时<span
+                                        class="timeMinute"></span>分<span
+                                        class="timeSecond"></span>秒
+                                </div>
+                            </div>
+                            <div class="group-shop-name">
+                                <label class="group-text-name text-overflow">苏州东山白玉枇杷3斤装（单果24g-35g）</label>
+                                <span class="group-text-intro text-clamp-overflow">新农之邦成都双流巧克力草莓，品种选自美国，保证绝对非转基因， 脆嫩多汁，内质丰富。【不催熟、不打蜡、不染色】</span>
+
+                                <div class="group-progress">
+                                    <div class="meter red"><span></span></div>
+                                    <span class="this-people">已参与5人</span>
+                                    <span class="all-people">总参团10人</span>
+                                </div>
+                            </div>
+
+                            <div class="shop-de-price group-de-price clearfix">
+                                <span class="shop-mark">团购价</span>
+
+                                <div class="now-price">
+                                    <label><i>￥</i>62.00</label>
+                                    <span>市场价：88.50</span>
+                                </div>
+
+                                <div class="group-num">
+                                    <div class="number-bar">
+                                        <span class="num-cut sprite-icon"></span>
+                                            <span class="num-input" data-max="10">
+                                                <input value="1" type="text" readonly="" placeholder="">
+                                            </span>
+                                        <span class="num-add sprite-icon"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <!--中心-->
+                    <div class="shopDetails-cont">
+                        <div class="group-row">
+                            <div class="group-rule">
+                                <h2>拼团玩法<a href="#">查看规则<i class="sprite-icon icon-arrow"></i></a></h2>
+
+                                <div class="group-rule-cont clearfix">
+                                    <div class="rule-row">
+                                        <i class="shopType-sprite-icon rule-icon1"></i>
+                                        <span>选择<br>心仪产品</span>
+                                    </div>
+                                    <div class="rule-line"></div>
+                                    <div class="rule-row">
+                                        <i class="shopType-sprite-icon rule-icon2"></i>
+                                        <span>支付<br>成功参团</span>
+                                    </div>
+                                    <div class="rule-line"></div>
+                                    <div class="rule-row">
+                                        <i class="shopType-sprite-icon rule-icon3"></i>
+                                        <span>等待<br>会员参团</span>
+                                    </div>
+                                    <div class="rule-line"></div>
+                                    <div class="rule-row">
+                                        <i class="shopType-sprite-icon rule-icon4"></i>
+                                        <span>达到数量<br>拼团成功</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group-row">
+                            <div class="shop-score-list">
+                                <ul>
+                                    <li>
+                                        <span>商品评分</span>
+
+                                        <div class="score-bar">
+                                            <i class="shop-sprite-icon"></i>
+                                            <i class="shop-sprite-icon"></i>
+                                            <i class="shop-sprite-icon"></i>
+                                            <i class="shop-sprite-icon"></i>
+                                            <i class="shop-sprite-icon"></i>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>销量</span>
+
+                                        <div class="sale-number">
+                                            <label>已售出<i>103</i>件</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>配送至</span>
+
+                                        <div class="sell-address">
+                                            <label id="checkArea"><i class="shop-sprite-icon"></i>重庆</label>
+                                            <span>有货</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--<div class="group-row mar-b10">-->
+                        <!--<div class="has-arrow-list">-->
+                        <!--<div class="list-modal">-->
+                        <!--<a href="shopIntroduce.html">商品介绍</a>-->
+                        <!--<a href="shopIntroduce.html">支付及配送范围</a>-->
+                        <!--<a href="shopIntroduce.html">售后保障</a>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <div id="pullUp" style="height: auto;">
+                            <div class="show-shop-details">
+                                <p><span>向上滑动显示图文详情</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shopDetails-intro animated-bottom">
+                    <!--产品详情-->
+                    <div class="register-bar collect-bar setting-bar" style="padding-top: 0;">
+
+                        <div class="introduce-bar">
+                            <div class="list-nav">
+                                <div class="list-row nav-cont">
+                                    <ul class="row-4">
+                                        <li><a href="javascript:;" class="nav-item active">商品介绍</a></li>
+                                        <li><a href="javascript:;" class="nav-item">支付及配送</a></li>
+                                        <li><a href="javascript:;" class="nav-item">售后保障</a></li>
+                                        <!--时有时无，注意切换，row-4，row-3-->
+                                        <li><a href="javascript:;" class="nav-item">品牌介绍</a></li>
+                                    </ul>
+                                    <div class="menu-line"></div>
+                                </div>
+                            </div>
+
+                            <div class="showIntroduce-bar">
+                                <div class="showIntroduce swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="shopDetails-pullDown">
+                                                <span>下拉，返回宝贝详情</span>
+                                            </div>
+                                            <div class="productintro-info" style="display: block">
+                                                这个是商品介绍界面
+                                            </div>
+                                            <div class="productintro-info">
+                                                <p class="productintro-info-t">在线支付</p>
+
+                                                <p class="productintro-info-bottom">
+                                                    礼仪之邦为您提供的网上支付方式有第三方支付平台和各大银行的网上银行，
+                                                    第三方支付平台是支付宝，支持的银行有中国工商银行、中国建设银行、
+                                                    中国农业银行、交通银行、招商银行、中国银行、中信银行、中国民生银行、
+                                                    兴业银行、中国光大银行、广东发展银行、中国邮政储蓄银行等。
+                                                </p>
+
+                                                <p class="productintro-info-t">第三方支付平台详细介绍</p>
+
+                                                <p class="productintro-info-bottom">
+                                                    <img src="img/bank/bank-zfb.jpg" width="190" height="36"/>
+                                                    <span>支付宝支付</span>
+                                                </p>
+
+                                                <p class="productintro-info-t">银行卡在线支付详情介绍</p>
+
+                                                <p class="productintro-info-bottom">
+                                                    <img src="img/bank/bank-zg.jpg" width="190" height="36"/>
+                                                    <span>中国银行</span>
+                                                    <img src="img/bank/bank-gs.jpg" width="190" height="36"/>
+                                                    <span>中国工商银行</span>
+                                                    <img src="img/bank/bank-ny.jpg" width="190" height="36"/>
+                                                    <span>中国农业银行</span>
+                                                    <img src="img/bank/bank-zs.jpg" width="190" height="36"/>
+                                                    <span>招商银行</span>
+                                                    <img src="img/bank/bank-js.jpg" width="190" height="36"/>
+                                                    <span>中国建设银行银行</span>
+                                                    <img src="img/bank/bank-jt.jpg" width="190" height="36"/>
+                                                    <span>交通银行</span>
+                                                    <img src="img/bank/bank-gf.jpg" width="190" height="36"/>
+                                                    <span>广东发展银行</span>
+                                                    <img src="img/bank/bank-yz.jpg" width="190" height="36"/>
+                                                    <span>中国邮政储蓄银行</span>
+                                                    <img src="img/bank/bank-zx.jpg" width="190" height="36"/>
+                                                    <span>中信银行</span>
+                                                    <img src="img/bank/bank-xy.jpg" width="190" height="36"/>
+                                                    <span>兴业银行</span>
+                                                    <img src="img/bank/bank-ms.jpg" width="190" height="36"/>
+                                                    <span>中国民生银行</span>
+                                                    <img src="img/bank/bank-gd.jpg" width="190" height="36"/>
+                                                    <span>中国光大银行</span>
+                                                </p>
+
+                                                <p class="productintro-info-t">配送范围</p>
+
+                                                <p class="productintro-info-bottom">
+                                                    礼仪之邦目前可配送的地区为国内各大城市，以EMS的配送覆盖区域为准(港、澳、台地区及国外地区除外)。
+                                                </p>
+
+                                                <p class="productintro-info-t"><strong>注意事项：</strong></p>
+
+                                                <p class="productintro-info-bottom">
+                                                    1、商品配送区域以EMS可到达区域为准（港澳台除外），红酒、化妆品、生鲜食品等特殊商品除外；
+                                                </p>
+
+                                                <p class="productintro-info-bottom">
+                                                    2、签收商品时，请核对快递单上的商品数量，如出现商品数量不足、商品外包装破损或商品损坏等情况，请您当场拒收，并立即拨打礼仪之邦客服热线<span
+                                                        class="fc-red">400-637-6367</span>与我们的客服人员取得联系。
+                                                </p>
+
+                                                <p class="productintro-info-bottom">
+                                                    3、如遇节假日；自然因素（如地震、火灾、雪灾、洪涝、大雾等）；政府或司法机关的行为、决定或命令等不可抗力的因素，提交订单后商品不能及时送达，我们深表歉意，希望您能够谅解。
+                                                </p>
+                                            </div>
+                                            <div class="productintro-info">
+                                                <p class="productintro-info-t">正品行货</p>
+
+                                                <p class="productintro-info-bottom">礼仪之邦向您保证所售商品均为正品行货，质量有保障。</p>
+
+                                                <p class="productintro-info-t">无忧退换货</p>
+
+                                                <p class="productintro-info-bottom">
+                                                    客户购买礼仪之邦的商品7日内（含7日，自客户收到商品之日起计算），在保证商品完好的前提下，可享受退换货服务。（部分特殊商品除外，详情请咨询售后服务中心）</p>
+
+                                                <p class="productintro-info-t">权益维护</p>
+
+                                                <p class="productintro-info-bottom">
+                                                    当用户向厂家或供应商争取相关权益及应有服务时，礼仪之邦会在用户需要的第一时间提供有关的联系及协调服务，协助用户维护自己应有的权益。</p>
+
+                                                <p class="productintro-info-t">正规发票</p>
+
+                                                <p class="productintro-info-bottom">
+                                                    O2O万企集采联盟平台会为客户开具正规的发票，请顾客自行保留原件以备后续之需。</p>
+                                            </div>
+                                            <div class="productintro-info">
+                                                这个是品牌介绍界面
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shopDetails-bto pos-abs-bl">
+        <div class="group-over-tips">该拼团已结束</div>
+        <div class="shop-handle list-row group-handle">
+            <ul class="row-1">
+                <li class="shop-handle-btn">
+                    <!--不能团购加上  none-buy-->
+                    <a class="t-car-btn active" href="javascript:;">￥78.00<br>单独团</a>
+                    <a class="t-buy-btn active none-buy" href="javascript:;">￥68.00<br>团购价</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--显示-->
+    <div class="showImgBig forget-type animated-left">
+        <h2 class="header-box pos-abs-tl" style="display: none;">
+            <a class="go-back-btn sprite-icon" id="backBtn" href="javascript:;"></a>
+        </h2>
+
+        <div class="swiper-container showProductImg-list">
+            <div class="swiper-wrapper"></div>
+            <div class="swiper-pagination header-banner-pagination"></div>
+        </div>
+    </div>
+
+    <!--配送地址-->
+    <div id="disk" class="disk"></div>
+    <div id="diskCont" class="animated-disk show-address">
+        <h2 class="disk-title">所在地区<a class="close-disk sprite-icon" id="closeDisk" href="javascript:;"></a></h2>
+
+        <div class="disk-cont">
+            <div class="disk-tab clearfix">
+                <a class="disk-tab-option show-modal active" id="province" href="javascript:;"><span>请选择</span></a>
+                <i class="current-line"></i>
+            </div>
+            <div class="disk-tab-cont" id="areaCont">
+                <div id="showArea"></div>
+                <div class="disk-loading"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--引导页面-->
+    <div class="guide group-guide1" style="display: none;">
+        <img src="img/group-guide1.png">
+        <a id="guide1" href="javascript:;"></a>
+    </div>
+    <div class="guide group-guide2" style="display: none;">
+        <img src="img/group-guide2.png">
+        <a id="guide2" href="javascript:;"></a>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/iscroll-probe.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
+<script src="js/area.js"></script>
+<script src="js/box.js"></script>
+<script src="js/public.js"></script>
+<script>
+    $(function () {
+        var bannerList, buyIntro, shopDetailsIntro, myScroll;
+        myScroll = publicFuns.newIScrollRefresh("#wrapper", "", loadFun, 0);
+        bannerList = publicFuns.newSwiper(".header-banner", 1);
+
+        var _showMain = false;
+
+        function loadFun() {
+            var _pullBar = $(".shopDetails-pullDown");
+            $(".shopDetails-main").addClass("animated-top");
+            $(".shopDetails-intro").addClass("active");
+            $("#scroller").css("height", "100%");
+            if (myScroll) {
+                myScroll.scrollTo(0, 0, 0);
+                myScroll.destroy();
+                myScroll = null;
+            }
+            shopDetailsIntro = publicFuns.newSwiper(".showIntroduce", 3);
+            shopDetailsIntro.on("onSliderMove", function () {
+                var _y = shopDetailsIntro.translate;
+                if (_y >= 60) {
+                    _pullBar.addClass("active").find("span").text("释放，返回宝贝详情");
+                    _showMain = true;
+                } else {
+                    if (_y >= 5) {
+                        _pullBar.fadeIn();
+                        _pullBar.css({
+                            "top": "-50px"
+                        });
+                    } else {
+                        _pullBar.fadeOut();
+                    }
+                    _pullBar.removeClass("active").find("span").text("下拉，返回宝贝详情");
+                    _showMain = false;
+                }
+            });
+
+            shopDetailsIntro.on("onTransitionEnd", function () {
+                _pullBar.fadeOut();
+                if (_showMain) {
+                    _pullBar.fadeOut();
+                    $(".shopDetails-main").removeClass("animated-top");
+                    $(".shopDetails-intro").removeClass("active");
+                    $("#scroller").css("height", "auto");
+                    if (myScroll == null) {
+                        myScroll = publicFuns.newIScrollRefresh("#wrapper", "", loadFun, 0);
+                        myScroll.scrollTo(0, myScroll.maxScrollY, 0);
+                        shopDetailsIntro.destroy(false, false);
+                        shopDetailsIntro = null;
+                    }
+                }
+            });
+        }
+
+        //引导页切换
+        var _guide_i = 1;
+//        $("#disk").fadeIn(function () {
+//            var _height = 0;
+//            _height = $(".group-rule").offset().top;
+//            myScroll.scrollTo(0, -(_height - 150), 600);
+//            setTimeout(function () {
+//                $(".group-guide" + _guide_i).fadeIn();
+//            }, 600)
+//        });
+
+        $(".guide").find("a").click(function () {
+            var _height = 0;
+            $(this).parents(".guide").fadeOut(30, function () {
+                _guide_i++;
+                $(".group-guide" + _guide_i).fadeIn();
+                if (_guide_i == ($(".guide").length + 1)) {
+                    $("#disk").fadeOut(30, function () {
+                        myScroll.scrollTo(0, 1, 600);
+                    });
+                }
+            });
+        });
+
+        //菜单切换
+        //初始化菜单底部的线条
+        var $menuLine = $(".menu-line");
+        $menuLine.css({
+            "left": $("a.nav-item.active").get(0).offsetLeft,
+            "width": $("a.nav-item.active").get(0).offsetWidth
+        });
+        $(".nav-cont").find("a").click(function () {
+            if (!$(this).hasClass("active")) {
+                $menuLine.animate({
+                    "left": $(this).get(0).offsetLeft,
+                    "width": $(this).get(0).offsetWidth
+                }, 300);
+            }
+            var _i = $(this).parents("li").index();
+            $(this).addClass("active").parents("li").siblings().find("a").removeClass("active");
+            $(".productintro-info").hide().eq(_i).fadeIn(300, function () {
+                if (shopDetailsIntro) {
+                    shopDetailsIntro.update(true);
+                }
+            });
+        });
+
+        //加减数字
+        $(".num-cut").click(function () {
+            var _max = parseInt($(this).next().attr("data-max"));
+            publicFuns.numberCalculate($(this).next(), _max, "cut", "", "");
+        });
+        $(".num-add").click(function () {
+            var _max = parseInt($(this).prev().attr("data-max"));
+            publicFuns.numberCalculate($(this).prev(), _max, "add", "", "");
+        });
+        //显示加减数字
+        $(document).on("click", ".num-input", function () {
+            var _this = this;
+            publicFuns.showCheckNum(_this, function () {
+                var _val = parseInt($(_this).find("input").val());
+                console.log("这是您输入的值：" + _val);
+            })
+        });
+
+        //进度
+        var allNum = 16000, thisNum = 11000;
+        var ratio = thisNum / allNum;
+        var _thisTag = $(".this-people"), _allTag = $(".all-people");
+        $(".meter").find("span").width(ratio * 100 + "%");
+
+        if (ratio * 100 <= 10) {
+            _thisTag.css({
+                "left": "0%"
+            }).text("已售" + thisNum).show();
+            _allTag.removeClass("active").text("共售" + allNum);
+        } else if (ratio * 100 >= 77) {
+            _thisTag.hide();
+            _allTag.addClass("active").text("已售" + thisNum);
+        } else {
+            _thisTag.css({
+                "left": ratio * 100 + "%",
+                "marginLeft": -Math.ceil(_thisTag.width()) / 2 + "px"
+            }).text("已售" + thisNum).show();
+            _allTag.removeClass("active").text("共售" + allNum);
+        }
+
+
+        //配送地址
+        $("#checkArea").click(function () {
+            $("#disk").fadeIn();
+            $("#diskCont").addClass("active");
+            lineAnimate(36, -20);
+            $(".disk-loading").show();
+            setTimeout(function () {
+                $(".disk-loading").hide();
+                change(0, "0", 1);
+            }, 500);
+        });
+
+        //浏览大图
+        $(document).on("click", ".header-banner .swiper-slide", "showImgBig", publicFuns.showProductImg);
+
+        //选择
+        $(".select-style").find("a").click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+
+
+        //倒计时
+        publicFuns.limitTime("#limitTime", "2016/06/13 17:02:05", endFun);
+        function endFun() {
+            console.log("倒计时结束了！");
+            $(".spellGroup-time").find(".pull-right").addClass("game-over");
+        }
+
+        //窗口改变
+        $(window).resize(function () {
+            publicFuns.countRatio(".header-banner", 640, 590);
+            $(".rule-line").width(($(this).width() - 10 * 2 - 54 * 4) / 3);
+            myScroll.refresh();
+        }).trigger("resize");
+    });
+</script>
+</body>
+</html>

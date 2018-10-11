@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html class="overflow-hidden">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>礼仪之邦-兑换券订单</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body class="overflow-hidden">
+<div class="collect-bar register-bar setting-bar">
+    <h2 class="header-box pos-abs-tl">
+        <div class="header-goBack">
+            <a class="go-back-btn sprite-icon" href="#"></a>
+        </div>
+        兑换券订单
+        <a href="#" class="shopType-sprite-icon orderSearch-icon"></a>
+    </h2>
+
+    <div class="collect-cont my-order-content order-hasMenu-list">
+        <div class="swiper-container" id="orderMenu">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" id="allOrder">全部</div>
+                <div class="swiper-slide" id="paymentOrder">待付款</div>
+                <div class="swiper-slide" id="sendOrder">待发货</div>
+                <div class="swiper-slide" id="shippedOrder">已发货</div>
+                <div class="swiper-slide" id="completedOrder">已完成</div>
+                <div class="swiper-slide active" id="cancelOrder">已取消</div>
+                <div class="swiper-slide" id="refundsOrder">退货退款</div>
+                <div class="swiper-slide" id="deletedOrder">已删除</div>
+            </div>
+        </div>
+        <div class="has-order-list">
+            <!--<div class="tab-loading"><img src="img/loading-LOGO.gif"></div>-->
+            <div id="wrapper">
+                <div id="scroller">
+                    <div id="pullDown">
+                        <span class="pullDownIcon"></span>
+                        <span class="pullDownLabel">下拉刷新...</span>
+                    </div>
+                    <div class="order-content shop-order-content">
+                        <div class="collect-list shopCar-list order-page-list no-padding">
+                            <div class="my-order-title">订单号：12156498323434613<span>待付款</span></div>
+                            <ul>
+                                <li>
+                                    <div class="collect-intro">
+                                        <a href="#">
+                                            <label class="collect-img">
+                                                <img src="img/collect-img.jpg">
+                                                <i class="shopType-sprite-icon orticket-icon"></i>
+                                            </label>
+
+                                            <div class="collect-intro-text">
+                                                <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                    压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                                <p class="order-id">退货</p>
+
+                                                <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                                <div class="number-box pos-abs-br num-text">兑换券数量 X1</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="my-order-intro">共2件商品<span>实付款：￥<i>36</i>.20（含运费￥0.00）</span></div>
+                            <div class="my-order-btn">
+                                <a href="javascript:;">取消订单</a>
+                                <a class="active" href="javascript:;">立即付款</a>
+                            </div>
+                        </div>
+                        <div class="collect-list shopCar-list order-page-list no-padding">
+                            <div class="my-order-title">订单号：12156498323434613<span>待付款</span></div>
+                            <ul>
+                                <li>
+                                    <div class="collect-intro">
+                                        <a href="#">
+                                            <label class="collect-img">
+                                                <img src="img/collect-img.jpg">
+                                                <i class="shopType-sprite-icon orticket-icon"></i>
+                                            </label>
+
+                                            <div class="collect-intro-text">
+                                                <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                    压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                                <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                                <div class="number-box pos-abs-br num-text">兑换券数量 X1</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collect-intro">
+                                        <a href="#">
+                                            <label class="collect-img">
+                                                <img src="img/collect-img.jpg">
+                                                <i class="shopType-sprite-icon orticket-icon"></i>
+                                            </label>
+
+                                            <div class="collect-intro-text">
+                                                <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                    压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                                <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                                <div class="number-box pos-abs-br num-text">兑换券数量 X1</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="my-order-intro">共2件商品<span>实付款：￥<i>36</i>.20（含运费￥0.00）</span></div>
+                            <div class="my-order-btn">
+                                <a href="javascript:;">取消订单</a>
+                                <a class="active" href="javascript:;">立即付款</a>
+                            </div>
+                        </div>
+                        <div class="collect-list shopCar-list order-page-list no-padding">
+                            <div class="my-order-title">订单号：12156498323434613<span>待付款</span></div>
+                            <ul>
+                                <li>
+                                    <div class="collect-intro">
+                                        <a href="#">
+                                            <label class="collect-img">
+                                                <img src="img/collect-img.jpg">
+                                                <i class="shopType-sprite-icon orticket-icon"></i>
+                                            </label>
+
+                                            <div class="collect-intro-text">
+                                                <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                    压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                                <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                                <div class="number-box pos-abs-br num-text">兑换券数量 X1</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="my-order-intro">共2件商品<span>实付款：￥<i>36</i>.20（含运费￥0.00）</span></div>
+                            <div class="my-order-btn">
+                                <a href="javascript:;">取消订单</a>
+                                <a class="active" href="javascript:;">立即付款</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-content shop-order-content" style="display: none">
+                        <div class="collect-list shopCar-list order-page-list no-padding">
+                            <div class="my-order-title">订单号：12156498323434613<span>待付款</span></div>
+                            <ul>
+                                <li>
+                                    <div class="collect-intro">
+                                        <a href="#">
+                                            <label class="collect-img">
+                                                <img src="img/collect-img.jpg">
+                                                <i class="shopType-sprite-icon orticket-icon"></i>
+                                            </label>
+
+                                            <div class="collect-intro-text">
+                                                <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                    压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                                <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                                <div class="number-box pos-abs-br num-text">兑换券数量 X1</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="my-order-intro">共2件商品<span>实付款：￥<i>36</i>.20（含运费￥0.00）</span></div>
+                            <div class="my-order-btn">
+                                <a href="javascript:;">取消订单</a>
+                                <a class="active" href="javascript:;">立即付款</a>
+                            </div>
+                        </div>
+                        <div class="collect-list shopCar-list order-page-list no-padding">
+                            <div class="my-order-title">订单号：12156498323434613<span>待付款</span></div>
+                            <ul>
+                                <li>
+                                    <div class="collect-intro">
+                                        <a href="#">
+                                            <label class="collect-img">
+                                                <img src="img/collect-img.jpg">
+                                                <i class="shopType-sprite-icon orticket-icon"></i>
+                                            </label>
+
+                                            <div class="collect-intro-text">
+                                                <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                    压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                                <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                                <div class="number-box pos-abs-br num-text">兑换券数量 X1</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collect-intro">
+                                        <a href="#">
+                                            <label class="collect-img">
+                                                <img src="img/collect-img.jpg">
+                                                <i class="shopType-sprite-icon orticket-icon"></i>
+                                            </label>
+
+                                            <div class="collect-intro-text">
+                                                <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                    压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                                <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                                <div class="number-box pos-abs-br num-text">兑换券数量 X1</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="my-order-intro">共2件商品<span>实付款：￥<i>36</i>.20（含运费￥0.00）</span></div>
+                            <div class="my-order-btn">
+                                <a href="javascript:;">取消订单</a>
+                                <a class="active" href="javascript:;">立即付款</a>
+                            </div>
+                        </div>
+                        <div class="collect-list shopCar-list order-page-list no-padding">
+                            <div class="my-order-title">订单号：12156498323434613<span>待付款</span></div>
+                            <ul>
+                                <li>
+                                    <div class="collect-intro">
+                                        <a href="#">
+                                            <label class="collect-img">
+                                                <img src="img/collect-img.jpg">
+                                                <i class="shopType-sprite-icon orticket-icon"></i>
+                                            </label>
+
+                                            <div class="collect-intro-text">
+                                                <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                    压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                                <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                                <div class="number-box pos-abs-br num-text">兑换券数量 X1</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="my-order-intro">共2件商品<span>实付款：￥<i>36</i>.20（含运费￥0.00）</span></div>
+                            <div class="my-order-btn">
+                                <a href="javascript:;">取消订单</a>
+                                <a class="active" href="javascript:;">立即付款</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-content shop-order-content" style="display: none">
+                        <div class="collect-list shopCar-list order-page-list no-padding">
+                            <div class="my-order-title">订单号：12156498323434613<span>待发货</span></div>
+                            <ul>
+                                <li>
+                                    <div class="collect-intro">
+                                        <a href="#">
+                                            <label class="collect-img">
+                                                <img src="img/collect-img.jpg">
+                                                <i class="shopType-sprite-icon orticket-icon"></i>
+                                            </label>
+
+                                            <div class="collect-intro-text">
+                                                <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                    压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                                <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                                <div class="number-box pos-abs-br num-text">兑换券数量 X1</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="my-order-intro">共2件商品<span>实付款：￥<i>36</i>.20（含运费￥0.00）</span></div>
+                            <div class="my-order-btn">
+                                <a href="javascript:;">取消订单</a>
+                                <a class="active" href="javascript:;">立即付款</a>
+                            </div>
+                        </div>
+                        <div class="collect-list shopCar-list order-page-list no-padding">
+                            <div class="my-order-title">订单号：12156498323434613<span>待付款</span></div>
+                            <ul>
+                                <li>
+                                    <div class="collect-intro">
+                                        <a href="#">
+                                            <label class="collect-img">
+                                                <img src="img/collect-img.jpg">
+                                                <i class="shopType-sprite-icon orticket-icon"></i>
+                                            </label>
+
+                                            <div class="collect-intro-text">
+                                                <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                    压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                                <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                                <div class="number-box pos-abs-br num-text">兑换券数量 X1</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collect-intro">
+                                        <a href="#">
+                                            <label class="collect-img">
+                                                <img src="img/collect-img.jpg">
+                                                <i class="shopType-sprite-icon orticket-icon"></i>
+                                            </label>
+
+                                            <div class="collect-intro-text">
+                                                <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                    压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                                <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                                <div class="number-box pos-abs-br num-text">兑换券数量 X1</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="my-order-intro">共2件商品<span>实付款：￥<i>36</i>.20（含运费￥0.00）</span></div>
+                            <div class="my-order-btn">
+                                <a href="javascript:;">取消订单</a>
+                                <a class="active" href="javascript:;">立即付款</a>
+                            </div>
+                        </div>
+                        <div class="collect-list shopCar-list order-page-list no-padding">
+                            <div class="my-order-title">订单号：12156498323434613<span>待付款</span></div>
+                            <ul>
+                                <li>
+                                    <div class="collect-intro">
+                                        <a href="#">
+                                            <label class="collect-img">
+                                                <img src="img/collect-img.jpg">
+                                                <i class="shopType-sprite-icon orticket-icon"></i>
+                                            </label>
+
+                                            <div class="collect-intro-text">
+                                                <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                    压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                                <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                                <div class="number-box pos-abs-br num-text">兑换券数量 X1</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="my-order-intro">共2件商品<span>实付款：￥<i>36</i>.20（含运费￥0.00）</span></div>
+                            <div class="my-order-btn">
+                                <a href="javascript:;">取消订单</a>
+                                <a class="active" href="javascript:;">立即付款</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-content shop-order-content" style="display: none">
+                        <div class="collect-list shopCar-list order-page-list no-padding">
+                            <div class="my-order-title">订单号：12156498323434613<span>已发货</span></div>
+                            <ul>
+                                <li>
+                                    <div class="collect-intro">
+                                        <a href="#">
+                                            <label class="collect-img">
+                                                <img src="img/collect-img.jpg">
+                                                <i class="shopType-sprite-icon orticket-icon"></i>
+                                            </label>
+
+                                            <div class="collect-intro-text">
+                                                <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                    压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                                <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                                <div class="number-box pos-abs-br num-text">兑换券数量 X1</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="my-order-intro">共2件商品<span>实付款：￥<i>36</i>.20（含运费￥0.00）</span></div>
+                            <div class="my-order-btn">
+                                <a href="javascript:;">取消订单</a>
+                                <a class="active" href="javascript:;">立即付款</a>
+                            </div>
+                        </div>
+                        <div class="collect-list shopCar-list order-page-list no-padding">
+                            <div class="my-order-title">订单号：12156498323434613<span>待付款</span></div>
+                            <ul>
+                                <li>
+                                    <div class="collect-intro">
+                                        <a href="#">
+                                            <label class="collect-img">
+                                                <img src="img/collect-img.jpg">
+                                                <i class="shopType-sprite-icon orticket-icon"></i>
+                                            </label>
+
+                                            <div class="collect-intro-text">
+                                                <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                    压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                                <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                                <div class="number-box pos-abs-br num-text">兑换券数量 X1</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collect-intro">
+                                        <a href="#">
+                                            <label class="collect-img">
+                                                <img src="img/collect-img.jpg">
+                                                <i class="shopType-sprite-icon orticket-icon"></i>
+                                            </label>
+
+                                            <div class="collect-intro-text">
+                                                <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                    压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                                <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                                <div class="number-box pos-abs-br num-text">兑换券数量 X1</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="my-order-intro">共2件商品<span>实付款：￥<i>36</i>.20（含运费￥0.00）</span></div>
+                            <div class="my-order-btn">
+                                <a href="javascript:;">取消订单</a>
+                                <a class="active" href="javascript:;">立即付款</a>
+                            </div>
+                        </div>
+                        <div class="collect-list shopCar-list order-page-list no-padding">
+                            <div class="my-order-title">订单号：12156498323434613<span>待付款</span></div>
+                            <ul>
+                                <li>
+                                    <div class="collect-intro">
+                                        <a href="#">
+                                            <label class="collect-img">
+                                                <img src="img/collect-img.jpg">
+                                                <i class="shopType-sprite-icon orticket-icon"></i>
+                                            </label>
+
+                                            <div class="collect-intro-text">
+                                                <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                    压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                                <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                                <div class="number-box pos-abs-br num-text">兑换券数量 X1</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="my-order-intro">共2件商品<span>实付款：￥<i>36</i>.20（含运费￥0.00）</span></div>
+                            <div class="my-order-btn">
+                                <a href="javascript:;">取消订单</a>
+                                <a class="active" href="javascript:;">立即付款</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-content shop-order-content" style="display: none">
+                        <div class="collect-list shopCar-list order-page-list no-padding">
+                            <div class="my-order-title">订单号：12156498323434613<span>已完成</span></div>
+                            <ul>
+                                <li>
+                                    <div class="collect-intro">
+                                        <a href="#">
+                                            <label class="collect-img">
+                                                <img src="img/collect-img.jpg">
+                                                <i class="shopType-sprite-icon orticket-icon"></i>
+                                            </label>
+
+                                            <div class="collect-intro-text">
+                                                <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                    压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                                <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                                <div class="number-box pos-abs-br num-text">兑换券数量 X1</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="my-order-intro">共2件商品<span>实付款：￥<i>36</i>.20（含运费￥0.00）</span></div>
+                            <div class="my-order-btn">
+                                <a href="javascript:;">取消订单</a>
+                                <a class="active" href="javascript:;">立即付款</a>
+                            </div>
+                        </div>
+                        <div class="collect-list shopCar-list order-page-list no-padding">
+                            <div class="my-order-title">订单号：12156498323434613<span>待付款</span></div>
+                            <ul>
+                                <li>
+                                    <div class="collect-intro">
+                                        <a href="#">
+                                            <label class="collect-img">
+                                                <img src="img/collect-img.jpg">
+                                                <i class="shopType-sprite-icon orticket-icon"></i>
+                                            </label>
+
+                                            <div class="collect-intro-text">
+                                                <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                    压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                                <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                                <div class="number-box pos-abs-br num-text">兑换券数量 X1</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collect-intro">
+                                        <a href="#">
+                                            <label class="collect-img">
+                                                <img src="img/collect-img.jpg">
+                                                <i class="shopType-sprite-icon orticket-icon"></i>
+                                            </label>
+
+                                            <div class="collect-intro-text">
+                                                <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                    压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                                <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                                <div class="number-box pos-abs-br num-text">兑换券数量 X1</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="my-order-intro">共2件商品<span>实付款：￥<i>36</i>.20（含运费￥0.00）</span></div>
+                            <div class="my-order-btn">
+                                <a href="javascript:;">取消订单</a>
+                                <a class="active" href="javascript:;">立即付款</a>
+                            </div>
+                        </div>
+                        <div class="collect-list shopCar-list order-page-list no-padding">
+                            <div class="my-order-title">订单号：12156498323434613<span>待付款</span></div>
+                            <ul>
+                                <li>
+                                    <div class="collect-intro">
+                                        <a href="#">
+                                            <label class="collect-img">
+                                                <img src="img/collect-img.jpg">
+                                                <i class="shopType-sprite-icon orticket-icon"></i>
+                                            </label>
+
+                                            <div class="collect-intro-text">
+                                                <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                    压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                                <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                                <div class="number-box pos-abs-br num-text">兑换券数量 X1</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="my-order-intro">共2件商品<span>实付款：￥<i>36</i>.20（含运费￥0.00）</span></div>
+                            <div class="my-order-btn">
+                                <a href="javascript:;">取消订单</a>
+                                <a class="active" href="javascript:;">立即付款</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-content shop-order-content" style="display: none">
+                        <div class="collect-list shopCar-list order-page-list no-padding">
+                            <div class="my-order-title">订单号：12156498323434613<span>已取消</span></div>
+                            <ul>
+                                <li>
+                                    <div class="collect-intro">
+                                        <a href="#">
+                                            <label class="collect-img">
+                                                <img src="img/collect-img.jpg">
+                                                <i class="shopType-sprite-icon orticket-icon"></i>
+                                            </label>
+
+                                            <div class="collect-intro-text">
+                                                <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                    压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                                <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                                <div class="number-box pos-abs-br num-text">兑换券数量 X1</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="my-order-intro">共2件商品<span>实付款：￥<i>36</i>.20（含运费￥0.00）</span></div>
+                            <div class="my-order-btn">
+                                <a href="javascript:;">取消订单</a>
+                                <a class="active" href="javascript:;">立即付款</a>
+                            </div>
+                        </div>
+                        <div class="collect-list shopCar-list order-page-list no-padding">
+                            <div class="my-order-title">订单号：12156498323434613<span>待付款</span></div>
+                            <ul>
+                                <li>
+                                    <div class="collect-intro">
+                                        <a href="#">
+                                            <label class="collect-img">
+                                                <img src="img/collect-img.jpg">
+                                                <i class="shopType-sprite-icon orticket-icon"></i>
+                                            </label>
+
+                                            <div class="collect-intro-text">
+                                                <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                    压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                                <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                                <div class="number-box pos-abs-br num-text">兑换券数量 X1</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collect-intro">
+                                        <a href="#">
+                                            <label class="collect-img">
+                                                <img src="img/collect-img.jpg">
+                                                <i class="shopType-sprite-icon orticket-icon"></i>
+                                            </label>
+
+                                            <div class="collect-intro-text">
+                                                <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                    压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                                <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                                <div class="number-box pos-abs-br num-text">兑换券数量 X1</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="my-order-intro">共2件商品<span>实付款：￥<i>36</i>.20（含运费￥0.00）</span></div>
+                            <div class="my-order-btn">
+                                <a href="javascript:;">取消订单</a>
+                                <a class="active" href="javascript:;">立即付款</a>
+                            </div>
+                        </div>
+                        <div class="collect-list shopCar-list order-page-list no-padding">
+                            <div class="my-order-title">订单号：12156498323434613<span>待付款</span></div>
+                            <ul>
+                                <li>
+                                    <div class="collect-intro">
+                                        <a href="#">
+                                            <label class="collect-img">
+                                                <img src="img/collect-img.jpg">
+                                                <i class="shopType-sprite-icon orticket-icon"></i>
+                                            </label>
+
+                                            <div class="collect-intro-text">
+                                                <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                    压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                                <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                                <div class="number-box pos-abs-br num-text">兑换券数量 X1</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="my-order-intro">共2件商品<span>实付款：￥<i>36</i>.20（含运费￥0.00）</span></div>
+                            <div class="my-order-btn">
+                                <a href="javascript:;">取消订单</a>
+                                <a class="active" href="javascript:;">立即付款</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-content shop-order-content" style="display: none">
+                        <div class="collect-list shopCar-list order-page-list no-padding">
+                            <div class="my-order-title">订单号：12156498323434613<span>退货退款</span></div>
+                            <ul>
+                                <li>
+                                    <div class="collect-intro">
+                                        <a href="#">
+                                            <label class="collect-img">
+                                                <img src="img/collect-img.jpg">
+                                                <i class="shopType-sprite-icon orticket-icon"></i>
+                                            </label>
+
+                                            <div class="collect-intro-text">
+                                                <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                    压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                                <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                                <div class="number-box pos-abs-br num-text">兑换券数量 X1</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="my-order-intro">共2件商品<span>实付款：￥<i>36</i>.20（含运费￥0.00）</span></div>
+                            <div class="my-order-btn">
+                                <a href="javascript:;">取消订单</a>
+                                <a class="active" href="javascript:;">立即付款</a>
+                            </div>
+                        </div>
+                        <div class="collect-list shopCar-list order-page-list no-padding">
+                            <div class="my-order-title">订单号：12156498323434613<span>待付款</span></div>
+                            <ul>
+                                <li>
+                                    <div class="collect-intro">
+                                        <a href="#">
+                                            <label class="collect-img">
+                                                <img src="img/collect-img.jpg">
+                                                <i class="shopType-sprite-icon orticket-icon"></i>
+                                            </label>
+
+                                            <div class="collect-intro-text">
+                                                <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                    压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                                <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                                <div class="number-box pos-abs-br num-text">兑换券数量 X1</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collect-intro">
+                                        <a href="#">
+                                            <label class="collect-img">
+                                                <img src="img/collect-img.jpg">
+                                                <i class="shopType-sprite-icon orticket-icon"></i>
+                                            </label>
+
+                                            <div class="collect-intro-text">
+                                                <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                    压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                                <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                                <div class="number-box pos-abs-br num-text">兑换券数量 X1</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="my-order-intro">共2件商品<span>实付款：￥<i>36</i>.20（含运费￥0.00）</span></div>
+                            <div class="my-order-btn">
+                                <a href="javascript:;">取消订单</a>
+                                <a class="active" href="javascript:;">立即付款</a>
+                            </div>
+                        </div>
+                        <div class="collect-list shopCar-list order-page-list no-padding">
+                            <div class="my-order-title">订单号：12156498323434613<span>待付款</span></div>
+                            <ul>
+                                <li>
+                                    <div class="collect-intro">
+                                        <a href="#">
+                                            <label class="collect-img">
+                                                <img src="img/collect-img.jpg">
+                                                <i class="shopType-sprite-icon orticket-icon"></i>
+                                            </label>
+
+                                            <div class="collect-intro-text">
+                                                <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                    压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                                <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                                <div class="number-box pos-abs-br num-text">兑换券数量 X1</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="my-order-intro">共2件商品<span>实付款：￥<i>36</i>.20（含运费￥0.00）</span></div>
+                            <div class="my-order-btn">
+                                <a href="javascript:;">取消订单</a>
+                                <a class="active" href="javascript:;">立即付款</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-content shop-order-content" style="display: none">
+                        <div class="collect-list shopCar-list order-page-list no-padding">
+                            <div class="my-order-title">订单号：12156498323434613<span>已删除</span></div>
+                            <ul>
+                                <li>
+                                    <div class="collect-intro">
+                                        <a href="#">
+                                            <label class="collect-img">
+                                                <img src="img/collect-img.jpg">
+                                                <i class="shopType-sprite-icon orticket-icon"></i>
+                                            </label>
+
+                                            <div class="collect-intro-text">
+                                                <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                    压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                                <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                                <div class="number-box pos-abs-br num-text">兑换券数量 X1</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="my-order-intro">共2件商品<span>实付款：￥<i>36</i>.20（含运费￥0.00）</span></div>
+                            <div class="my-order-btn">
+                                <a href="javascript:;">取消订单</a>
+                                <a class="active" href="javascript:;">立即付款</a>
+                            </div>
+                        </div>
+                        <div class="collect-list shopCar-list order-page-list no-padding">
+                            <div class="my-order-title">订单号：12156498323434613<span>待付款</span></div>
+                            <ul>
+                                <li>
+                                    <div class="collect-intro">
+                                        <a href="#">
+                                            <label class="collect-img">
+                                                <img src="img/collect-img.jpg">
+                                                <i class="shopType-sprite-icon orticket-icon"></i>
+                                            </label>
+
+                                            <div class="collect-intro-text">
+                                                <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                    压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                                <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                                <div class="number-box pos-abs-br num-text">兑换券数量 X1</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="my-order-intro">共2件商品<span>实付款：￥<i>36</i>.20（含运费￥0.00）</span></div>
+                            <div class="my-order-btn">
+                                <a href="javascript:;">取消订单</a>
+                                <a class="active" href="javascript:;">立即付款</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="pullUp">
+                        <span class="pullUpLabel">加载更多...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
+<script src="js/iscroll-probe.js"></script>
+<script src="js/box.js"></script>
+<script src="js/public.js"></script>
+<script>
+    $(function () {
+        /**
+         * 说明
+         * 每种订单对应的按钮状态，根据需求自己修改
+         * 红色的按钮，加上样式  active
+         * 团购状态记得会出现倒计时的情况
+         */
+        //初始化状态，默认是全部订单
+        var _orderTips = "allOrder";
+        var orderMune = publicFuns.newSwiper("#orderMenu", 2);
+        var myScroll = publicFuns.newIScrollRefresh("#wrapper", refreshFun, loadFun, 0);
+
+        function refreshFun() {
+            //_orderTips标识  当前是哪种订单
+            //需要判断 当前触发的是哪个状态
+            console.log(_orderTips + " 刷新数据");
+        }
+
+        function loadFun() {
+            //_orderTips标识  当前是哪种订单
+            //需要判断 当前触发的是哪个状态
+            console.log(_orderTips + " 加载数据");
+        }
+
+        //菜单切换
+        //菜单初始化
+        navInit();
+        function navInit() {
+            var w_w = $(window).width();
+            var n = $("#orderMenu .swiper-slide").length;
+            var _dom = $(".swiper-slide.active");
+            var i = _dom.index();
+            var _left = _dom.offset().left;
+            if (_left > w_w) {
+                orderMune.slideTo((n - 1), 100, false);
+            } else {
+                orderMune.slideTo(i, 100, false);
+            }
+        }
+
+
+        $("#orderMenu").find(".swiper-slide").click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+            var _menu = $("#orderMenu");
+            var _curBar = _menu.find(".swiper-slide.active");
+            var _width = _curBar.offset().left + _curBar[0].offsetWidth;
+            if (_width > $(window).width()) {
+                orderMune.slideNext();
+            } else if (_width < _curBar[0].offsetWidth * 2) {
+                orderMune.slidePrev();
+            }
+            var _i = $(this).index();
+            //测试使用
+            _orderTips = $(this).attr("id") + $(this).text();
+            //真实标识
+            //_orderTips=$(this).attr("id");
+            $(".shop-order-content").eq(_i).fadeIn(function () {
+                myScroll.refresh();
+            }).siblings(".shop-order-content").hide();
+        });
+
+        //倒计时
+        publicFuns.limitTime(".order-time-down", "2016/06/15 16:08:05", endFun);
+        function endFun() {
+            console.log("倒计时结束了！");
+        }
+
+        //菜单个数平分宽度
+        $(window).resize(function () {
+            var _tag = $("#orderMenu").find(".swiper-slide");
+            var i = _tag.length;
+            if (i <= 5) {
+                _tag.width((($(window).width() - 20) / i - 20));
+            }
+        }).trigger("resize");
+    })
+</script>
+</body>
+</html>

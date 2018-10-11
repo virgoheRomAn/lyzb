@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="overflow-hidden">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>礼仪之邦-系统维护中</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body class="overflow-hidden">
+<div class="Network-bar" style="background: #FFFFFF;">
+    <div class="Network-cont">
+        <label class="smaller"><img src="img/Network3.png"></label>
+        <h2>系统维护中</h2>
+        <span class="Network-tips" style="font-size: 10px; line-height: 22px; margin-top: 5px;">有任何疑问请联系客<br>服客服电话：<a href="tel:400-637-6367">4000-266-357</a></span>
+        <div class="Network-btn clearfix">
+            <a class="" href="javascript:;">
+                <span>返回首页</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/box.js"></script>
+<script>
+    $(function () {
+        $("a.reload").click(function () {
+            $(this).find("span").addClass("active");
+            setTimeout(function(){
+                $("a.reload").find("span").removeClass("active");
+            },500);
+        });
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html class="overflow-hidden">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>礼仪之邦-确认订单</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body class="overflow-hidden">
+<div class="collect-bar register-bar order-bar">
+    <h2 class="header-box pos-abs-tl">
+        <a class="go-back-btn sprite-icon" href="#"></a>
+        确认订单
+    </h2>
+
+    <div class="collect-cont">
+        <div id="wrapper">
+            <div id="scroller">
+                <div class="order-content">
+                    <div class="order-area none-arrow">
+                        <div class="add-user">
+                            <span class="add-user-name text-overflow">徐继强</span>
+                            <span class="add-user-phone">13628332957</span>
+                        </div>
+                        <div class="add-location text-clamp-overflow">
+                            <i class="shopType-sprite-icon"></i>
+                            重庆市 重庆市 江北区 观音桥街道，建北一村78号6-1
+                        </div>
+                    </div>
+                    <div class="collect-list shopCar-list order-page-list no-padding">
+                        <ul>
+                            <li>
+                                <div class="collect-intro">
+                                    <a href="#">
+                                        <label class="collect-img">
+                                            <img src="img/collect-img.jpg">
+                                            <!--<i class="shopType-sprite-icon presell-icon"></i>-->
+                                        </label>
+
+                                        <div class="collect-intro-text">
+                                            <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                            <div class="product-norms text-overflow">蓝色,34码</div>
+
+                                            <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                            <div class="number-box pos-abs-br num-text">x1</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collect-intro">
+                                    <a href="#">
+                                        <label class="collect-img">
+                                            <img src="img/collect-img.jpg">
+                                            <i class="shopType-sprite-icon presell-icon"></i>
+                                        </label>
+
+                                        <div class="collect-intro-text">
+                                            <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                            <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                            <div class="number-box pos-abs-br num-text">x2</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collect-intro">
+                                    <a href="#">
+                                        <label class="collect-img">
+                                            <img src="img/collect-img.jpg">
+                                            <i class="shopType-sprite-icon presell-icon"></i>
+                                        </label>
+
+                                        <div class="collect-intro-text">
+                                            <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                            <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                            <div class="number-box pos-abs-br num-text">x3</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="order-intro">
+                        <div class="register-cont no-margin">
+                            <ul>
+                                <li class="no-padding">
+                                    <div class="register-input line-black padding-left no-padding">
+                                        <label>备注信息：</label>
+                                        <span class="show-intor text-overflow">此处为填写的备注信息，不可编辑。字数限制在50字以内。</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="order-price">
+                        <div class="pay-intro">
+                            <h2><span>商品总额</span><label>¥72.80</label></h2>
+
+                            <p><span>- 优惠券</span><label>¥0.00</label></p>
+
+                            <p><span>+ 运费</span><label>¥10.00</label></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="collect-bottom po-abs order-bottom">
+        <div class="shop-handle list-row">
+            <ul class="row-2">
+                <li class="shop-handle-intro"><label>合计：￥62.00</label></li>
+                <li class="shop-handle-btn">
+                    <a id="ensureBtn" class="t-buy-btn active show-box" href="javascript:;">去支付</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/box.js"></script>
+<script src="js/public.js"></script>
+<script>
+    $(function () {
+        var myScroll = publicFuns.newIScroll("#wrapper");
+    })
+</script>
+</body>
+</html>

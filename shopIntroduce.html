@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="overflow-hidden">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>礼仪之邦-图文介绍</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body class="overflow-hidden">
+<div class="register-bar collect-bar setting-bar">
+    <h2 class="header-box pos-abs-tl">
+        <a class="go-back-btn sprite-icon" id="forgetGoBack" href="#"></a>
+        图文介绍
+        <span id="settingMenu" class="has-icon sprite-icon"></span>
+    </h2>
+
+    <div class="setting-menu pos-abs-tr">
+        <span class="arrow-top"></span>
+        <a href="#"><i class="sprite-icon index-icon"></i>首页</a>
+        <a href="#"><i class="sprite-icon shop-icon"></i>商品分类</a>
+        <a href="#"><i class="sprite-icon car-icon"></i>购物车</a>
+        <a href="#"><i class="sprite-icon goods-icon"></i>实物订单</a>
+        <a href="#"><i class="sprite-icon mine-icon"></i>我的</a>
+    </div>
+
+    <div class="introduce-bar">
+        <div class="list-nav">
+            <div class="list-row nav-cont">
+                <ul class="row-4">
+                    <li><a href="javascript:;" class="nav-item active">商品介绍</a></li>
+                    <li><a href="javascript:;" class="nav-item">支付及配送</a></li>
+                    <li><a href="javascript:;" class="nav-item">售后保障</a></li>
+                    <!--时有时无，注意切换，row-4，row-3-->
+                    <li><a href="javascript:;" class="nav-item">品牌介绍</a></li>
+                </ul>
+                <div class="menu-line"></div>
+            </div>
+        </div>
+
+        <div class="showIntroduce-bar">
+            <div id="wrapper">
+                <div id="scroller">
+                    <div class="showIntroduce">
+                        <!--显示切换内容，切换之后请刷新myScroll-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/box.js"></script>
+<script src="js/public.js"></script>
+<script>
+    $(function () {
+        var myScroll = publicFuns.newIScroll("#wrapper");
+
+        //显示设置菜单
+        $("#settingMenu").click(function () {
+            $(".setting-menu").fadeToggle();
+        });
+        //菜单切换
+        //初始化菜单底部的线条
+        var $menuLine = $(".menu-line");
+        $menuLine.css({
+            "left": $("a.nav-item.active").get(0).offsetLeft,
+            "width": $("a.nav-item.active").get(0).offsetWidth
+        });
+        $(".nav-cont").find("a").click(function () {
+            if (!$(this).hasClass("active")) {
+                $menuLine.animate({
+                    "left": $(this).get(0).offsetLeft,
+                    "width": $(this).get(0).offsetWidth
+                }, 300);
+            }
+            $(this).addClass("active").parents("li").siblings().find("a").removeClass("active");
+            myScroll.refresh();
+        });
+    })
+</script>
+</body>
+</html>

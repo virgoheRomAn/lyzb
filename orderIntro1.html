@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html class="overflow-hidden">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>礼仪之邦-实物订单详情</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body class="overflow-hidden">
+<div class="register-bar collect-bar">
+    <h2 class="header-box pos-abs-tl">
+        <a class="go-back-btn sprite-icon" id="forgetGoBack" href="#"></a>
+        订单详情
+        <span id="settingMenu" class="has-icon sprite-icon"></span>
+    </h2>
+
+    <div class="setting-menu pos-abs-tr">
+        <span class="arrow-top"></span>
+        <a href="#"><i class="sprite-icon index-icon"></i>首页</a>
+        <a href="#"><i class="sprite-icon shop-icon"></i>商品分类</a>
+        <a href="#"><i class="sprite-icon car-icon"></i>购物车</a>
+        <a href="#"><i class="sprite-icon goods-icon"></i>实物订单</a>
+        <a href="#"><i class="sprite-icon mine-icon"></i>我的</a>
+    </div>
+    <div class="collect-cont">
+        <div id="wrapper">
+            <div id="scroller">
+                <div class="refund-box orderIntro-box pad-b10">
+                    <div class="my-order-title mar-b10">订单号：12156498323434613<span>待付款</span></div>
+                    <div class="order-area mar-b10">
+                        <div class="add-user">
+                            <span class="add-user-name text-overflow">徐继强</span>
+                            <span class="add-user-phone">13628332957</span>
+                        </div>
+                        <div class="add-location text-clamp-overflow">
+                            <i class="shopType-sprite-icon"></i>
+                            重庆市 重庆市 江北区 观音桥街道，建北一村78号6-1
+                        </div>
+                    </div>
+
+                    <div class="collect-list shopCar-list order-page-list no-padding mar-b10">
+                        <h2 class="orderIntro-title orderGroup-title">实物订单</h2>
+                        <ul>
+                            <li>
+                                <div class="collect-intro">
+                                    <a href="#">
+                                        <label class="collect-img">
+                                            <img src="img/collect-img.jpg">
+                                            <i class="shopType-sprite-icon group-icon"></i>
+                                        </label>
+
+                                        <div class="collect-intro-text">
+                                            <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                            <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                            <div class="number-box pos-abs-br num-text">x2</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="pay-intro">
+                        <h2><span>商品总额</span><label>¥72.80</label></h2>
+
+                        <p><span>- 优惠券</span><label>¥0.00</label></p>
+
+                        <p><span>+ 运费</span><label>¥10.00</label></p>
+                    </div>
+                    <div class="orderIntro-pay-money">
+                        <label>待付款：<i>￥82.80</i></label>
+                        <span>下单时间：2016-05-17 13:00:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shopDetails-bto pos-abs-bl orderIntro-bto">
+        <div class="my-order-btn">
+            <a href="javascript:;">取消订单</a>
+            <a href="javascript:;">评价详情</a>
+            <a class="active" href="javascript:;">立即付款</a>
+        </div>
+    </div>
+</div>
+
+<a class="telphone none shop-sprite-icon animated shake" href="tel:110"></a>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/box.js"></script>
+<script src="js/public.js"></script>
+<script src="js/area.js"></script>
+<script>
+    $(function () {
+        var myScroll;
+        myScroll = publicFuns.newIScroll("#wrapper");
+
+        //倒计时
+        publicFuns.limitTime("#limitTime", "2016/06/16 16:08:05", endFun);
+        function endFun() {
+            console.log("倒计时结束了！");
+        }
+    });
+</script>
+</body>
+</html>

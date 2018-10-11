@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="overflow-hidden">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>礼仪之邦-无网络</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body class="overflow-hidden">
+<div class="Network-bar">
+    <div class="Network-cont">
+        <label class="bigger"><img src="img/Network2.png"></label>
+        <span class="Network-tips"><i>网络请求失败</i>非常抱歉，页面加载失败</span>
+
+        <div class="Network-btn has-two clearfix">
+            <a class="reload" href="javascript:;">
+                <span>刷新</span>
+            </a>
+            <a class="setting" href="javascript:;">
+                <span>设置</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/box.js"></script>
+<script>
+    $(function () {
+        $("a.reload").click(function () {
+            $(this).find("span").addClass("active");
+            setTimeout(function () {
+                $("a.reload").find("span").removeClass("active");
+            }, 500);
+        });
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,2783 @@
+/********************************************/
+/*文字样式*/
+/********************************************/
+.f8 {
+    font-size: 8px !important;
+}
+
+.f9 {
+    font-size: 9px !important;
+}
+
+.f10 {
+    font-size: 10px !important;
+}
+
+.f12 {
+    font-size: 12px !important;
+}
+
+.f14 {
+    font-size: 14px !important;
+}
+
+.f16 {
+    font-size: 16px !important;
+}
+
+.f18 {
+    font-size: 18px !important;
+}
+
+/********************************************/
+/*雪碧图标*/
+/********************************************/
+.sprite-icon {
+    display: block;
+    background: url("../img/sprite-icon.png") no-repeat center;
+    background-size: 221px 178px;
+}
+
+.shop-sprite-icon {
+    display: block;
+    background: url("../img/personalcenter-icon.png") no-repeat center;
+    background-size: 200px 200px;
+}
+
+.shopType-sprite-icon {
+    display: block;
+    background: url("../img/shopType-icon.png") no-repeat center;
+    background-size: 200px 200px;
+}
+
+.change-sprite-icon {
+    display: block;
+    background: url("../img/change-icon.png") no-repeat center;
+    background-size: 200px 200px;
+}
+
+/********************************************/
+/***********          进度条          ***********/
+/********************************************/
+
+.meter {
+    height: 8px;
+    position: relative;
+    margin: 0;
+    background: #EDEDED;
+    border-radius: 16px;
+    padding: 1px;
+    -webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+}
+
+.meter > span {
+    display: block;
+    height: 100%;
+    border-radius: 50px;
+    background: rgb(43, 194, 83) -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0, rgb(43, 194, 83)),
+            color-stop(1, rgb(84, 240, 84))
+    );
+    -webkit-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+    inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+    inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.meter > span:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%,
+    color-stop(.25, rgba(255, 255, 255, .2)),
+    color-stop(.25, transparent), color-stop(.5, transparent),
+    color-stop(.5, rgba(255, 255, 255, .2)),
+    color-stop(.75, rgba(255, 255, 255, .2)),
+    color-stop(.75, transparent), to(transparent)
+    );
+    z-index: 1;
+    -webkit-background-size: 50px 50px;
+    -moz-background-size: 50px 50px;
+    -webkit-animation: move 2s linear infinite;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.animate > span:after {
+    display: none;
+}
+
+@-webkit-keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 50px 50px;
+    }
+}
+
+.orange > span {
+    background-color: #f1a165;
+    background-image: -moz-linear-gradient(top, #f1a165, #f36d0a);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f1a165), color-stop(1, #f36d0a));
+    background-image: -webkit-linear-gradient(#f1a165, #f36d0a);
+}
+
+.red > span {
+    background-color: #f0a3a3;
+    background-image: -moz-linear-gradient(top, #f0a3a3, #f42323);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f0a3a3), color-stop(1, #f42323));
+    background-image: -webkit-linear-gradient(#f0a3a3, #f42323);
+}
+
+.nostripes > span > span, .nostripes > span:after {
+    -webkit-animation: none;
+    background-image: none;
+}
+
+/********************************************/
+/***********          布局限制          ***********/
+/***********          字体限制          ***********/
+/********************************************/
+.main-overflow {
+    position: relative;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    overflow: auto !important;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.overflow-hidden {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.text-overflow {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.text-clamp-overflow {
+    display: -webkit-box !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+/********************************************/
+/***********          布局位置          ***********/
+/********************************************/
+.pos-relative {
+    position: relative !important;
+    top: 0;
+    left: 0;
+}
+
+.pos-fix {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+}
+
+.pos-abs-tl {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+}
+
+.pos-abs-tr {
+    position: absolute !important;
+    top: 0;
+    right: 0;
+}
+
+.pos-abs-bl {
+    position: absolute !important;
+    bottom: 0;
+    left: 0;
+}
+
+.pos-abs-br {
+    position: absolute !important;
+    bottom: 0;
+    right: 0;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+/********************************************/
+/***********          间距位置         ***********/
+/********************************************/
+.pad-t5 {
+    padding-top: 5px !important;
+}
+
+.pad-t10 {
+    padding-top: 10px !important;
+}
+
+.pad-t15 {
+    padding-top: 15px !important;
+}
+
+.pad-t20 {
+    padding-top: 20px !important;
+}
+
+.pad-b5 {
+    padding-bottom: 5px !important;
+}
+
+.pad-b10 {
+    padding-bottom: 10px !important;
+}
+
+.pad-b15 {
+    padding-bottom: 15px !important;
+}
+
+.pad-b20 {
+    padding-bottom: 20px !important;
+}
+
+.pad-l5 {
+    padding-left: 5px !important;
+}
+
+.pad-l10 {
+    padding-left: 10px !important;
+}
+
+.pad-l15 {
+    padding-left: 15px !important;
+}
+
+.pad-l20 {
+    padding-left: 20px !important;
+}
+
+.pad-r5 {
+    padding-right: 5px !important;
+}
+
+.pad-r10 {
+    padding-right: 10px !important;
+}
+
+.pad-r15 {
+    padding-right: 15px !important;
+}
+
+.pad-r20 {
+    padding-right: 20px !important;
+}
+
+.mar-t5 {
+    margin-top: 5px !important;
+}
+
+.mar-t10 {
+    margin-top: 10px !important;
+}
+
+.mar-t15 {
+    margin-top: 15px !important;
+}
+
+.mar-t20 {
+    margin-top: 20px !important;
+}
+
+.mar-b5 {
+    margin-bottom: 5px !important;
+}
+
+.mar-b10 {
+    margin-bottom: 10px !important;
+}
+
+.mar-b15 {
+    margin-bottom: 15px !important;
+}
+
+.mar-b20 {
+    margin-bottom: 20px !important;
+}
+
+.mar-l5 {
+    margin-left: 5px !important;
+}
+
+.mar-l10 {
+    margin-left: 10px !important;
+}
+
+.mar-l15 {
+    margin-left: 15px !important;
+}
+
+.mar-l20 {
+    margin-left: 20px !important;
+}
+
+.mar-r5 {
+    margin-right: 5px !important;
+}
+
+.mar-r10 {
+    margin-right: 10px !important;
+}
+
+.mar-r15 {
+    margin-right: 15px !important;
+}
+
+.mar-r20 {
+    margin-right: 20px !important;
+}
+
+.pad-all5 {
+    padding: 5px !important;
+}
+
+.pad-all10 {
+    padding: 10px !important;
+}
+
+.pad-all15 {
+    padding: 5px !important;
+}
+
+.pad-all20 {
+    padding: 20px !important;
+}
+
+.mar-all5 {
+    margin: 5px !important;
+}
+
+.mar-all10 {
+    margin: 10px !important;
+}
+
+.mar-all15 {
+    margin: 5px !important;
+}
+
+.mar-all20 {
+    margin: 20px !important;
+}
+
+/********************************************/
+/***********          列数列表          ***********/
+/********************************************/
+.list-row {
+    display: block;
+    width: 100%;
+}
+
+.list-row > ul {
+    display: block;
+    width: 100%;
+}
+
+.list-row > ul:after {
+    display: block;
+    content: "";
+    clear: both;
+    visibility: visible;
+    height: 0;
+}
+
+.list-row > ul > li {
+    text-align: center;
+    margin-top: 15px;
+    padding: 0 10px;
+}
+
+.list-row.none-space > ul > li {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+/*五列*/
+.list-row > .row-5 li {
+    float: left;
+    width: 20%;
+}
+
+/*四列*/
+.list-row > .row-4 li {
+    float: left;
+    width: 25%;
+}
+
+/*三列*/
+.list-row > .row-3 li {
+    float: left;
+    width: 33.33%;
+}
+
+/*两列*/
+.list-row > .row-2 li {
+    float: left;
+    width: 50%;
+}
+
+/*一列*/
+.list-row > .row-1 li {
+    float: left;
+    width: 100%;
+}
+
+/********************************************/
+/***********          flex布局          ***********/
+/********************************************/
+.display-flex {
+    display: -webkit-flex;
+    display: flex;
+}
+
+.display-flex.row-wrap {
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+}
+
+.display-flex.row-wrap-reverse {
+    flex-flow: row wrap-reverse;
+    -webkit-flex-flow: row wrap-reverse;
+}
+
+.display-flex.column-wrap {
+    flex-flow: column wrap;
+    -webkit-flex-flow: column wrap;
+}
+
+.display-flex.column-wrap-reverse {
+    flex-flow: column wrap-reverse;
+    -webkit-flex-flow: column wrap-reverse;
+}
+
+.display-flex.horizontal {
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.display-flex.vertical {
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.display-flex > .flex-item {
+    flex: 1;
+    -webkit-flex: 1;
+}
+
+.display-flex > .width-item {
+    width: 80px;
+    height: 80px;
+}
+
+.display-flex.horizontal > .flex-item {
+    text-align: center;
+}
+
+/********************************************/
+/***********          table布局          ***********/
+/********************************************/
+.display-table {
+    display: table;
+    width: 100%;
+}
+
+.display-table > .table-box {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+}
+
+/********************************************/
+/**********         IScroll5样式         **********/
+/********************************************/
+#wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    overflow: hidden;
+}
+
+#scroller {
+    position: absolute;
+    z-index: 1;
+    /*-webkit-tap-highlight-color: rgba(0, 0, 0, 0);*/
+    width: 100%;
+    background: #FFFFFF;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+.iScrollVerticalScrollbar, .iScrollVerticalScrollbarV {
+    position: absolute;
+    z-index: 9999;
+    bottom: 2px;
+    top: 2px;
+    right: 1px;
+    overflow: hidden;
+    transform: translateZ(0px);
+    transition-duration: 500ms;
+    opacity: 0;
+    width: 3px !important;
+}
+
+.iScrollVerticalScrollbarV > div,
+.iScrollIndicator {
+    border: 0 none !important;
+    background: rgba(0, 0, 0, 0.2) !important;
+}
+
+#pullUp {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    /*margin-bottom: -40px;*/
+}
+
+#pullDown {
+    width: 100%;
+    padding: 10px 0 0 0;
+    margin-top: -121px;
+    vertical-align: middle;
+    text-align: center;
+    background: transparent;
+}
+
+#pullDown span.pullDownIcon,
+#pullUp span.pullUpIcon {
+    background: url("../img/login-banner.png") no-repeat;
+    background-size: 100% 100%;
+    display: block;;
+    width: 121px;
+    height: 61px;
+    margin: auto;
+}
+
+#pullDown span.pullDownLabel,
+#pullUp span.pullUpLabel {
+    position: relative;
+    display: block;
+    width: 100px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    color: #de1817;
+    margin: 10px auto auto;
+}
+
+#pullUp span.pullUpLabel {
+    margin: auto;
+}
+
+#pullDown span.pullDownLabel:before,
+#pullUp span.pullUpLabel:before {
+    display: inline-block;
+    float: left;
+    content: "";
+    background: url("../img/refresh-icon.png") no-repeat;
+    background-size: 100% 100%;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-right: 8px;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+
+    transition: transform 250ms;
+    -webkit-transition: -webkit-transform 250ms;
+}
+
+#pullDown.flip span.pullDownLabel:before,
+#pullUp.flip span.pullUpLabel:before {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+}
+
+#pullDown.loadingCls span.pullDownLabel:before,
+#pullUp.loadingCls span.pullUpLabel:before {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    background: url("../img/loading.gif") no-repeat;
+    background-size: 100% 100%;
+}
+
+/********************************************/
+/**********   带有购买的商品列表   ***********/
+/**********   商品图片在左侧位置   ***********/
+/********************************************/
+.shop-list.img-left-list {
+    display: block;
+    width: 100%;
+}
+
+.shop-list.img-left-list > ul > li {
+    position: relative;
+    width: 100%;
+    padding-left: 140px;
+    border-bottom: 1px solid #dcdada;
+}
+
+.shop-list.img-left-list > ul > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.shop-list.img-left-list > ul > li .shop-img {
+    display: block;
+    margin: 0;
+    height: 140px;
+    width: 140px;
+    padding: 5px 5px 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.shop-list.img-left-list > ul > li .shop-intro {
+    padding-bottom: 10px;
+}
+
+.shop-list.img-left-list > ul > li .shop-name {
+    display: block;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.shop-list.img-left-list > ul > li .shop-name label.shop-name-text {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #333;
+    text-align: right;
+    font-weight: normal;
+    margin: 0;
+}
+
+.shop-list.img-left-list > ul > li .shop-name span.shop-name-infor {
+    height: 32px;
+    line-height: 16px;
+    font-size: 12px;
+    color: #999999;
+    text-align: right;
+}
+
+.shop-list.img-left-list > ul > li .shop-price {
+    display: block;
+    text-align: right;
+    margin-top: 5px;
+    padding: 0 10px;
+}
+
+.shop-list.img-left-list > ul > li .shop-price span {
+    position: relative;
+    top: -1px;
+    display: inline-block;
+    padding: 3px 5px;
+    background: #f3f3f3;
+    border-radius: 8px;
+    font-size: 10px;
+    color: #999999;
+}
+
+.shop-list.img-left-list > ul > li .shop-price label {
+    font-size: 19px;
+    font-weight: 700;
+    color: #e12f2e;
+    margin: 0;
+}
+
+.shop-list.img-left-list > ul > li .shop-price label i {
+    font-style: normal;
+    font-size: 12px;
+}
+
+a.buy-shop-btn {
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+    width: 65px;
+    height: 23px;
+    line-height: 23px;
+    background: #e12f2e;
+    color: #ffffff;
+    font-size: 13px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/********************************************/
+/***********          顶部布局          ***********/
+/********************************************/
+.header-box {
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+    background: #de1817;
+    margin: 0;
+}
+
+.header-box.background {
+    background: #5c2566;
+}
+
+.background-5c2566 {
+    background: #5c2566;
+}
+
+.header-active {
+    padding: 7px 15px 7px;
+}
+
+.header-active label {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 66px;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.header-active label i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    line-height: 18px;
+    font-size: 12px;
+    color: #ffffff;
+    background: #de1817;
+    border-radius: 3px;
+    text-align: center;
+    font-style: normal;
+}
+
+.header-active label span {
+    line-height: 18px;
+    display: block;
+}
+
+.header-active-item em {
+    font-style: normal;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    height: 20px;
+    line-height: 18px;
+    padding-right: 15px;
+}
+
+.header-active-item {
+    margin-bottom: 8px;
+}
+
+.header-active-item em:after {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: block;
+    width: 6px;
+    height: 10px;
+    margin-top: -5px;
+    background: url("../img/sprite-icon.png") no-repeat 0 -138px;
+    background-size: 221px 178px;
+    content: "";
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transition: transform 0.3s;
+    -webkit-transition: -webkit-transform 0.3s;
+}
+
+.header-active-item.active em:after {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
+
+.header-active-slide {
+    display: none;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    z-index: 1111;
+    width: 100%;
+    padding: 0 15px;
+    background: #5c2566;
+}
+
+.header-active-slide .header-active-item {
+    margin-bottom: 13px;
+    padding-right: 15px;
+}
+
+.header-active-slide .header-active-item:after {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: block;
+    width: 6px;
+    height: 10px;
+    margin-top: -5px;
+    background: url("../img/sprite-icon.png") no-repeat 0 -138px;
+    background-size: 221px 178px;
+    /*content: "";*/
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transition: transform 0.3s;
+    -webkit-transition: -webkit-transform 0.3s;
+}
+
+.header-active label i.background-red {
+    background: #de1817;
+}
+
+.header-active label i.background-org {
+    background: #da9c00;
+}
+
+.header-box.background-000000 {
+    background: #000000;
+}
+
+.header-goBack {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+}
+
+.header-goBack_fx {
+    position: absolute;
+    width: 44px;
+    height: 60px;
+    z-index: 999;
+}
+
+.header-more-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 44px;
+    height: 44px;
+}
+
+.header-box a.go-back-btn {
+    position: absolute;
+    left: 15px;
+    top: 11px;
+    display: block;
+    float: right;
+    width: 10px;
+    height: 20px;
+    background-position: 0 -88px;
+}
+
+.header-box .has-text {
+    display: block;
+    width: 55px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.header-box .has-icon {
+    display: block;
+    width: 5px;
+    height: 17px;
+    position: absolute;
+    top: 14px;
+    right: 15px;
+    background-position: -74px 0;
+}
+
+.header-box #closeRelated {
+    width: 15px;
+    background-position: 0 0;
+}
+
+.header-box .has-icon.del-icon {
+    width: 20px;
+    height: 20px;
+    background-position: -83px 0;
+    top: 13px;
+}
+
+.header-box i {
+    font-size: 12px;
+    font-style: normal;
+}
+
+.setting-menu {
+    display: none;
+    top: 52px;
+    right: 10px;
+    z-index: 9999;
+    background: #FFFFFF;
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    padding: 0 4px;
+}
+
+.arrow-top {
+    position: absolute;
+    top: -8px;
+    right: 10px;
+    background: url("../img/arrow-top.png") no-repeat;
+    background-size: 100% 100%;
+    width: 13px;
+    height: 8px;
+}
+
+.setting-menu a {
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    color: #333333;
+    border-bottom: 1px solid #cccccc;
+    padding: 0 5px 0 25px;
+    position: relative;
+}
+
+.setting-menu a span {
+    display: inline-block;
+    height: 15px;
+    line-height: 15px;
+    font-size: 10px;
+    font-style: normal;
+    padding: 0 5px;
+    background: #de1817;
+    border-radius: 8px;
+    color: #FFFFFF;
+    margin-left: 5px;
+}
+
+.setting-menu a i {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    width: 14px;
+    height: 14px;
+    margin-top: -7px;
+}
+
+.setting-menu i.index-icon {
+    background-position: -103px 2px;
+}
+
+.setting-menu i.shop-icon {
+    background-position: -103px -20px;
+}
+
+.setting-menu i.car-icon {
+    background-position: -103px -41px;
+}
+
+.setting-menu i.goods-icon {
+    background-position: -103px -63px;
+    margin-top: -6px;
+}
+
+.setting-menu i.mine-icon {
+    background-position: -103px -85px;
+}
+
+.setting-menu a:last-child {
+    border-bottom: 0 none;
+}
+
+/********************************************/
+/***********     带有箭头的列表     ***********/
+/********************************************/
+.has-arrow-list {
+    display: block;
+    width: 100%;
+}
+
+.new-list .list-modal a {
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.new-list .list-modal a:last-child {
+    border-bottom: 0 none;
+}
+
+.list-modal {
+    position: relative;
+    background: #FFFFFF;
+    margin-top: 10px;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 0 15px 0 15px;
+}
+
+.list-modal > a,
+.list-modal label.tips {
+    position: relative;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: #333333;
+    font-size: 12px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.list-modal label.tips span {
+    float: right;
+    color: #999999;
+}
+
+.list-modal > a:after {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: block;
+    width: 6px;
+    height: 10px;
+    margin-top: -5px;
+    background: url("../img/sprite-icon.png") no-repeat 0 -138px;
+    background-size: 221px 178px;
+    content: "";
+}
+
+div.list-btn-box {
+    padding: 0 15px 0 15px;
+    margin-top: 30px;
+}
+
+.ios-tips {
+    padding: 8px 15px;
+    color: #999999;
+    font-size: 10px;
+    margin: 0;
+    text-align: left;
+    line-height: 18px;
+}
+
+/********************************************/
+/***********          form列表          ***********/
+/********************************************/
+.form-list {
+    display: block;
+    width: 100%;
+    background: #FFFFFF;
+}
+
+.form-list li {
+    position: relative;
+    padding-left: 90px;
+    padding-right: 15px;
+    border-bottom: 1px solid #dcdada;
+    height: 44px;
+}
+
+.form-list li.more-padding {
+    padding-right: 27px;
+}
+
+.form-list li.big-padding {
+    padding-right: 65px;
+}
+
+.form-list li > span {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    display: block;
+    width: 80px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 12px;
+}
+
+.form-list li > label {
+    display: block;
+    width: 100%;
+    margin: 0;
+    font-weight: normal;
+}
+
+.form-list li .form-clear-btn {
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -7px;
+    background-position: -50px -24px;
+}
+
+.form-list li input[type="text"],
+.form-list li input[type="password"] {
+    position: relative;
+    top: 13px;
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    border: 0 none;
+}
+
+.form-list li a.select-btn {
+    position: relative;
+    top: 13px;
+    display: block;
+    width: 100%;
+    color: #999;
+    font-size: 12px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.form-list li a.select-btn.active {
+    color: #333333;
+}
+
+.form-list li a.select-btn:after {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    display: block;
+    width: 6px;
+    height: 10px;
+    background: url("../img/sprite-icon.png") no-repeat 0 -138px;
+    background-size: 221px 178px;
+    content: "";
+}
+
+/*自定义form元素演示*/
+/*滑块*/
+.slide-bar {
+    width: 150px;
+    height: 32px;
+    background: #e8e8e8;
+    position: relative;
+    z-index: 20;
+    float: right;
+    overflow: hidden;
+    margin-top: 6px;
+}
+
+.slide-bar .slide-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: #FFFFFF;
+    text-align: center;
+    border: 1px solid #cccccc;
+}
+
+.slide-bar .slide-btn i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -5px 0 0 -6px;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-position: -125px -71px;
+}
+
+.slide-bar .slide-complete {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #fee4e4;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: 5;
+}
+
+.code-text-num {
+    display: none;
+    width: 120px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    background: #fee4e4;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    z-index: 20;
+    float: right;
+    margin-top: 6px;
+    color: #333333;
+}
+
+.code-text-num i {
+    color: #de1817;
+    font-style: normal;
+}
+
+.slide-bar .slide-text {
+    position: relative;
+    z-index: 10;
+    display: block;
+    padding-left: 40px;
+    height: 32px;
+    line-height: 32px;
+    color: #666666;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-blend-mode: hard-light;
+    background-image: linear-gradient(110deg, #666666 25%, #fff 30%, #fff 32%, #666666 37%);
+    background-size: 200%;
+    animation: shine 3s infinite;
+    -webkit-animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 27%;
+    }
+    100% {
+        background-position: -46%;
+    }
+}
+
+@-webkit-keyframes shine {
+    0% {
+        background-position: 27%;
+    }
+    100% {
+        background-position: -46%;
+    }
+}
+
+/*多选*/
+label.checkbox-bar {
+    position: absolute;
+    top: 1px;
+    left: 16px;
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    border: 1px solid #c2c2c2;
+    margin: 0;
+}
+
+label.checkbox-bar.active {
+    border: 1px solid #de1817;
+}
+
+label.checkbox-bar.active span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 10px;
+    height: 8px;
+    background: url("../img/sprite-icon.png") no-repeat 0 -70px;
+    background-size: 221px 178px;
+    margin: -4px 0 0 -5px;
+}
+
+label.checkbox-bar input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+}
+
+label.checkbox-bar span {
+    font-size: 12px;
+}
+
+/*单选*/
+label.radio-bar {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid #90929c;
+    margin: -7px 0 0 0;
+}
+
+label.radio-bar.active {
+    border: 1px solid #de1817;
+    background: #de1817;
+}
+
+label.radio-bar.active span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 11px;
+    height: 9px;
+    background: url("../img/sprite-icon.png") no-repeat 0 -117px;
+    background-size: 221px 178px;
+    margin: -6px 0 0 -6px;
+}
+
+label.radio-bar input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+}
+
+label.radio-bar span {
+    font-size: 12px;
+}
+
+/*数量*/
+div.number-bar {
+    display: block;
+}
+
+div.number-bar span {
+    position: relative;
+    z-index: 50;
+    display: block;
+    /*float: left;*/
+    width: 22px;
+    height: 22px;
+    margin: 8px auto 0;
+}
+
+div.number-bar label.num-btn-box {
+    display: block;
+    width: 40px;
+    height: 38px;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+div.number-bar span.num-cut,
+div.number-bar span.reset-num-cut {
+    background-position: -168px -23px;
+    /*margin-right: 5px;*/
+}
+
+div.number-bar span.num-input,
+div.number-bar span.reset-num-input {
+    z-index: 20;
+    display: block;
+    width: 32px;
+    height: 22px;
+    float: left;
+    border: 1px solid #dfdfdf;
+    font-weight: normal;
+    color: #848589;
+    font-size: 12px;
+    text-align: center;
+}
+
+div.number-bar span.num-input input,
+div.number-bar span.reset-num-input input {
+    font-size: 12px;
+    text-align: center;
+    color: #848589;
+    border: 0 none;
+    background: transparent;
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+div.number-bar span.num-add,
+div.number-bar span.reset-num-add {
+    background-position: -168px 0;
+    /*margin-left: 5px;*/
+}
+
+/*开关*/
+.switch-bar {
+    top: 50%;
+    right: 15px;
+    display: block;
+    width: 38px;
+    height: 22px;
+    border-radius: 12px;
+    border: 1px solid #dedede;
+    margin-top: -12px;
+    background-color: #fff;
+
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.switch-bar input[type="checkbox"] {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+.switch-bar.active {
+    border-radius: 12px;
+    border: 1px solid #de1817;
+    background-color: #de1817;
+}
+
+.switch-bar i {
+    position: absolute;
+    top: -2px;
+    left: -4px;
+    display: block;
+    width: 26px;
+    height: 26px;
+    background: url("../img/switch-cont.png") no-repeat;
+    background-size: 100% 100%;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.switch-bar.active i {
+    position: absolute;
+    top: -2px;
+    left: 16px;
+    display: block;
+    width: 26px;
+    height: 26px;
+}
+
+/********************************************/
+/***********          注册登录          ***********/
+/***********          表单列表          ***********/
+/********************************************/
+.register-cont {
+    margin: 15px 0;
+    border-top: 1px solid #e1e0e0;
+    border-bottom: 1px solid #e1e0e0;
+    background: #FFFFFF;
+}
+
+.register-cont li {
+    position: relative;
+    width: 100%;
+    padding-left: 55px;
+}
+
+.register-cont li.less-padding {
+    padding-left: 15px;
+}
+
+.register-cont li.no-padding {
+    padding-left: 0;
+}
+
+.register-cont li.no-padding .register-input {
+    padding-left: 15px;
+}
+
+.register-cont li.active {
+    background: #f5f5f5;
+}
+
+i.register-icon {
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 22px;
+    width: 55px;
+    height: 44px;
+}
+
+i.icon-phone {
+    background-position: -26px -128px;
+    width: 12px;
+    height: 18px;
+    top: 13px;
+    left: 22px;
+}
+
+i.icon-phone-color {
+    background-position: -30px -92px;
+    width: 21px;
+    height: 20px;
+    top: 15px;
+    left: 21px;
+}
+
+i.icon-user {
+    background-position: -50px -162px;
+    width: 18px;
+    height: 16px;
+    top: 15px;
+    left: 21px;
+}
+
+i.icon-paw {
+    background-position: -50px -137px;
+    width: 15px;
+    height: 17px;
+    top: 13px;
+    left: 23px;
+}
+
+i.icon-code {
+    background-position: -50px -46px;
+    width: 15px;
+    height: 17px;
+    top: 14px;
+    left: 22px;
+}
+
+i.icon-clock {
+    background-position: -50px -113px;
+    width: 14px;
+    height: 17px;
+    top: 13px;
+    left: 21px;
+}
+
+i.icon-welcome {
+    background-position: -26px -103px;
+    width: 16px;
+    height: 17px;
+    top: 14px;
+    left: 20px;
+}
+
+.register-input {
+    position: relative;
+    width: 100%;
+    height: 44px;
+    border-bottom: 1px solid #000;
+    padding-right: 85px;
+}
+
+.register-input.no-padding {
+    padding: 0;
+}
+
+.register-input.less-padding {
+    padding-right: 30px;
+}
+
+.register-input.line-light {
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.register-input.line-black {
+    border-bottom: 1px solid #e1e0e0;
+}
+
+.register-input.line-heavy {
+    border-bottom: 1px solid #e1e0e0;
+}
+
+.register-cont li.no-padding .register-input.padding-left {
+    padding-left: 80px;
+}
+
+.register-cont li:last-child .register-input {
+    border-bottom: 0 none;
+}
+
+.register-input > label {
+    display: block;
+    width: 80px;
+    height: 44px;
+    line-height: 44px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    font-size: 12px;
+    color: #333333;
+    font-weight: normal;
+}
+
+.register-input input[type="tel"],
+.register-input input[type="text"],
+.register-input .user-name,
+.register-input input[type="password"] {
+    width: 100%;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    border: 0 none;
+    font-size: 12px;
+}
+
+.register-input .user-name {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.code {
+    top: 50%;
+    right: 10px;
+    display: block;
+    width: 64px;
+    height: 24px;
+    padding: 3px 5px;
+    border: 1px solid #BBBBBB;
+    border-radius: 3px;
+    margin-top: -12px;
+}
+
+.code-btn {
+    top: 50%;
+    right: 10px;
+    display: block;
+    width: 75px;
+    text-align: center;
+    padding: 3px 0;
+    font-size: 12px;
+    color: #666666;
+    border: 1px solid #666666;
+    border-radius: 3px;
+    margin-top: -12px;
+}
+
+.code-btn.active {
+    color: #EEEEEE;
+    background: #cecece;
+    border: 1px solid #cecece;
+}
+
+.code-link {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    color: #037cff;
+    font-size: 12px;
+    top: 50%;
+    right: 10px;
+    margin-top: -10px;
+}
+
+.code-link.active {
+    color: #ccc;
+}
+
+.clear-btn {
+    top: 0;
+    right: 0;
+    display: block;
+    width: 30px;
+    height: 100%;
+}
+
+.clear-btn:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 17px;
+    height: 17px;
+    margin-top: -8px;
+    background: url("../img/sprite-icon.png") no-repeat -50px 0;
+    background-size: 221px 178px;
+}
+
+.show-btn {
+    top: 0;
+    right: 0;
+    display: block;
+    width: 30px;
+    height: 100%;
+}
+
+.show-btn:before {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    content: "";
+    display: block;
+    width: 20px;
+    height: 13px;
+    margin-top: -4px;
+    background: url("../img/sprite-icon.png") no-repeat -74px -55px;
+    background-size: 221px 178px;
+}
+
+.show-btn.active:before {
+    height: 9px;
+    margin-top: -3px;
+    background-position: -74px -31px;
+}
+
+.register-btn, .register-text, .login-btn, .forget-tips {
+    display: block;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 0 15px 0;
+    position: relative;
+    z-index: 21;
+}
+
+.forget-tips a.register-fast,
+.forget-tips a.forget-pass {
+    display: block;
+    width: 50%;
+    text-align: left;
+    color: #f30b0a;
+}
+
+.forget-tips a.forget-pass {
+    text-align: right;
+    color: #999999;
+}
+
+.register-btn a, .login-btn a {
+    display: block;
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 3px;
+    color: #FFFFFF;
+    background: #cecece;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.register-btn.active a, .login-btn.active a {
+    background: #de1817;
+}
+
+/********************************************/
+/***********          下拉弹窗          ***********/
+/********************************************/
+.pullDown-bar {
+    width: 100%;
+    background: #f5f5f5;
+    padding: 10px 15px;
+}
+
+.pullDown-cont {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #dcdada;
+}
+
+.pullDown-title {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #dcdada;
+    font-size: 12px;
+    color: #333333;
+}
+
+.pullDown-intro {
+    width: 100%;
+}
+
+.pullDown-intro > span {
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    color: #666666;
+    line-height: 18px;
+    margin-bottom: 5px;
+}
+
+.pullDown-tips {
+    display: block;
+    width: 100%;
+    color: #037cff;
+    font-size: 10px;
+    font-style: normal;
+}
+
+.pullDown-btn {
+    display: block;
+    width: 100%;
+    border: 1px solid #cccccc;
+    height: 40px;
+    line-height: 38px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333333;
+    font-size: 12px;
+}
+
+.pullDown-btn > i {
+    position: relative;
+    top: 4px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-position: 0 -160px;
+    margin-right: 10px;
+}
+
+.pullDown-btn > span {
+    margin-right: 20px;
+    color: #999999;
+}
+
+/********************************************/
+/***********          弹窗动画          ***********/
+/********************************************/
+.animated {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+}
+
+.animate-infinite-linear {
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-direction: normal;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-direction: normal;
+}
+
+/*旋转*/
+@-webkit-keyframes rotateDeg {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateDeg {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rotateDeg {
+    animation-name: rotateDeg;
+    -webkit-animation-name: rotateDeg;
+}
+
+/*j弹窗动画*/
+@-webkit-keyframes j-alert-ani {
+    0% {
+        -webkit-transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        -webkit-transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes j-alert-ani {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.j-alert-ani {
+    -webkit-animation-name: j-alert-ani;
+    animation-name: j-alert-ani;
+}
+
+@-webkit-keyframes shake {
+    0%, 100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+    10%, 30%, 50%, 70%, 90% {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px)
+    }
+    20%, 40%, 60%, 80% {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px)
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0)
+    }
+    10%, 30%, 50%, 70%, 90% {
+        -webkit-transform: translateX(-5px);
+        -ms-transform: translateX(-5px);
+        transform: translateX(-5px)
+    }
+    20%, 40%, 60%, 80% {
+        -webkit-transform: translateX(5);
+        -ms-transform: translateX(5px);
+        transform: translateX(5px)
+    }
+}
+
+.shake {
+    -webkit-animation-name: shake;
+    animation-name: shake
+}
+
+/*遮罩动画*/
+/*左侧进入*/
+.animated-left {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+    -webkit-transform: translate3d(100%, 0, 0);
+    -o-transform: translate3d(100%, 0, 0);
+    -moz-transform: translate3d(100%, 0, 0);
+
+    transition: all 0.5s 0s;
+    -webkit-transition: all 0.5s 0s;
+    -o-transition: all 0.5s 0s;
+    -moz-transition: all 0.5s 0s;
+}
+
+/*右侧进入*/
+.animated-right {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -o-transform: translate3d(-100%, 0, 0);
+    -moz-transform: translate3d(-100%, 0, 0);
+
+    transition: all 0.5s 0s;
+    -webkit-transition: all 0.5s 0s;
+    -o-transition: all 0.5s 0s;
+    -moz-transition: all 0.5s 0s;
+}
+
+/*上方进入*/
+.animated-top {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+    -webkit-transform: translate3d(0, -100%, 0);
+    -o-transform: translate3d(0, -100%, 0);
+    -moz-transform: translate3d(0, -100%, 0);
+
+    transition: all 0.5s 0s;
+    -webkit-transition: all 0.5s 0s;
+    -o-transition: all 0.5s 0s;
+    -moz-transition: all 0.5s 0s;
+}
+
+/*下方进入*/
+.animated-bottom {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 100%, 0);
+    -o-transform: translate3d(0, 100%, 0);
+    -moz-transform: translate3d(0, 100%, 0);
+
+    transition: all 0.5s 0s;
+    -webkit-transition: all 0.5s 0s;
+    -o-transition: all 0.5s 0s;
+    -moz-transition: all 0.5s 0s;
+}
+
+.animated-left.active,
+.animated-right.active,
+.animated-top.active,
+.animated-bottom.active {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+}
+
+/********************************************/
+/***********          猜你喜欢          ***********/
+/***********          商品列表          ***********/
+/********************************************/
+.related-box {
+    display: block;
+    margin-top: 50px;
+}
+
+.related-box.no-margin {
+    margin-top: 0;
+}
+
+.related-line {
+    position: relative;
+    text-align: center;
+    border-bottom: 1px solid #dcdada;
+    margin: 0 0 15px;
+}
+
+.related-line span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: -15px;
+    font-size: 12px;
+    color: #666666;
+    display: block;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    background: #f5f5f5;
+}
+
+/*大图列表*/
+.product-list {
+    padding: 0 10px;
+}
+
+.related-box > ul.product-list > li {
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.related-box > ul.product-list > li:nth-of-type(odd) {
+    padding: 0 5px 0 0;
+}
+
+.related-box > ul.product-list > li:nth-of-type(even) {
+    padding: 0 0 0 5px;
+}
+
+.list-nav {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 10;
+    border-bottom: 1px solid #dcdada;
+}
+
+.list-nav .nav-cont {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 40px;
+    width: auto;
+}
+
+.menu-line {
+    position: absolute;
+    bottom: 1px;
+    left: 20px;
+    height: 2px;
+    width: 66px;
+    background: #de1817;
+}
+
+.list-nav .nav-cont > ul {
+    padding: 0 10px;
+}
+
+.list-nav .nav-cont > ul > li {
+    margin: 0;
+    padding: 0 10px;
+}
+
+.list-nav a.nav-item {
+    color: #666666;
+    font-size: 14px;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    display: block;
+    line-height: 40px;
+    overflow: hidden;
+}
+
+.list-nav a.nav-item:after {
+    display: block;
+    width: 100%;
+    /*content: "";*/
+    border-bottom: 2px solid #de1817;
+    position: relative;
+    top: -2px;
+    left: -1px;
+
+    transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.list-nav a.nav-item .icon-up {
+    background-position: 3px -137px;
+    height: 12px;
+    width: 10px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    left: 6px;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.list-nav a.nav-item .icon-up.active {
+    top: 1px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
+
+.list-nav a.nav-item .icon-check {
+    position: relative;
+    top: 2px;
+    left: 4px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-position: 0 -42px;
+}
+
+.list-nav a.nav-item.active .icon-check {
+    background-position: 0 -57px;
+}
+
+.list-nav a.active {
+    color: #de1817;
+}
+
+.list-nav a.active:after {
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.list-nav a.list-change {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 40px;
+    width: 40px;
+    border-left: 1px solid #dcdada;
+}
+
+.list-nav a.list-change .sprite-icon {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.list-nav a.list-change .icon-list.active {
+    background-position: -72px -95px;
+}
+
+.list-nav a.list-change .icon-list {
+    background-position: -72px -72px;
+}
+
+ul.product-list .related-intro {
+    position: relative;
+    background: #FFFFFF;
+    padding: 8px 8px 0;
+}
+
+ul.product-list .related-product {
+    display: table;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+ul.product-list.simple-list .related-product img {
+    height: 100%;
+}
+
+ul.product-list .related-product img {
+    display: table-cell;
+    vertical-align: middle;
+    height: auto;
+}
+
+ul.product-list .related-name {
+    color: #333333;
+    font-size: 12px;
+    margin: 8px 0;
+    text-align: left;
+}
+
+ul.product-list .related-price {
+    margin: 0;
+    padding: 0 0 8px 0;
+    font-size: 12px;
+    text-align: left;
+    position: relative;
+}
+
+ul.product-list .related-price label {
+    margin: 0;
+    color: #de1817;
+    font-weight: normal;
+}
+
+ul.product-list .related-price label i {
+    font-style: normal;
+    font-size: 10px;
+}
+
+ul.product-list .related-price label s {
+    font-size: 10px;
+    font-style: normal;
+    text-decoration: none;
+}
+
+ul.product-list .related-price label span {
+    font-size: 10px;
+    text-decoration: line-through;
+    margin-left: 10px;
+    color: #999999;
+}
+
+ul.product-list .shopCar-icon {
+    position: absolute;
+    top: 0;
+    right: -6px;
+    background-position: -76px -118px;
+    width: 21px;
+    height: 16px;
+    margin: 0;
+    cursor: pointer;
+}
+
+/*小图列表*/
+.related-box > ul.product-list.simple-list {
+    padding: 0;
+}
+
+.related-box > ul.product-list.simple-list li {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-bottom: 1px solid #dcdada;
+}
+
+ul.product-list.simple-list .related-intro {
+    padding: 10px 15px 10px 85px;
+    height: 80px;
+}
+
+ul.product-list.simple-list .related-product {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    border: 1px solid #e7e5e5;
+}
+
+ul.product-list.simple-list .related-name {
+    margin: 2px 0 0 0;
+    padding-right: 40px;
+}
+
+ul.product-list.simple-list .related-price {
+    padding: 0 40px 0 0;
+    margin-top: 8px;
+}
+
+ul.product-list.simple-list .shopCar-icon {
+    width: 21px;
+    height: 16px;
+    background-position: -76px -118px;
+    top: -23px;
+    right: -7px;
+}
+
+/********************************************/
+/***********          底部导航          ***********/
+/********************************************/
+.index-bar {
+    padding-bottom: 49px;
+}
+
+.index-cont, .main-cont {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    transition: transform 0.5s 0s;
+    -webkit-transition: transform 0.5s 0s;
+    -o-transition: transform 0.5s 0s;
+    -moz-transition: transform 0.5s 0s;
+}
+
+.index-bto {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 200;
+    width: 100%;
+    height: 50px;
+    background: #f9f9f9;
+    border-top: 1px solid #eaeaea;
+    padding: 0 8px;
+}
+
+.middle-btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    margin-left: -30px;
+}
+
+.middle-btn a {
+    background: url("../img/index-bto-home.png") no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+    color: #ef3030;
+    text-align: center;
+    padding-top: 14px;
+}
+
+.middle-btn a i {
+    display: block;
+    width: 16px;
+    height: 20px;
+    background-position: -121px -24px;
+    margin: auto;
+}
+
+.middle-btn a.active i {
+    background-position: -146px -24px;
+}
+
+.index-bto .list-row {
+    float: left;
+    width: 50%;
+}
+
+.index-bto .list-row:first-child {
+    padding-right: 35px;
+}
+
+.index-bto .list-row:last-child {
+    padding-left: 35px;
+}
+
+.index-bto .list-row > ul > li {
+    padding: 0;
+    margin: 0;
+}
+
+.index-bto .list-row a {
+    display: block;
+    padding: 8px 0 0;
+    color: #777777;
+    font-size: 10px;
+}
+
+.index-btn i {
+    margin: 0 auto 2px;
+    width: 22px;
+    height: 20px;
+    background-position: -121px -51px;
+}
+
+.index-btn.active i {
+    background-position: -146px -51px;
+}
+
+.sort-btn i {
+    margin: 0 auto 2px;
+    width: 20px;
+    height: 20px;
+    background-position: -121px -78px;
+}
+
+.sort-btn.active i {
+    background-position: -146px -78px;
+}
+
+.car-btn span {
+    margin: 0 auto 2px;
+    width: 22px;
+    height: 20px;
+    background-position: -121px -105px;
+    position: relative;
+}
+
+.car-btn.active span {
+    background-position: -146px -105px;
+}
+
+.car-btn i {
+    display: block;
+    height: 15px;
+    line-height: 15px;
+    font-size: 10px;
+    font-style: normal;
+    padding: 0 5px;
+    background: #de1817;
+    border-radius: 8px;
+    color: #FFFFFF;
+    position: absolute;
+    top: -5px;
+    left: 23px;
+}
+
+i.showNumerBar {
+    display: block;
+    height: 15px;
+    line-height: 15px;
+    font-size: 10px;
+    font-style: normal;
+    padding: 0 5px;
+    background: #de1817;
+    border-radius: 8px;
+    color: #FFFFFF;
+    position: absolute;
+    top: -5px;
+    left: 23px;
+}
+
+.mine-btn span {
+    margin: 0 auto 2px;
+    width: 16px;
+    height: 20px;
+    background-position: -121px -132px;
+    position: relative;
+}
+
+.mine-btn.active span {
+    background-position: -146px -132px;
+}
+
+.mine-btn i {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #de1817;
+    position: absolute;
+    top: -3px;
+    left: 17px;
+}
+
+/********************************************/
+/***********           商品详情         ***********/
+/********************************************/
+/*支付信息*/
+.pay-intro {
+    background: #FFFFFF;
+    border-top: 1px solid #e3e5e9;
+    border-bottom: 1px solid #e3e5e9;
+    padding: 15px;
+}
+
+.pay-intro.no-border {
+    border-top: 0 none;
+}
+
+.pay-intro label {
+    color: #de1817;
+    float: right;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.pay-intro h2 {
+    margin: 0;
+    font-size: 14px;
+    color: #333333;
+}
+
+.pay-intro p {
+    font-size: 12px;
+    margin: 10px 0 0 0;
+    padding: 0;
+    color: #666;
+}
+
+/**************************************************/
+/*列表展示*/
+/**************************************************/
+.group-box {
+    display: block;
+    width: 100%;
+    position: relative;
+    background: #FFFFFF;
+    border-top: 1px solid #e3e5e9;
+    border-bottom: 1px solid #e3e5e9;
+}
+
+.group-box h2, .group-box label {
+    margin: 0;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.group-title {
+    height: 36px;
+    line-height: 36px;
+    font-size: 12px;
+    padding-left: 15px;
+}
+
+.group-box ul {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.group-box li {
+    display: block;
+    width: 100%;
+    height: 46px;
+    border-top: 1px solid #e3e5e9;
+    padding-left: 15px;
+}
+
+.group-box li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #333333;
+}
+
+.group-left {
+    float: left;
+    position: relative;
+    width: 70%;
+    height: 100%;
+}
+
+.group-right {
+    display: none;
+    float: right;
+    position: relative;
+    width: 30%;
+    height: 100%;
+}
+
+.group-icon {
+    position: relative;
+    height: 100%;
+    padding-left: 40px;
+}
+
+.group-icon label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 6px;
+    overflow: hidden;
+}
+
+.group-icon label span {
+    display: block;
+    width: 100%;
+    color: #333333;
+}
+
+.group-icon label span:nth-child(2) {
+    color: #999999;
+}
+
+.group-icon label span.red {
+    color: #de1817;
+}
+
+.group-icon i {
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+i.icon-yucunkuan {
+    width: 26px;
+    height: 26px;
+    background-position: 0 0;
+    margin-top: -13px;
+}
+
+i.icon-weixin {
+    width: 26px;
+    height: 26px;
+    background-position: 0 -90px;
+    margin-top: -13px;
+}
+
+i.icon-yijifu {
+    width: 26px;
+    height: 26px;
+    background-position: -34px 0;
+    margin-top: -13px;
+}
+
+i.icon-yinlian {
+    width: 26px;
+    height: 26px;
+    background-position: 0 -61px;
+    margin-top: -13px;
+}
+
+i.icon-zhifubao {
+    width: 26px;
+    height: 26px;
+    background-position: 0 -120px;
+    margin-top: -13px;
+}
+
+.group-right {
+    padding-right: 15px;
+    text-align: right;
+    line-height: 46px;
+}
+
+.group-right span.none-icon {
+    color: #666666;
+}
+
+.group-box li.none .group-right,
+.group-box li.active .group-right {
+    display: block;
+}
+
+.group-box li.none i.icon-yucunkuan {
+    width: 26px;
+    height: 26px;
+    background-position: 0 -31px;
+    margin-top: -13px;
+}
+
+.group-box li.none .group-icon label span.red {
+    color: #999999;
+}
+
+.group-box li.active .group-right span.has-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    display: block;
+    width: 16px;
+    height: 14px;
+    margin-top: -7px;
+    background-position: 0 -149px;
+}
+
+.group-box .show-more {
+    height: 34px;
+    line-height: 34px;
+    border-top: 1px solid #e3e5e9;
+}
+
+.group-box .show-more i.down-arrow {
+    display: inline-block;
+    width: 14px;
+    height: 7px;
+    background-position: 0 -170px;
+    margin-left: 5px;
+}

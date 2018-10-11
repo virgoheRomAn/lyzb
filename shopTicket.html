@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html class="overflow-hidden">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>礼仪之邦-优惠券</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body class="overflow-hidden">
+<div class="collect-bar register-bar ticket-bar">
+    <h2 class="header-box pos-abs-tl">
+        <div class="header-goBack">
+            <a class="go-back-btn sprite-icon" href="#"></a>
+        </div>
+        我的优惠券
+        <span id="helpBtn" class="has-text">使用规则</span>
+    </h2>
+
+    <div class="collect-cont ticket-cont-bar">
+        <div class="ticket-menu list-row">
+            <ul class="nav nav-tabs row-3">
+                <li class="active"><a data-toggle="tab" href="#canUsed" aria-expanded="true">未过期(1)</a></li>
+                <li><a data-toggle="tab" href="#noUsed" aria-expanded="true">已过期(2)</a></li>
+                <li><a data-toggle="tab" href="#userUsed" aria-expanded="false">已使用(5)</a></li>
+            </ul>
+        </div>
+        <div class="ticket-list-show hasTicket" style="display: block;">
+            <div id="wrapper">
+                <div id="scroller">
+                    <div class="tab-content">
+                        <div id="canUsed" class="tab-pane fade in active">
+                            <div class="ticket-list">
+                                <ul>
+                                    <li>
+                                        <div class="ticket-cont">
+                                            <label class="ticket-icon"></label>
+
+                                            <div class="ticket-intro">
+                                                <div class="ticket-text">
+                                                    <i>￥</i><span>20</span>
+
+                                                    <div class="ticket-num">
+                                                        <span>全品类（特例商品除外）</span>
+                                                        <label><b>优惠券</b>（满509减20）</label>
+                                                    </div>
+                                                </div>
+                                                <div class="ticket-time">有效期：2016-05-16至2016-06-09</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ticket-cont">
+                                            <label class="ticket-icon"></label>
+
+                                            <div class="ticket-intro">
+                                                <div class="ticket-text">
+                                                    <i>￥</i><span>15</span>
+
+                                                    <div class="ticket-num">
+                                                        <span>全品类（特例商品除外）</span>
+                                                        <label><b>现金券</b>（无门槛使用）</label>
+                                                    </div>
+                                                </div>
+                                                <div class="ticket-time">有效期：2016-05-16至2016-06-09</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="noUsed" class="tab-pane fade">
+                            <div class="ticket-list no-used">
+                                <ul>
+                                    <li>
+                                        <div class="ticket-cont">
+                                            <label class="ticket-icon"></label>
+
+                                            <div class="ticket-intro">
+                                                <div class="ticket-text">
+                                                    <i>￥</i><span>20</span>
+
+                                                    <div class="ticket-num">
+                                                        <span>全品类（特例商品除外）</span>
+                                                        <label><b>优惠券</b>（满509减20）</label>
+                                                    </div>
+                                                </div>
+                                                <div class="ticket-time">有效期：2016-05-16至2016-06-09</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ticket-cont">
+                                            <label class="ticket-icon"></label>
+
+                                            <div class="ticket-intro">
+                                                <div class="ticket-text">
+                                                    <i>￥</i><span>15</span>
+
+                                                    <div class="ticket-num">
+                                                        <span>全品类（特例商品除外）</span>
+                                                        <label><b>现金券</b>（无门槛使用）</label>
+                                                    </div>
+                                                </div>
+                                                <div class="ticket-time">有效期：2016-05-16至2016-06-09</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="userUsed" class="tab-pane fade">
+                            <div class="ticket-list no-used user-used">
+                                <ul>
+                                    <li>
+                                        <div class="ticket-cont">
+                                            <label class="ticket-icon"></label>
+
+                                            <div class="ticket-intro">
+                                                <div class="ticket-text">
+                                                    <i>￥</i><span>20</span>
+
+                                                    <div class="ticket-num">
+                                                        <span>全品类（特例商品除外）</span>
+                                                        <label><b>优惠券</b>（满509减20）</label>
+                                                    </div>
+                                                </div>
+                                                <div class="ticket-time">有效期：2016-05-16至2016-06-09</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ticket-cont">
+                                            <label class="ticket-icon"></label>
+
+                                            <div class="ticket-intro">
+                                                <div class="ticket-text">
+                                                    <i>￥</i><span>15</span>
+
+                                                    <div class="ticket-num">
+                                                        <span>全品类（特例商品除外）</span>
+                                                        <label><b>现金券</b>（无门槛使用）</label>
+                                                    </div>
+                                                </div>
+                                                <div class="ticket-time">有效期：2016-05-16至2016-06-09</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ticket-cont">
+                                            <label class="ticket-icon"></label>
+
+                                            <div class="ticket-intro">
+                                                <div class="ticket-text">
+                                                    <i>￥</i><span>20</span>
+
+                                                    <div class="ticket-num">
+                                                        <span>全品类（特例商品除外）</span>
+                                                        <label><b>优惠券</b>（满509减20）</label>
+                                                    </div>
+                                                </div>
+                                                <div class="ticket-time">有效期：2016-05-16至2016-06-09</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ticket-cont">
+                                            <label class="ticket-icon"></label>
+
+                                            <div class="ticket-intro">
+                                                <div class="ticket-text">
+                                                    <i>￥</i><span>15</span>
+
+                                                    <div class="ticket-num">
+                                                        <span>全品类（特例商品除外）</span>
+                                                        <label><b>现金券</b>（无门槛使用）</label>
+                                                    </div>
+                                                </div>
+                                                <div class="ticket-time">有效期：2016-05-16至2016-06-09</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ticket-cont">
+                                            <label class="ticket-icon"></label>
+
+                                            <div class="ticket-intro">
+                                                <div class="ticket-text">
+                                                    <i>￥</i><span>20</span>
+
+                                                    <div class="ticket-num">
+                                                        <span>全品类（特例商品除外）</span>
+                                                        <label><b>优惠券</b>（满509减20）</label>
+                                                    </div>
+                                                </div>
+                                                <div class="ticket-time">有效期：2016-05-16至2016-06-09</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ticket-list-show noneTicket" style="display: none;">
+            <div style="position: absolute; top: 30%; left: 50%; margin: -43px 0 0 -64px; text-align: center;">
+                <img style="width: 80px; height: 85px; margin: auto;" src="img/noneTicket.png">
+
+                <p style="font-size: 12px; color: #C5C5C5; margin: 10px;">暂时没有优惠券哦！</p>
+            </div>
+        </div>
+
+        <!--使用规则-->
+        <div class="disk"></div>
+        <div class="pullDown-bar help-bar pos-abs-tl">
+            <div class="pullDown-cont">
+                <div class="pullDown-intro">
+                    <span>1、满减券/现金券不可重复使用，只限一次，满减券/现金券可叠加使用，每笔订单仅使用一张满减券/现金券。</span>
+                    <span>2、本优惠券不找零，不兑现；</span>
+                    <span>3、本优惠券仅限于礼仪之邦集食惠本站使用；</span>
+                    <span>4、礼仪之邦集食惠保留对此优惠活动的最终解释权。</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/box.js"></script>
+<script src="js/public.js"></script>
+<script>
+    $(function () {
+        var myScroll = publicFuns.newIScroll("#wrapper");
+
+        //使用规则
+        $("#helpBtn").click(function () {
+            $(".disk").toggle();
+            $(".help-bar").slideToggle(300);
+        });
+
+        $(".disk").click(function () {
+            $("#helpBtn").trigger("click");
+        });
+
+        //切换
+        $(".ticket-menu").find("a").click(function () {
+            $(this).on("shown.bs.tab", function () {
+                myScroll.refresh();
+                myScroll.scrollTo(0, 0);
+            });
+        });
+
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html class="overflow-hidden">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>礼仪之邦-绑定员工账号</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body class="overflow-hidden">
+<div class="register-bar">
+    <h2 class="header-box">
+        <a class="go-back-btn sprite-icon" id="forgetGoBack" href="javascript:;"></a>
+        员工账号
+        <span id="helpBtn" class="has-text">帮助</span>
+    </h2>
+
+    <!--绑定员工账号-->
+    <div class="forget-type">
+        <div class="register-cont">
+            <ul>
+                <li class="less-padding">
+                    <div class="register-input line-black no-padding">
+                        <input id="telephone" placeholder="请输入推荐码" value="" type="text" maxlength="20">
+                        <span id="clearCont" class="pos-abs-tr clear-btn"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="sureBtn" class="login-btn active"><a href="javascript:;">立即绑定</a></div>
+        <div class="forget-tips binding-tips"><img src="img/bingingPersonal.png"></div>
+
+        <!--帮助提示-->
+        <div class="disk"></div>
+        <div class="pullDown-bar help-bar pos-abs-tl">
+            <div class="pullDown-cont">
+                <p class="pullDown-title">什么是推荐码</p>
+
+                <div class="pullDown-intro">
+                    <span>1、推荐码是指用户注册或升级成为万企集采企业会员或员工帐号时必需的一种特殊通行证；</span>
+                    <span>2、推荐码长度为6位，由英文或阿拉伯数字随机组成；</span>
+                    <span>3、输入推荐码成为万企集采企业会员或员工帐号，即可享受更多优惠。</span>
+                    <i class="pullDown-tips">现在还没推荐码吗？请拨打客服电话</i>
+                    <a class="pullDown-btn" href="tel:400-637-6367"><i class="sprite-icon"></i><span>客服电话</span>400-637-6367</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/box.js"></script>
+<script src="js/public.js"></script>
+<script>
+    $(function () {
+        $("#helpBtn").click(function () {
+            $(".disk").toggle();
+            $(".help-bar").slideToggle(300);
+        });
+
+        $(".disk").click(function () {
+            $("#helpBtn").trigger("click");
+        });
+
+        //清空输入
+        $("#clearCont").click(function () {
+            publicFuns.clearText($(this).prev());
+        });
+
+        var _sure_ = true;
+        $("#sureBtn").click(function () {
+            if (!_sure_) {
+                $.jAlert("邀请码不存在", 140, 50, "");
+            } else {
+                $.jAlertBtn(["恭喜您绑定成功！", "确定"], function () {
+                    $.jAlert("绑定成功，正在跳转...", 200, 50, "");
+                }, 210, 100, "");
+            }
+        });
+    });
+</script>
+</body>
+</html>

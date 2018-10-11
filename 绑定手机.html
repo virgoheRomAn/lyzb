@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html class="overflow-hidden">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>绑定手机</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body class="overflow-hidden">
+<div class="register-bar" style="padding-top: 44px;">
+    <div class="header-box" style="position: absolute; top: 0;">
+        <div class="header-goBack">
+            <a class="go-back-btn sprite-icon" href="javascript:;"></a>
+        </div>
+        绑定手机
+        <span class="has-text">跳过</span>
+    </div>
+
+    <div class="collect-cont">
+        <div id="wrapper">
+            <div id="scroller">
+
+                <div class="register-cont" style="margin-top: 0; border-top: 0 none;">
+                    <div class="forget-banner background-f5f5f5">
+                        <img class="phone-img" src="img/phoneImg1.png">
+                        <p>您还未绑定手机，绑定手机后账号将更安全</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <i class="register-icon icon-phone-color change-sprite-icon"></i>
+
+                            <div class="register-input line-light">
+                                <input id="telephone" data-waring="请输入手机号" placeholder="请输入手机号" value="" type="text"
+                                       maxlength="11">
+                                <!--<span id="getCode" class="pos-abs-tr code-btn">获取验证码</span>-->
+                                <span id="clearCont" class="pos-abs-tr clear-btn"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="register-icon icon-code sprite-icon"
+                               style="background-position:-101px -107px;"></i>
+
+                            <div class="register-input line-heavy less-padding" style="padding: 0 10px 0 80px;">
+                                <input id="code" data-waring="请输入验证码" placeholder="请输入验证码" value="" type="text"
+                                       maxlength="6" style="width: 80px; left: 0;">
+                                <!--<span id="clearCont" class="pos-abs-tr clear-btn sprite-icon"></span>-->
+                                <div class="slide-bar" id="slideBar">
+                                    <span class="slide-btn" id="slideBarBtn"><i class="shopType-sprite-icon"></i></span>
+                                    <span class="slide-complete"></span>
+                                    <span class="slide-text">拖动获取验证码</span>
+                                </div>
+                                <span id="codeTextNum" class="code-text-num">已发送验证码  <i>120</i>秒</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="register-icon icon-paw sprite-icon"></i>
+
+                            <div class="register-input line-light no-padding">
+                                <input id="password" data-waring="请输入密码" placeholder="请输入密码(限6-20个数字、字母或符号)" value=""
+                                       type="password" maxlength="20">
+                            </div>
+                            <span id="showPaw" class="pos-abs-tr show-btn active"></span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="register-btn active"><a href="javascript:;">确定</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
+<script src="js/box.js"></script>
+<script src="js/public.js?a=0qq00"></script>
+<script>
+    $(function () {
+        //显示密码
+        $("#showPaw").click(function () {
+            if ($(this).hasClass("active")) {
+                $("#password").prop("type", "text");
+            } else {
+                $("#password").prop("type", "password");
+            }
+            $(this).toggleClass("active");
+        });
+        //绑定滑块
+        var slideBox = new publicFuns.slideBar("#slideBar");
+        slideBox.init({
+            ele: "#slideBarBtn",
+            successFun: function (ratio) {
+                console.log("成功回调：当前元素" + this + "，当前滚动比例：" + ratio);
+                publicFuns.testPhone($("#telephone").val(), function () {
+                    $("#slideBar").hide();
+                    $("#codeTextNum").show();
+                    publicFuns.countDown("#codeTextNum i", 5, function () {
+                        $("#codeTextNum").hide();
+                        $("#slideBar").show();
+                    }, function (time) {
+                        console.log(time);
+                    });
+                });
+            },
+            errorFun: function (ratio) {
+                console.log("失败回调：当前元素" + this + "，当前滚动比例：" + ratio);
+            }
+        });
+
+        publicFuns.animateTransform.show(".protocol-text i", ".animated-left");
+        publicFuns.animateTransform.hide("#goPage", ".animated-left");
+
+        $(window).resize(function () {
+            $(".swiper-slide").height($(".swiper-slide-c").height());
+        }).trigger("resize");
+
+        var indexSwiper = publicFuns.newSwiper(".register-swiper", 3);
+        var myScroll = publicFuns.newIScroll("#wrapper");
+
+
+        //获取验证码
+        $("#getCode").on("click", getCode);
+        function getCode() {
+            publicFuns.testPhone($("#telephone").val(), function () {
+                $("#getCode").off("click", getCode);
+                publicFuns.countDown("#getCode", 120, function () {
+                    $("#getCode").on("click", getCode);
+                });
+            });
+        }
+
+        //清空输入
+        $("#clearCont").click(function () {
+            publicFuns.clearText($(this).prev());
+        });
+    });
+</script>
+</body>
+</html>

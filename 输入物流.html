@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html class="overflow-hidden">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>礼仪之邦-输入物流</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body class="overflow-hidden">
+<div class="register-bar collect-bar">
+    <h2 class="header-box pos-abs-tl">
+        <a class="go-back-btn sprite-icon" id="forgetGoBack" href="#"></a>
+        订单详情
+        <span id="settingMenu" class="has-icon sprite-icon"></span>
+    </h2>
+
+    <div class="setting-menu pos-abs-tr">
+        <span class="arrow-top"></span>
+        <a href="#"><i class="sprite-icon index-icon"></i>首页</a>
+        <a href="#"><i class="sprite-icon shop-icon"></i>商品分类</a>
+        <a href="#"><i class="sprite-icon car-icon"></i>购物车</a>
+        <a href="#"><i class="sprite-icon goods-icon"></i>实物订单</a>
+        <a href="#"><i class="sprite-icon mine-icon"></i>我的</a>
+    </div>
+    <div class="collect-cont">
+        <div id="wrapper">
+            <div id="scroller">
+                <div class="refund-box orderIntro-box pad-b10">
+                    <div class="collect-list shopCar-list order-page-list no-padding mar-b10 no-margin">
+                        <h2 class="orderIntro-title orderGroup-title1">退回地址</h2>
+
+                        <div class="orderIntro-area">
+                            <span>收货人姓名：张三</span>
+                            <span>收货人手机：1332512569</span>
+                            <span><i>收货地址：</i>重庆市渝中区九龙坡区珠江华轩E座一楼仓库405号门</span>
+                        </div>
+                    </div>
+
+                    <div class="shopCar-list no-padding mar-b10 orderIntro-list">
+                        <h2 class="orderIntro-title orderGroup-title2">请输入物流信息</h2>
+
+                        <div class="form-list refund-list no-margin">
+                            <ul>
+                                <li>
+                                    <span>物流公司</span>
+                                    <label><a href="javascript:;" class="select-btn text-overflow"
+                                              id="checkLogistics">选择</a></label>
+                                </li>
+                                <li>
+                                    <span>物流单号</span>
+                                    <label><input type="text" placeholder="请输入物流单号" value=""></label>
+                                </li>
+                                <li>
+                                    <span>发货运费</span>
+                                    <label><input type="text" placeholder="请输入发货运费" value=""></label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="shopCar-list no-padding orderIntro-list">
+                        <h2 class="orderIntro-title orderGroup-title3">请输入退款账号</h2>
+
+                        <div class="form-list refund-list has-border ">
+                            <ul>
+                                <li>
+                                    <span>退款到</span>
+                                    <label><a href="javascript:;" class="select-btn text-overflow"
+                                              id="selectPay">支付宝</a></label>
+                                </li>
+                                <li class="payBox">
+                                    <span>支付宝开户名</span>
+                                    <label><input type="text" placeholder="请输入支付宝开户名" value=""></label>
+                                </li>
+                                <li class="payBox">
+                                    <span>支付宝账号</span>
+                                    <label><input type="text" placeholder="请输入支付宝账号" value=""></label>
+                                </li>
+                                <li class="HankBox" style="display: none;">
+                                    <span>开户行</span>
+                                    <label><a href="javascript:;" class="select-btn text-overflow">选择</a></label>
+                                </li>
+                                <li class="HankBox" style="display: none;">
+                                    <span>开户名</span>
+                                    <label><input type="text" placeholder="请输入开户人姓名" value=""></label>
+                                </li>
+                                <li class="HankBox" style="display: none;">
+                                    <span>开户账号</span>
+                                    <label><input type="text" placeholder="请输入银行卡号" value=""></label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shopDetails-bto pos-abs-bl orderIntro-bto">
+        <div class="my-order-btn">
+            <a href="javascript:;">返回详情</a>
+            <a class="active" href="javascript:;">确认提交</a>
+        </div>
+    </div>
+
+
+    <!--选择退款方式-->
+    <div id="disk" class="disk order-disk"></div>
+    <div class="refund-type animated animated-bottom">
+        <h2 class="disk-title">所在地区<a class="close-disk sprite-icon" data-handel="close" href="javascript:;"></a></h2>
+
+        <div class="refund-content">
+            <a id="checkPay" class="active" href="javascript:;">支付宝</a>
+            <a id="checkHank" href="javascript:;">银行卡</a>
+        </div>
+    </div>
+
+    <!--选择物流公司-->
+    <div class="show-disk-box checkShop-bar animated animated-left" style="padding-bottom: 0; background: #FFFFFF;">
+        <div class="checkShop-cont" style="padding-top: 40px;">
+            <h2 class="disk-title">选择物流
+                <a class="close-disk sprite-icon" id="closeDisk" href="javascript:;"></a>
+            </h2>
+
+            <div class="swiper-container checkShop-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="responsibility-cont">
+                            <div class="responsibility-list">
+                                <span>申通快递</span>
+                                <span>申通快递</span>
+                                <span>申通快递</span>
+                                <span>申通快递</span>
+                                <span>申通快递</span>
+                                <span>申通快递</span>
+                                <span>申通快递</span>
+                                <span>申通快递</span>
+                                <span>申通快递</span>
+                                <span>申通快递</span>
+                                <span>申通快递</span>
+                                <span>申通快递</span>
+                                <span>申通快递</span>
+                                <span>申通快递</span>
+                                <span>申通快递</span>
+                                <span>申通快递</span>
+                                <span>申通快递</span>
+                                <span>申通快递</span>
+                                <span>申通快递</span>
+                                <span>申通快递</span>
+                                <span>申通快递</span>
+                                <span>申通快递</span>
+                                <span>申通快递</span>
+                                <span>申通快递</span>
+                                <span>申通快递</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a class="telphone none shop-sprite-icon animated shake" href="tel:110"></a>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/box.js"></script>
+<script src="js/public.js"></script>
+<script src="js/area.js"></script>
+<script>
+    $(function () {
+        var myScroll = publicFuns.newIScroll("#wrapper");
+        var mySwiper = publicFuns.newSwiper(".checkShop-swiper", 3);
+
+
+        $("#selectPay").click(function () {
+            $("#disk").fadeIn();
+            $(".refund-type").addClass("active");
+        });
+
+        $("a[data-handel='close']").click(function () {
+            $("#disk").fadeOut();
+            $(".refund-type").removeClass("active");
+        });
+
+        //选择支付方式
+        $("#checkPay").click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+            $(".refund-type").removeClass("active");
+            $("#disk").fadeOut(function () {
+                $("#selectPay").text("支付宝");
+                $(".payBox").show();
+                $(".HankBox").hide();
+                myScroll.refresh();
+            });
+        });
+        $("#checkHank").click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+            $(".refund-type").removeClass("active");
+            $("#disk").fadeOut(function () {
+                $("#selectPay").text("银行卡");
+                $(".payBox").hide();
+                $(".HankBox").show();
+                myScroll.refresh();
+            });
+        });
+
+        //选择物流
+        $("#checkLogistics").click(function () {
+            $(".order-disk").fadeIn();
+            $(".checkShop-bar").addClass("active");
+        });
+
+        $(".responsibility-list").find("span").click(function () {
+            var _this = this;
+            $(".show-disk-box").removeClass("active");
+            $(".order-disk").fadeOut(function () {
+                $("#checkLogistics").text($(_this).text());
+            });
+        });
+
+        $("#closeDisk").click(function () {
+            $(".order-disk").trigger("click");
+        });
+
+
+        $(".order-disk").click(function () {
+            $(this).fadeOut();
+            $(".show-disk-box").removeClass("active");
+        });
+    });
+</script>
+</body>
+</html>

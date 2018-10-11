@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="overflow-hidden">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>礼仪之邦-无法查询</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body class="overflow-hidden">
+<div class="register-bar collect-bar setting-bar seeLogistics-bar">
+    <h2 class="header-box pos-abs-tl">
+        <a class="go-back-btn sprite-icon" id="forgetGoBack" href="#"></a>
+        无法查询
+    </h2>
+
+    <div class="collect-cont">
+        <div id="wrapper" style="background: #FFFFFF">
+            <div id="scroller">
+                <div class="logistics-none mar-t10">
+                    <div class="logistics-none-t">
+                        <label><img src="img/seeLogistics.png"></label>
+                    </div>
+                    <div class="logistics-none-c">
+                        <span class="big-size">该物流公司不支持跟踪物流信息查询<i>您可以联系客服查询包裹物流状态</i></span>
+                        <a class="pullDown-btn" href="tel:400-637-6367"><i class="sprite-icon"></i><span>客服电话</span>400-637-6367</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/box.js"></script>
+<script src="js/copyJS/clipBoard.min.js"></script>
+<script>
+    $(function () {
+        $("a.a-link").click(function () {
+            if(document.execCommand("copy")) {
+                var copy=new clipBoard("#logisticsNum", {
+                    copy: function () {
+                        return $("#logisticsNum").text();
+                    },
+                    afterCopy: function () {
+                        $.jAlert("已成功复制到剪贴板", 180, "", "");
+                    }
+                });
+            }else{
+                $.jAlert("您的浏览器不支持点击复制，请长按复制！", 300, "", "");
+            }
+        });
+    })
+</script>
+</body>
+</html>

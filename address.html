@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html class="overflow-hidden">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>礼仪之邦-收货地址</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body class="overflow-hidden">
+<div class="address-bar collect-bar register-bar">
+    <h2 class="header-box pos-abs-tl">
+        <a class="go-back-btn sprite-icon" href="javascript:window.history.go(-1);"></a>
+        收货地址管理
+    </h2>
+
+    <div class="collect-cont">
+        <!--没有地址列表-->
+        <div class="collect-none  address-none"><img src="img/add-none.png"></div>
+        <!--有地址列表-->
+        <div id="wrapper" style="background: #fff;">
+            <div id="scroller" class="address-list">
+                <ul>
+                    <li>
+                        <div class="add-container">
+                            <div class="add-introduction">
+                                <div class="add-loser"></div>
+                                <div class="add-user">
+                                    <span class="add-user-name">徐继强</span>
+                                    <span class="add-user-phone">13628332957</span>
+                                </div>
+                                <div class="add-location text-clamp-overflow">重庆 重庆市 渝北区 海王星E座6-3-1</div>
+                            </div>
+                            <div class="add-handle">
+                                <div class="radio-box">
+                                    <label class="radio-bar">
+                                        <input type="radio" name="addDef" value="">
+                                        <span></span>
+                                    </label>
+                                    设为默认
+                                </div>
+                                <div class="add-handle-btn">
+                                    <a class="add-edit-btn" href="javascript:;">编辑</a>
+                                    <a class="add-del-btn" href="javascript:;">删除</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="add-container">
+                            <div class="add-introduction">
+                                <div class="add-user">
+                                    <span class="add-user-name">徐继强</span>
+                                    <span class="add-user-phone">13628332957</span>
+                                </div>
+                                <div class="add-location text-clamp-overflow">重庆 重庆市 渝北区 海王星E座6-3-1</div>
+                            </div>
+                            <div class="add-handle">
+                                <div class="radio-box">
+                                    <label class="radio-bar active">
+                                        <input type="radio" name="addDef" value="" checked>
+                                        <span></span>
+                                    </label>
+                                    设为默认
+                                </div>
+                                <div class="add-handle-btn">
+                                    <a class="add-edit-btn" href="javascript:;">编辑</a>
+                                    <a class="add-del-btn" href="javascript:;">删除</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="collect-bottom noneAddress pos-abs-bl">
+        <div class="collect-handle less-padding">
+            <div class="flex-btn">
+                <a id="addLocation" class="active" href="javascript:;"><span><i class="add-icon">+</i>  新建地址</span></a>
+            </div>
+        </div>
+    </div>
+
+    <!--loading-->
+    <div class="add-loading"><span></span></div>
+
+    <!--添加地址-->
+    <div class="register-box-text animated-left" id="addArea">
+        <h2 class="header-box pos-abs-tl">
+            <a class="go-back-btn sprite-icon" id="goPage" href="javascript:;"></a>
+            <span>添加收货地址</span>
+            <span id="saveBtn" class="save-btn has-text">保存</span>
+        </h2>
+
+        <!--添加地址输入信息form-->
+        <div class="register-box-c add-form-list">
+            <div class="form-list">
+                <ul>
+                    <li class="more-padding">
+                        <span>收货人</span>
+                        <label><input type="text" id="addUserName" class="text-overflow" value=""
+                                      placeholder="请输入收货人名称"></label>
+                        <i class="form-clear-btn sprite-icon"></i>
+                    </li>
+                    <li class="more-padding">
+                        <span>联系电话</span>
+                        <label><input type="text" id="addUserPhone" value="" placeholder="请输入收货人电话"
+                                      maxlength="11"></label>
+                        <i class="form-clear-btn sprite-icon"></i>
+                    </li>
+                    <li>
+                        <span>所在地区</span>
+                        <label><a href="javascript:;" class="select-btn text-overflow" id="checkArea">请选择</a></label>
+                    </li>
+                </ul>
+            </div>
+            <div class="address-text"><textarea class="textarea" id="areaMinute" cols="" rows=""
+                                                placeholder="请填写详细地址，不少于5个字"></textarea>
+            </div>
+            <div class="line"></div>
+            <div class="set-default">
+                <span>设为默认</span>
+                <a class="switch-bar pos-abs-tr" href="javascript:;"><i></i><input id="setDefault" type="checkbox"
+                                                                                   value=""></a>
+            </div>
+            <div class="del-area">
+                <a href="javascript:;">删除地址</a>
+            </div>
+        </div>
+        <!--选择地址弹窗-->
+        <div id="disk" class="disk"></div>
+        <div id="diskCont" class="animated-disk show-address">
+            <h2 class="disk-title">所在地区<a class="close-disk sprite-icon" id="closeDisk" href="javascript:;"></a></h2>
+
+            <div class="disk-cont">
+                <div class="disk-tab clearfix">
+                    <a class="disk-tab-option show-modal active" id="province" href="javascript:;"><span>请选择</span></a>
+                    <a class="disk-tab-option hide-modal" id="city" href="javascript:;"><span>请选择</span></a>
+                    <a class="disk-tab-option hide-modal" id="county" href="javascript:;"><span>请选择</span></a>
+                    <i class="current-line"></i>
+                </div>
+                <div class="disk-tab-cont" id="areaCont">
+                    <div id="showArea"></div>
+                    <div class="disk-loading"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
+<script src="js/box.js"></script>
+<script src="js/public.js"></script>
+<!--<script src="js/area.js"></script>-->
+<script src="js/areaDate.js"></script>
+<script src="js/newArea-2016-11-17.js"></script>
+<script>
+    $(function () {
+        var myScroll = publicFuns.newIScroll("#wrapper");
+
+        var step = 0, _del_data_index = 0, _isDef = false;
+        var _addressType = true;    //地址状态。false没有地址列表，true有地址列表
+        var _init = true;
+        //状态信息
+        addressFun(_addressType);
+
+        //选择城市初始化
+        $("#checkArea").click(function () {
+            $("#disk").fadeIn();
+            $("#diskCont").addClass("active");
+            if (_init && step == 1) {
+                $.checkArea.init("#showArea", 2, true, this);
+                _init = false;
+            } else {
+                var _area = $(this).text();
+                //重新获取地址信息
+                $.checkArea.getAreaIntro(_area, this);
+            }
+        });
+
+        //跳转添加地址
+        $("#addLocation").click(function () {
+            step = 1;
+            _isDef = false;
+            _init = true;
+            $("#setDefault").prop("checked", false).parents(".switch-bar").removeClass("active");
+            //还原
+            $("#addUserName").val("");
+            $("#addUserPhone").val("");
+            $("#checkArea").text("请选择").removeClass("active");
+            $("#areaMinute").val("");
+
+            //显示
+            $(".set-default").show();
+            $(".del-area").hide();
+            $("#addArea").addClass("active").find(".register-title span:eq(0)").text("添加收货地址");
+        });
+
+        //返回
+        $("#goPage").click(function () {
+            $("#addArea").removeClass("active");
+        });
+
+        //设置默认
+        $("#setDefault").change(function () {
+            $(this).parents(".switch-bar").toggleClass("active");
+            _isDef = !!$(this).parents(".switch-bar").hasClass("active");
+        });
+
+        //清空输入
+        $(".form-clear-btn").click(function () {
+            $(this).parents("li").find("input[type='text']").val("");
+        });
+
+        //保存信息
+        $("#saveBtn").click(function () {
+            var _area = {};
+            var $name = $("#addUserName"), $phone = $("#addUserPhone"), $area = $("#checkArea"), $textarea = $("#areaMinute");
+            _area.def = _isDef;
+            _area.name = $name.val();
+            _area.phone = $phone.val();
+            _area.area = $area.text() + " " + $textarea.val();
+
+            //验证判断
+            if ($name.val() == "" || $name.val() == null) {
+                $.jAlert("收货人不能为空！", 150, 50, "");
+            } else if ($phone.val() == "" || $phone.val() == null) {
+                $.jAlert("收货人电话不能为空！", 170, 50, "");
+            } else if (!publicFuns.testForm.phone($phone.val())) {
+                $.jAlert("手机号码格式错误", 150, 50, "");
+            } else if ($area.text() == "请选择") {
+                $.jAlert("请选择所在地区！", 150, 50, "");
+            } else if ($textarea.val() == "" || $textarea.val() == null) {
+                $.jAlert("请填写详细地址！", 150, 50, "");
+            } else {
+                _addressType = true;
+                addressFun(_addressType);
+                //添加新地址
+                if (step == 1) {
+                    var new_html = _addHTML(_area);
+                    $(".address-list ul").prepend(new_html);
+                }
+                //编辑地址
+                if (step == 2) {
+                    var _tag = $(".address-list").find("li").eq(_del_data_index);
+                    _tag.find(".add-user-name").text(_area.name);
+                    _tag.find(".add-user-phone").text(_area.phone);
+                    _tag.find(".add-location").text(_area.area);
+                }
+                $(".add-loading").show();
+                setTimeout(function () {
+                    $(".add-loading").hide();
+                    $("#addArea").removeClass("active");
+                }, 500);
+            }
+
+            myScroll.refresh();
+        });
+
+        //添加HTML到列表
+        function _addHTML(obj) {
+            var _def = "", _checked = "";
+            if (obj.def) {
+                _def = "active";
+                _checked = "checked";
+                $("input[name='addDef']").prop("checked", false).parents(".radio-bar").removeClass("active");
+            }
+            var _html = "";
+            _html += '<li>';
+            _html += ' <div class="add-container">';
+            _html += ' <div class="add-introduction">';
+            _html += '  <div class="add-user"><span class="add-user-name">' + obj.name + '</span><span class="add-user-phone">' + obj.phone + '</span></div>';
+            _html += '  <div class="add-location text-clamp-overflow">' + obj.area + '</div>';
+            _html += '</div>';
+            _html += '  <div class="add-handle">';
+            _html += '      <div class="radio-box"><label class="radio-bar ' + _def + '"><input type="radio" name="addDef" value="" ' + _checked + '><span></span></label>设为默认</div>';
+            _html += '      <div class="add-handle-btn"><a class="add-edit-btn" href="javascript:;">编辑</a><a class="add-del-btn" href="javascript:;">删除</a></div>';
+            _html += '  </div>';
+            _html += '</div>';
+            _html += '</li>';
+            return _html;
+        }
+
+        //显示状态
+        function addressFun(type) {
+            if (!type) {
+                $.jAlert("您还没有添加过地址！", 170, 50, "j-alert-ani");
+                $(".collect-none").show();
+                $(".collect-list").hide();
+            } else {
+                $(".collect-none").hide();
+                $(".collect-list").show();
+            }
+        }
+
+        /*事件绑定*/
+        //单选按钮
+        $(document).on("click", ".radio-box", function () {
+            if (!$(this).find(".radio-bar").hasClass("active")) {
+                $(".radio-bar").removeClass("active");
+                $(".radio-bar input").prop("checked", "");
+                $(this).find(".radio-bar").addClass("active");
+                $(this).find("input").prop("checked", "checked");
+            }
+        });
+
+        //删除地址列表
+        $(document).on("click", ".add-del-btn", function () {
+            var $this = $(this);
+            var _i = $(".address-list").find("li").length;
+            $.jConfirm(["是否确认删除地址？", "确定", "取消"], function () {
+                $this.parents("li").animate({
+                    "left": "-100%"
+                }, 300, function () {
+                    $this.parents("li").remove();
+                    myScroll.refresh();
+                    _i--;
+                    if (_i == 0) {
+                        _addressType = false;
+                        addressFun(_addressType);
+                    }
+                });
+            }, "", "", "", "");
+        });
+
+        //删除编辑地址
+        $(document).on("click", ".del-area", function () {
+            var _i = $(".address-list").find("li").length;
+            $.jConfirm(["是否确认删除地址？", "确定", "取消"], function () {
+                $(".add-loading").show();
+                setTimeout(function () {
+                    $("#addArea").removeClass("active");
+                    _i--;
+                    if (_i == 0) {
+                        _addressType = false;
+                        addressFun(_addressType);
+                    }
+                    $(".add-loading").hide();
+                }, 500);
+                $(".address-list").find("li").eq(_del_data_index).remove();
+                myScroll.refresh();
+            }, "", "", "", "");
+        });
+
+        //编辑地址
+        $(document).on("click", ".add-edit-btn", function () {
+            step = 2;
+            var $this = $(this);
+            var $parent = $this.parents("li");
+            _del_data_index = $parent.index();
+            var _name, _phone, _area, _def_add, _area_id_;
+            _name = $parent.find(".add-user-name").text();
+            _phone = $parent.find(".add-user-phone").text();      //需要解密操作，需把隐藏的电话号码显示出来
+            _area = $parent.find(".add-location").text();
+            _area_id_ = $parent.find(".add-location").attr("data-area");
+            //_def_add = $parent.find("input[name='addDef]").prop("checked");     //是否是默认地址
+
+            //赋值
+            $("#addUserName").val(_name);
+            $("#addUserPhone").val(_phone);
+            $("#checkArea").text(_area.split(" ")[0] + " " + _area.split(" ")[1] + " " + _area.split(" ")[2]).addClass("active");
+            $("#areaMinute").val(_area.split(" ")[3]);
+
+
+            //显示
+            $(".set-default").hide();
+            $(".del-area").show();
+            $("#addArea").addClass("active").find(".register-title span:eq(0)").text("修改收货地址");
+        });
+    })
+</script>
+</body>
+</html>

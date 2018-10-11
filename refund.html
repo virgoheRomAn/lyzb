@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html class="overflow-hidden">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>礼仪之邦-申请退款</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body class="overflow-hidden">
+<div class="register-bar collect-bar setting-bar">
+    <h2 class="header-box pos-abs-tl">
+        <a class="go-back-btn sprite-icon" id="forgetGoBack" href="#"></a>
+        申请退款
+        <span id="settingMenu" class="has-icon sprite-icon"></span>
+    </h2>
+
+    <div class="setting-menu pos-abs-tr">
+        <span class="arrow-top"></span>
+        <a href="#"><i class="sprite-icon index-icon"></i>首页</a>
+        <a href="#"><i class="sprite-icon shop-icon"></i>商品分类</a>
+        <a href="#"><i class="sprite-icon car-icon"></i>购物车</a>
+        <a href="#"><i class="sprite-icon goods-icon"></i>实物订单</a>
+        <a href="#"><i class="sprite-icon mine-icon"></i>我的</a>
+    </div>
+    <div class="collect-cont">
+        <div id="wrapper">
+            <div id="scroller">
+                <div class="refund-box">
+                    <div class="form-list refund-list">
+                        <ul>
+                            <li>
+                                <span>退款原因</span>
+                                <label class="text-label text-overflow">未达到拼团人数</label>
+                            </li>
+                            <li>
+                                <span>退款金额</span>
+                                <label class="text-label text-color">￥72.80</label>
+                            </li>
+                            <li>
+                                <span>退款到</span>
+                                <label><a href="javascript:;" class="select-btn text-overflow"
+                                          id="selectPay">支付宝</a></label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="payBox" class="form-list refund-list has-border">
+                        <ul>
+                            <li>
+                                <span>支付宝账号</span>
+                                <label><input type="text" placeholder="请输入支付宝账号" value=""></label>
+                            </li>
+                            <li>
+                                <span>姓名</span>
+                                <label><input type="text" placeholder="请输入真实姓名" value=""></label>
+                            </li>
+                            <li>
+                                <span>手机号</span>
+                                <label class="text-label" style="text-align: left;">136****2957</label>
+                            </li>
+                            <li class="big-padding">
+                                <span>支付宝账号</span>
+                                <label><input type="text" placeholder="请输入验证码" value="">
+                                    <a class="code-link pos-abs-tr" href="javascript:;">获取验证码</a></label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="HankBox" class="form-list refund-list has-border" style="display: none;">
+                        <ul>
+                            <li>
+                                <span>银行卡号</span>
+                                <label><input type="text" placeholder="请输入银行卡号" value=""></label>
+                            </li>
+                            <li>
+                                <span>持卡人姓名</span>
+                                <label><input type="text" placeholder="请输入开户人姓名" value=""></label>
+                            </li>
+                            <li>
+                                <span>银行</span>
+                                <label><a href="javascript:;" class="select-btn text-overflow">选择</a></label>
+                            </li>
+                            <li>
+                                <span>所在地区</span>
+                                <label><a id="checkArea" href="javascript:;" class="select-btn text-overflow">选择</a></label>
+                            </li>
+                            <li>
+                                <span>开户支行</span>
+                                <label><input type="text" placeholder="例：重庆银行渝中区上清寺支行" value=""></label>
+                            </li>
+                            <li>
+                                <span>手机号</span>
+                                <label class="text-label" style="text-align: left;">136****2957</label>
+                            </li>
+                            <li class="big-padding">
+                                <span>支付宝账号</span>
+                                <label><input type="text" placeholder="请输入验证码" value="">
+                                    <a class="code-link pos-abs-tr" href="javascript:;">获取验证码</a></label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="list-btn-box register-btn active refund-btn">
+                        <span>为了能更快的转钱到你的帐号,请仔细填写以上信息 </span>
+                        <a href="#">确认提交</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--选择退款方式-->
+    <div class="refund-type animated animated-bottom">
+        <h2 class="disk-title">所在地区<a class="close-disk sprite-icon" data-handel="close" href="javascript:;"></a></h2>
+        <div class="refund-content">
+            <a id="checkPay" class="zhifubao-pay active" href="javascript:;">支付宝</a>
+            <a id="checkHank" class="weixin-pay" href="javascript:;">银行卡</a>
+        </div>
+    </div>
+
+    <!--选择地址弹窗-->
+    <div id="disk" class="disk"></div>
+    <div id="diskCont" class="animated-disk show-address">
+        <h2 class="disk-title">所在地区<a class="close-disk sprite-icon" id="closeDisk" href="javascript:;"></a></h2>
+
+        <div class="disk-cont">
+            <div class="disk-tab clearfix">
+                <a class="disk-tab-option show-modal active" id="province" href="javascript:;"><span>请选择</span></a>
+                <a class="disk-tab-option hide-modal" id="city" href="javascript:;"><span>请选择</span></a>
+                <a class="disk-tab-option hide-modal" id="county" href="javascript:;"><span>请选择</span></a>
+                <i class="current-line"></i>
+            </div>
+            <div class="disk-tab-cont" id="areaCont">
+                <div id="showArea"></div>
+                <div class="disk-loading"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/box.js"></script>
+<script src="js/public.js"></script>
+<script src="js/area.js"></script>
+<script>
+    $(function () {
+        var myScroll;
+        myScroll = publicFuns.newIScroll("#wrapper");
+
+        var _init = true;
+        //选择城市初始化
+        $("#checkArea").click(function () {
+            $("#disk").fadeIn();
+            $("#diskCont").addClass("active");
+            if (_init) {
+                _init_area();
+                _init = false;
+            } else {
+                $(".current-line").width($county.width());
+            }
+        });
+
+        $("#selectPay").click(function () {
+            $("#disk").fadeIn();
+            $(".refund-type").addClass("active");
+        });
+
+        $("a[data-handel='close']").click(function () {
+            $("#disk").fadeOut();
+            $(".refund-type").removeClass("active");
+        });
+
+        //显示设置菜单
+        $("#settingMenu").click(function () {
+            $(".setting-menu").fadeToggle();
+        });
+
+        //选择支付方式
+        $("#checkPay").click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+            $(".refund-type").removeClass("active");
+            $("#disk").fadeOut(function(){
+                $("#selectPay").text("支付宝");
+                $("#payBox").show();
+                $("#HankBox").hide();
+                myScroll.refresh();
+            });
+        });
+        $("#checkHank").click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+            $(".refund-type").removeClass("active");
+            $("#disk").fadeOut(function(){
+                $("#selectPay").text("银行卡");
+                $("#payBox").hide();
+                $("#HankBox").show();
+                myScroll.refresh();
+            });
+        });
+    });
+</script>
+</body>
+</html>

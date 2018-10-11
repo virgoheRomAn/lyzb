@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html class="overflow-hidden">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>礼仪之邦-申请退货</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body class="overflow-hidden">
+<div class="register-bar collect-bar setting-bar" style="padding-bottom: 70px;">
+    <h2 class="header-box pos-abs-tl">
+        <a class="go-back-btn sprite-icon" id="forgetGoBack" href="#"></a>
+        申请退货
+        <span id="settingMenu" class="has-icon sprite-icon"></span>
+    </h2>
+
+    <div class="setting-menu pos-abs-tr">
+        <span class="arrow-top"></span>
+        <a href="#"><i class="sprite-icon index-icon"></i>首页</a>
+        <a href="#"><i class="sprite-icon shop-icon"></i>商品分类</a>
+        <a href="#"><i class="sprite-icon car-icon"></i>购物车</a>
+        <a href="#"><i class="sprite-icon goods-icon"></i>实物订单</a>
+        <a href="#"><i class="sprite-icon mine-icon"></i>我的</a>
+    </div>
+
+    <div class="collect-cont">
+        <div id="wrapper">
+            <div id="scroller">
+                <div class="refund-box orderIntro-box pad-b10">
+                    <div class="collect-list shopCar-list order-page-list no-padding mar-b10"
+                         style="margin-top: 0; border-top: 0 none;">
+                        <h2 id="allCheckBar" class="orderIntro-title none" style="padding-left: 35px;">
+                            <label class="checkbox-bar">
+                                <input id="allCheckBox" type="checkbox" value="">
+                                <span></span>
+                            </label>
+                            选择退货商品</h2>
+
+                        <div id="fefund" class="collect-list shopCar-list" style="">
+                            <ul>
+                                <li class="">
+                                    <label class="checkbox-bar">
+                                        <input type="checkbox" value="">
+                                        <span></span>
+                                    </label>
+
+                                    <div class="collect-intro">
+                                        <a href="#">
+                                            <label class="collect-img">
+                                                <img src="img/collect-img.jpg">
+                                                <span class="collect-over-img"><img src="img/collect-over.png"></span>
+                                            </label>
+
+                                            <div class="collect-intro-text">
+                                                <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                    压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                                <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                                <div class="number-box pos-abs-br">
+                                                    <div class="number-bar">
+                                                        <span class="num-cut sprite-icon"></span>
+                                                    <span class="num-input" data-max="10">
+                                                        <input value="1" type="text" readonly="">
+                                                    </span>
+                                                        <span class="num-add sprite-icon"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <div class="collect-list-disk"></div>
+                                        <div class="collect-input-disk"></div>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <label class="checkbox-bar">
+                                        <input type="checkbox" value="">
+                                        <span></span>
+                                    </label>
+
+                                    <div class="collect-intro">
+                                        <a href="#">
+                                            <label class="collect-img">
+                                                <img src="img/collect-img.jpg">
+                                                <span class="collect-over-img"><img src="img/collect-over.png"></span>
+                                            </label>
+
+                                            <div class="collect-intro-text">
+                                                <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                                    压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                                <p class="collect-price" data-price="145.30">￥145.30元</p>
+
+                                                <div class="number-box pos-abs-br">
+                                                    <div class="number-bar">
+                                                        <span class="num-cut sprite-icon"></span>
+                                                    <span class="num-input" data-max="10">
+                                                        <input value="1" type="text" readonly="">
+                                                    </span>
+                                                        <span class="num-add sprite-icon"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <div class="collect-list-disk"></div>
+                                        <div class="collect-input-disk"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="shopCar-list no-padding mar-b10 orderIntro-list">
+                        <div class="form-list refund-list no-margin">
+                            <ul>
+                                <li>
+                                    <span>退款金额</span>
+                                    <label class="text-label text-color">￥72.80</label>
+                                </li>
+                                <li>
+                                    <span>退款方式</span>
+                                    <label>
+                                        <a href="javascript:;" class="select-btn text-overflow" id="refundType">选择</a>
+                                    </label>
+                                </li>
+                                <li>
+                                    <span>退款原因</span>
+                                    <label>
+                                        <a href="javascript:;" class="select-btn text-overflow" id="refundWhy">选择</a>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="shopCar-list no-padding mar-b10">
+                        <div class="feedback-intro">
+                            <h2 class="feedback-intro-title">上传凭证<span>（最多上传5张）</span></h2>
+
+                            <div class="feedback-img">
+                                <input id="uploadInput" type="file">
+                                <ul id="uploadImg" class="clearfix imgBasicCls active">
+                                    <li>
+                                        <a id="uploadBtn" href="javascript:;">
+                                            <img src="img/uploadBtnImg.png">
+                                        </a>
+                                    </li>
+                                    <li class="upload-box">
+                                        <a href="javascript:;">
+                                            <img data-w="342" data-h="342" src="img/product-img2.jpg">
+                                            <i class="sprite-icon close-icon"></i>
+                                        </a>
+                                    </li>
+                                    <li class="upload-box">
+                                        <a href="javascript:;">
+                                            <img data-w="160" data-h="31" src="img/recommend-title.png">
+                                            <i class="sprite-icon close-icon"></i>
+                                        </a>
+                                    </li>
+                                    <li class="upload-box">
+                                        <a href="javascript:;">
+                                            <img data-w="238" data-h="588" src="img/add-none.png">
+                                            <i class="sprite-icon close-icon"></i>
+                                        </a>
+                                    </li>
+                                    <li class="upload-box">
+                                        <a href="javascript:;">
+                                            <img data-w="342" data-h="342" src="img/product-img5.jpg">
+                                            <i class="sprite-icon close-icon"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shopCar-list no-padding mar-b10">
+                        <div class="feedback-intro">
+                            <h2 class="feedback-intro-title">退货说明</h2>
+
+                            <div class="feedintro-text">
+                                <textarea cols="" rows="" placeholder="请输入2000字以内的退货说明"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="shopDetails-bto pos-abs-bl orderIntro-bto2">
+        <span>为了能更快的转钱到你的账号，请仔细填写以上信息</span>
+
+        <div class="list-btn-box register-btn active">
+            <a href="#">确认提交</a>
+        </div>
+    </div>
+
+    <!--显示-->
+    <div class="showImgBig forget-type animated-left">
+        <h2 class="header-box pos-abs-tl">
+            <a class="go-back-btn sprite-icon" id="backBtn" href="javascript:;"></a>
+            浏览图片<i id="showImgNum">（2/3）</i>
+            <span id="delImgBtn" class="has-icon del-icon sprite-icon"></span>
+        </h2>
+
+        <div class="swiper-container showProductImg-list">
+            <div class="swiper-wrapper"></div>
+        </div>
+    </div>
+
+    <!--选择退款方式-->
+    <div class="disk order-disk"></div>
+    <div class="show-disk-box refund-type refund-type1 animated animated-bottom">
+        <h2 class="disk-title">退款方式<a class="close-disk sprite-icon" data-handel="close" href="javascript:;"></a></h2>
+
+        <div class="refund-content">
+            <a class="payType active" href="javascript:;">退款退货</a>
+            <a class="payType" href="javascript:;">退款不退货</a>
+        </div>
+        <div class="disk-close-bar"><a id="closeDisk" href="javascript:;">取消</a></div>
+    </div>
+
+    <!--选择退款原因-->
+    <div class="show-disk-box refund-type refund-type2 animated animated-bottom">
+        <h2 class="disk-title">退款原因<a class="close-disk sprite-icon" data-handel="close" href="javascript:;"></a></h2>
+
+        <div class="refund-content min-height">
+            <a class="responsibility active" href="javascript:;">质量问题</a>
+            <a class="responsibility" href="javascript:;">物流货损</a>
+            <a class="responsibility" href="javascript:;">物流丢件</a>
+            <a class="responsibility" href="javascript:;">发货错漏</a>
+            <a class="responsibility" href="javascript:;">实物与描述不符</a>
+            <a class="responsibility" href="javascript:;">个人喜好</a>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/box.js"></script>
+<script src="js/public.js"></script>
+<script src="js/area.js"></script>
+<script>
+    $(function () {
+        var myScroll = publicFuns.newIScroll("#wrapper");
+
+        //选择退款方式
+        $("#refundType").click(function () {
+            $(".order-disk").fadeIn();
+            $(".refund-type1").addClass("active");
+        });
+        $(".payType").click(function () {
+            var _this = this;
+            $(this).addClass("active").siblings().removeClass("active");
+            $(".show-disk-box").removeClass("active");
+            $(".order-disk").fadeOut(function () {
+                $("#refundType").text($(_this).text());
+            });
+        });
+        //选择退款原因
+        $("#refundWhy").click(function () {
+            $(".order-disk").fadeIn();
+            $(".refund-type2").addClass("active");
+        });
+        $(".responsibility").click(function () {
+            var _this = this;
+            $(this).addClass("active").siblings().removeClass("active");
+            $(".show-disk-box").removeClass("active");
+            $(".order-disk").fadeOut(function () {
+                $("#refundWhy").text($(_this).text());
+            });
+        });
+
+        $("a[data-handel='close']").click(function () {
+            $(".order-disk").fadeOut();
+            $(".show-disk-box").removeClass("active");
+        });
+
+        $("#closeDisk").click(function(){
+            $("a[data-handel='close']").trigger("click");
+        });
+
+
+        //删除上传图片
+        $(document).on("click", ".close-icon", function (e) {
+            e.stopPropagation();
+            var _this = $(this);
+            _this.parents("li").fadeOut(function () {
+                $(this).remove();
+                myScroll.refresh();
+            });
+        });
+        //浏览上传图片
+        $(document).on("click", ".upload-box", "showImgBig", publicFuns.showProductImg);
+
+
+        //加减数字
+        $(".num-cut").click(function () {
+            var _max = parseInt($(this).next().attr("data-max"));
+            publicFuns.numberCalculate($(this).next(), _max, "cut", "", "");
+        });
+        $(".num-add").click(function () {
+            var _max = parseInt($(this).prev().attr("data-max"));
+            publicFuns.numberCalculate($(this).prev(), _max, "add", "", "");
+        });
+        //显示加减数字
+        $(document).on("click", ".num-input", function () {
+            var _this = this;
+            publicFuns.showCheckNum(_this, function () {
+                var _val = parseInt($(_this).find("input").val());
+                console.log("这是您输入的值：" + _val);
+            })
+        });
+
+        //选择
+        window._isAllCheck = false;
+        $(document).on("click", ".collect-input-disk", function () {
+            var _tag = $("#fefund");
+            var $this = $(this).parents("li").find("input[type='checkbox']");
+            $this.parents(".checkbox-bar").toggleClass("active");
+            if ($this.parents(".checkbox-bar").hasClass("active")) {
+                $this.prop("checked", true);
+            } else {
+                $this.prop("checked", false);
+            }
+            if (_tag.find(".checkbox-bar.active").length == _tag.find("li").length) {
+                $("#allCheckBox").prop("checked", true).parents(".checkbox-bar").addClass("active");
+                window._isAllCheck = true;
+            } else {
+                $("#allCheckBox").prop("checked", false).parents(".checkbox-bar").removeClass("active");
+                window._isAllCheck = false;
+            }
+        });
+        //全选
+        $("#allCheckBar").click(function () {
+            publicFuns.allChecked("#allCheckBar", "#fefund", function () {
+            }, function () {
+            });
+        });
+//        $("#allCheckBox").change(function () {
+//            var _this = $(this);
+//            var _tag = $("#fefund");
+//            _this.parents(".checkbox-bar").toggleClass("active");
+//            _tag.find(".checkbox-bar").toggleClass("active");
+//            if (!_isAllCheck) {
+//                _isAllCheck = true;
+//                _tag.find(".checkbox-bar").addClass("active");
+//                _tag.find("input[type='checkbox']").prop("checked", true);
+//            } else {
+//                _isAllCheck = false;
+//                _tag.find(".checkbox-bar").removeClass("active");
+//                _tag.find("input[type='checkbox']").prop("checked", false);
+//            }
+//        });
+    });
+</script>
+</body>
+</html>

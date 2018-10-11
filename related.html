@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>礼仪之邦-猜你喜欢</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body style="overflow: hidden; height: 100%;">
+<!--猜你喜欢-->
+<div class="related-bar" id="wrapper">
+    <div class="related-list" id="scroller">
+        <ul id="list">
+            <li>
+                <div class="line"></div>
+                <a href="#">
+                    <label class="related-img"><img class="lazy" src="img/product-img1.jpg"></label>
+
+                    <div class="related-cont">
+                        <label class="related-name text-clamp-overflow">澳洲无籽红提3斤装（果长24 -30mm） </label>
+                        <span class="related-price">￥30 <i>￥136.99</i></span>
+                        <span class="related-num">成交<i>698</i>笔</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <div class="line"></div>
+                <a href="#">
+                    <label class="related-img"><img class="lazy" src="img/product-img2.jpg"></label>
+
+                    <div class="related-cont">
+                        <label class="related-name text-clamp-overflow">澳洲无籽红提3斤装（果长24 -30mm） </label>
+                        <span class="related-price">￥30 <i>￥136.99</i></span>
+                        <span class="related-num">成交<i>698</i>笔</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <div class="line"></div>
+                <a href="#">
+                    <label class="related-img"><img class="lazy" src="img/product-img1.jpg"></label>
+
+                    <div class="related-cont">
+                        <label class="related-name text-clamp-overflow">澳洲无籽红提3斤装（果长24 -30mm） </label>
+                        <span class="related-price">￥30 <i>￥136.99</i></span>
+                        <span class="related-num">成交<i>698</i>笔</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <div class="line"></div>
+                <a href="#">
+                    <label class="related-img"><img class="lazy" src="img/product-img1.jpg"></label>
+
+                    <div class="related-cont">
+                        <label class="related-name text-clamp-overflow">澳洲无籽红提3斤装（果长24 -30mm） </label>
+                        <span class="related-price">￥30 <i>￥136.99</i></span>
+                        <span class="related-num">成交<i>698</i>笔</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <div class="line"></div>
+                <a href="#">
+                    <label class="related-img"><img class="lazy" src="img/product-img2.jpg"></label>
+
+                    <div class="related-cont">
+                        <label class="related-name text-clamp-overflow">澳洲无籽红提3斤装（果长24 -30mm） </label>
+                        <span class="related-price">￥30 <i>￥136.99</i></span>
+                        <span class="related-num">成交<i>698</i>笔</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <div class="line"></div>
+                <a href="#">
+                    <label class="related-img"><img class="lazy" src="img/product-img4.jpg"></label>
+
+                    <div class="related-cont">
+                        <label class="related-name text-clamp-overflow">澳洲无籽红提3斤装（果长24 -30mm） </label>
+                        <span class="related-price">￥30 <i>￥136.99</i></span>
+                        <span class="related-num">成交<i>698</i>笔</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <div id="pullUp">
+            <span class="pullUpLabel">上拉加载更多…</span>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.lazyload.min.js"></script>
+<script src="js/iscroll-probe.js"></script>
+<script src="js/public.js"></script>
+<script>
+    $(function () {
+        var myScroll = publicFuns.newIScrollRefresh("#wrapper", "", "", 0);
+    });
+</script>
+</body>
+</html>

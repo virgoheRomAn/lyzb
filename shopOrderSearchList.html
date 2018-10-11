@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html class="overflow-hidden">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>礼仪之邦-兑换券订单</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body class="overflow-hidden">
+<div class="collect-bar register-bar setting-bar">
+    <h2 class="header-box pos-abs-tl">
+        <a class="go-back-btn sprite-icon" href="#"></a>
+        兑换券订单
+        <a href="#" class="shopType-sprite-icon orderSearch-icon"></a>
+    </h2>
+
+    <div class="collect-cont my-order-content order-hasMenu-list">
+        <div class="swiper-container" id="orderMenu">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide active" id="allOrder">全部</div>
+                <div class="swiper-slide" id="paymentOrder">待付款</div>
+                <div class="swiper-slide" id="sendOrder">待发货</div>
+                <div class="swiper-slide" id="shippedOrder">已发货</div>
+                <div class="swiper-slide" id="completedOrder">已完成</div>
+                <div class="swiper-slide" id="cancelOrder">已取消</div>
+                <div class="swiper-slide" id="refundsOrder">退货退款</div>
+                <div class="swiper-slide" id="deletedOrder">已删除</div>
+            </div>
+        </div>
+        <div class="has-order-list">
+            <div id="wrapper">
+                <div id="scroller">
+                    <div id="pullDown">
+                        <span class="pullDownIcon"></span>
+                        <span class="pullDownLabel">下拉刷新...</span>
+                    </div>
+                    <!--无搜索结果时-->
+                    <div class="footprint-none pro-on order-no">
+                        <span>暂无结果</span>
+                        <a href="#">去首页逛逛</a>
+                    </div>
+                    <!--猜你喜欢  标题-->
+                    <div class="related-box list-row">
+                        <!--没有搜索内容时显示“猜你喜欢”-->
+                        <h2 class="related-line"><span>猜你喜欢</span></h2>
+                        <ul class="row-2 product-list">
+                            <li>
+                                <div class="related-intro">
+                                    <a href="#">
+                                        <label class="related-product"><img src="img/product-img1.jpg"></label>
+                                        <span class="related-name text-clamp-overflow">海南三亚小台农芒果1.5kg海南 三亚小台农芒果1.5kg</span>
+
+                                        <p class="related-price">
+                                            <label><i>￥</i>148.<s>00</s><span>￥159.00</span></label>
+                                            <i class="sprite-icon shopCar-icon"></i>
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="related-intro">
+                                    <a href="#">
+                                        <label class="related-product"><img src="img/menu-icon2.png"></label>
+                                        <span class="related-name text-clamp-overflow">海南三亚小台农芒果1.5kg海南 三亚小台农芒果1.5kg</span>
+
+                                        <p class="related-price">
+                                            <label><i>￥</i>148.<s>00</s><span>￥159.00</span></label>
+                                            <i class="sprite-icon shopCar-icon"></i>
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="related-intro">
+                                    <a href="#">
+                                        <label class="related-product"><img src="img/product-img1.jpg"></label>
+                                        <span class="related-name text-clamp-overflow">海南三亚小台农芒果1.5kg海南 三亚小台农芒果1.5kg</span>
+
+                                        <p class="related-price">
+                                            <label><i>￥</i>148.<s>00</s><span>￥159.00</span></label>
+                                            <i class="sprite-icon shopCar-icon"></i>
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="related-intro">
+                                    <a href="#">
+                                        <label class="related-product"><img src="img/menu-icon2.png"></label>
+                                        <span class="related-name text-clamp-overflow">海南三亚小台农芒果1.5kg海南 三亚小台农芒果1.5kg</span>
+
+                                        <p class="related-price">
+                                            <label><i>￥</i>148.<s>00</s><span>￥159.00</span></label>
+                                            <i class="sprite-icon shopCar-icon"></i>
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="related-intro">
+                                    <a href="#">
+                                        <label class="related-product"><img src="img/product-img1.jpg"></label>
+                                        <span class="related-name text-clamp-overflow">海南三亚小台农芒果1.5kg海南 三亚小台农芒果1.5kg</span>
+
+                                        <p class="related-price">
+                                            <label><i>￥</i>148.<s>00</s><span>￥159.00</span></label>
+                                            <i class="sprite-icon shopCar-icon"></i>
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="related-intro">
+                                    <a href="#">
+                                        <label class="related-product"><img src="img/menu-icon2.png"></label>
+                                        <span class="related-name text-clamp-overflow">海南三亚小台农芒果1.5kg海南 三亚小台农芒果1.5kg</span>
+
+                                        <p class="related-price">
+                                            <label><i>￥</i>148.<s>00</s><span>￥159.00</span></label>
+                                            <i class="sprite-icon shopCar-icon"></i>
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="related-intro">
+                                    <a href="#">
+                                        <label class="related-product"><img src="img/product-img1.jpg"></label>
+                                        <span class="related-name text-clamp-overflow">海南三亚小台农芒果1.5kg海南 三亚小台农芒果1.5kg</span>
+
+                                        <p class="related-price">
+                                            <label><i>￥</i>148.<s>00</s><span>￥159.00</span></label>
+                                            <i class="sprite-icon shopCar-icon"></i>
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="related-intro">
+                                    <a href="#">
+                                        <label class="related-product"><img src="img/menu-icon2.png"></label>
+                                        <span class="related-name text-clamp-overflow">海南三亚小台农芒果1.5kg海南 三亚小台农芒果1.5kg</span>
+
+                                        <p class="related-price">
+                                            <label><i>￥</i>148.<s>00</s><span>￥159.00</span></label>
+                                            <i class="sprite-icon shopCar-icon"></i>
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="pullUp">
+                        <span class="pullUpLabel">加载更多...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
+<script src="js/iscroll-probe.js"></script>
+<script src="js/box.js"></script>
+<script src="js/public.js"></script>
+<script>
+    $(function () {
+        /**
+         * 说明
+         * 每种订单对应的按钮状态，根据需求自己修改
+         * 红色的按钮，加上样式  active
+         * 团购状态记得会出现倒计时的情况
+         */
+        //初始化状态，默认是全部订单
+        var _orderTips = "allOrder";
+        var orderMune = publicFuns.newSwiper("#orderMenu", 2);
+        var myScroll = publicFuns.newIScrollRefresh("#wrapper", refreshFun, loadFun, 0);
+
+        function refreshFun() {
+            //_orderTips标识  当前是哪种订单
+            //需要判断 当前触发的是哪个状态
+            console.log(_orderTips + " 刷新数据");
+        }
+
+        function loadFun() {
+            //_orderTips标识  当前是哪种订单
+            //需要判断 当前触发的是哪个状态
+            console.log(_orderTips + " 加载数据");
+        }
+
+        //菜单切换
+        $("#orderMenu").find(".swiper-slide").click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+            var _i = $(this).index();
+            //测试使用
+            _orderTips = $(this).attr("id") + $(this).text();
+            //真实标识
+            //_orderTips=$(this).attr("id");
+            $(".shop-order-content").eq(_i).fadeIn(function () {
+                myScroll.refresh();
+            }).siblings(".shop-order-content").hide();
+        });
+
+        //倒计时
+        publicFuns.limitTime(".order-time-down", "2016/06/15 16:08:05", endFun);
+        function endFun() {
+            console.log("倒计时结束了！");
+        }
+    })
+</script>
+</body>
+</html>

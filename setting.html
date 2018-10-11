@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html class="overflow-hidden">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>礼仪之邦-设置首页</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/public.css?a=000"/>
+    <link rel="stylesheet" href="css/app.css?a=000"/>
+</head>
+<body class="overflow-hidden">
+<div class="register-bar collect-bar setting-bar">
+    <h2 class="header-box pos-abs-tl">
+        <a class="go-back-btn sprite-icon" id="forgetGoBack" href="#"></a>
+        设置
+        <span id="settingMenu" class="has-icon sprite-icon"></span>
+    </h2>
+
+    <div class="setting-menu pos-abs-tr">
+        <span class="arrow-top"></span>
+        <a href="#"><i class="sprite-icon index-icon"></i>首页</a>
+        <a href="#"><i class="sprite-icon shop-icon"></i>商品分类</a>
+        <a href="#"><i class="sprite-icon car-icon"></i>购物车<span>10</span></a>
+        <a href="#"><i class="sprite-icon goods-icon"></i>实物订单</a>
+        <a href="#"><i class="sprite-icon mine-icon"></i>我的</a>
+    </div>
+    <div class="collect-cont">
+        <div id="wrapper">
+            <div id="scroller">
+                <!--设置列表-->
+                <div id="settingIndex">
+                    <div class="has-arrow-list new-list">
+                        <div class="list-modal">
+                            <a href="#">修改登录密码</a>
+                            <a href="#">修改验证手机</a>
+                            <a href="#">修改支付密码</a>
+                        </div>
+                        <div class="list-modal">
+                            <a id="informationBtn" href="javascript:;">消息设置</a>
+                            <a id="shareBtn" href="javascript:;">分享给朋友</a>
+                        </div>
+                        <div class="list-modal">
+                            <a id="feedBackBtn" href="javascript:;">意见反馈</a>
+                            <a id="aboutUsBtn" href="javascript:;">关于集食惠</a>
+                        </div>
+                        <div class="list-btn-box register-btn active">
+                            <a href="#">退出当前账户</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--消息设置-->
+                <div id="settingInformation" class="forget-type animated-left">
+                    <div class="has-arrow-list showHeight">
+                        <div class="list-modal" id="android">
+                            <label class="tips">消息设置</label>
+
+                            <div class="switch-box pos-abs-tr">
+                                <a class="switch-bar pos-abs-tr" href="javascript:;">
+                                    <i></i><input id="open" type="checkbox" value="">
+                                </a>
+                            </div>
+                        </div>
+                        <div id="IOS">
+                            <div class="list-modal">
+                                <label class="tips">消息设置<span>已开启</span></label>
+                            </div>
+                            <p class="ios-tips">开启或关闭消息通知需进入设置>通知中心>集食惠中手动设置</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--关于集食惠-->
+                <div id="aboutUs" class="forget-type animated-left">
+                    <div class="showHeight" style="height: 100%; position: relative;">
+                        <div class="setting-logo">
+                            <img src="img/setting-logo.png">
+                            <span>集食惠：V5.0.1</span>
+                        </div>
+                        <div class="about-list">
+                            <a class="adbout-c" href="#">
+                                <p>
+                                    <label><i class="sprite-icon WeChat-icon"></i>微信公众号</label>
+                                </p>
+                                <span>集食惠</span>
+                            </a>
+                            <a class="adbout-c" href="#">
+                                <p>
+                                    <label><i class="sprite-icon QQ-icon"></i>客服QQ</label>
+                                </p>
+                                <span>4000630163</span>
+                            </a>
+                            <a class="adbout-c" href="tel:400-637-6367">
+                                <p>
+                                    <label><i class="sprite-icon tel-icon"></i>客服电话</label>
+                                </p>
+                                <span>400-637-6367</span>
+                            </a>
+                        </div>
+                        <p class="about-tips pos-abs-bl">上集食惠，购实惠健康！快叫上你的小伙伴一起下载吧！</p>
+                    </div>
+                </div>
+
+                <!--意见反馈-->
+                <div id="feedback" class="forget-type animated-left">
+                    <div class="showHeight" style="padding-bottom: 15px;">
+                        <div class="feedback-list">
+                            <span class="tips">问题和意见</span>
+
+                            <div class="feedback-intro">
+                                <label class="feedback-textarea"><textarea cols="" rows=""
+                                                                           placeholder="请简要描述你的问题和意见"></textarea></label>
+                            </div>
+                        </div>
+                        <div class="feedback-list">
+                            <span class="tips">图片（选填，提供问题截图）</span>
+
+                            <div class="feedback-intro  pad-l5 pad-r15">
+                                <div class="feedback-img">
+                                    <input id="uploadInput" type="file">
+                                    <ul id="uploadImg" class="clearfix imgBasicCls active">
+                                        <li>
+                                            <a id="uploadBtn" href="javascript:;">
+                                                <img src="img/uploadBtnImg.png">
+                                            </a>
+                                        </li>
+                                        <li class="upload-box">
+                                            <a href="javascript:;">
+                                                <img data-w="342" data-h="342" src="img/limit-img3.jpg">
+                                                <i class="sprite-icon close-icon"></i>
+                                            </a>
+                                        </li>
+                                        <li class="upload-box">
+                                            <a href="javascript:;">
+                                                <img data-w="342" data-h="342" src="img/product-img2.jpg">
+                                                <i class="sprite-icon close-icon"></i>
+                                            </a>
+                                        </li>
+                                        <li class="upload-box">
+                                            <a href="javascript:;">
+                                                <img data-w="160" data-h="31" src="img/recommend-title.png">
+                                                <i class="sprite-icon close-icon"></i>
+                                            </a>
+                                        </li>
+                                        <li class="upload-box">
+                                            <a href="javascript:;">
+                                                <img data-w="238" data-h="588" src="img/add-none.png">
+                                                <i class="sprite-icon close-icon"></i>
+                                            </a>
+                                        </li>
+                                        <li class="upload-box">
+                                            <a href="javascript:;">
+                                                <img data-w="342" data-h="342" src="img/product-img5.jpg">
+                                                <i class="sprite-icon close-icon"></i>
+                                            </a>
+                                        </li>
+                                        <li class="upload-box">
+                                            <a href="javascript:;">
+                                                <img data-w="342" data-h="342" src="img/limit-default2.jpg">
+                                                <i class="sprite-icon close-icon"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedback-list">
+                            <span class="tips">联系电话</span>
+
+                            <div class="feedback-intro">
+                                <label class="feedback-input"><input type="text" placeholder="选填，便于我们与你联系"
+                                                                     value=""></label>
+                            </div>
+                        </div>
+                        <div class="list-btn-box register-btn active">
+                            <a href="#">提交反馈</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--显示-->
+    <div class="showImgBig forget-type animated-left">
+        <h2 class="header-box pos-abs-tl">
+            <a class="go-back-btn sprite-icon" id="backBtn" href="javascript:;"></a>
+            浏览图片<i id="showImgNum">（2/3）</i>
+            <span id="delImgBtn" class="has-icon del-icon sprite-icon"></span>
+        </h2>
+
+        <div class="swiper-container showProductImg-list">
+            <div class="swiper-wrapper"></div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/box.js"></script>
+<script src="js/public.js?a=000"></script>
+<script>
+    $(function () {
+        var phoneType = "android";    //IOS or android
+        var myScroll;
+
+        myScroll = publicFuns.newIScroll("#wrapper");
+
+        //显示设置菜单
+        $("#settingMenu").click(function () {
+            $(".setting-menu").fadeToggle();
+        });
+        $(document).click(function (e) {
+            if ($(e.target).attr("id") != "settingMenu") {
+                $(".setting-menu").fadeOut();
+            }
+        });
+
+        //开关
+        $("#open").change(function () {
+            $(this).parents(".switch-bar").toggleClass("active");
+        });
+
+//        $(".feedback-input input").focus(function () {
+//            $("#scroller").height($("#scroller").height() + 200);
+//            myScroll.refresh();
+//        }).blur(function () {
+//            $("#scroller").height($("#scroller").height() - 200);
+//            myScroll.refresh();
+//        });
+
+
+        //删除上传图片
+        $(document).on("click", ".close-icon", function (e) {
+            e.stopPropagation();
+            var _this = $(this);
+            _this.parents("li").fadeOut(function () {
+                $(this).remove();
+                $("#scroller").height($("#feedback").find(".showHeight").height());
+                myScroll.refresh();
+            });
+        });
+
+
+        //浏览上传图片
+        $(document).on("click", ".upload-box", "showImgBig", publicFuns.showProductImg);
+
+
+        //切换
+        var _step = 0, _back = $("#forgetGoBack").get(0);
+        _back.addEventListener("click", goBackFun, false);
+
+        //返回
+        function goBackFun(e) {
+            if (_step == 0) {
+                _back.removeEventListener("click", goBackFun, false);
+            } else {
+                e.preventDefault();
+                _step = 0;
+                $(".animated-left.active").removeClass("active");
+                $("#settingIndex").show();
+                $("#scroller").height("");
+                myScroll.scrollTo(0, 0);
+                myScroll.refresh();
+            }
+        }
+
+        //显示切换
+        function tabFun(dom, tag) {
+            $(dom).click(function () {
+                _back.addEventListener("click", goBackFun, false);
+                if (tag == "#settingInformation") {
+                    if (phoneType == "IOS") {
+                        $("#IOS").show();
+                        $("#android").hide();
+                    } else {
+                        $("#IOS").hide();
+                        $("#android").show();
+                    }
+                }
+                _step = 1;
+                $("#settingIndex").fadeOut(300);
+                $(tag).addClass("active");
+                var _height = $(tag).find(".showHeight").height() > ($(window).height() - 44) ? $(tag).find(".showHeight").height() : ($(window).height() - 44);
+                $("#scroller").height(_height);
+                myScroll.scrollTo(0, 0);
+                myScroll.refresh();
+            });
+        }
+
+        tabFun("#informationBtn", "#settingInformation");
+        tabFun("#feedBackBtn", "#feedback");
+        tabFun("#aboutUsBtn", "#aboutUs");
+
+//        $(window).resize(function(){
+//            alert($(this).height());
+//            $("#scroller").height($(this).height());
+//            myScroll.refresh();
+//        }).trigger("resize");
+
+        //上传
+        //上传图片显示预览成功后，记得刷新myScroll
+        // $("#scroller").height($("#feedback").find(".showHeight").height());
+        //myScroll.refresh();
+        //上面是刷新代码
+        var _uploadInput = $("#uploadInput").get(0);
+        $("#uploadBtn").click(function () {
+            $(_uploadInput).click();
+        });
+    });
+</script>
+</body>
+</html>

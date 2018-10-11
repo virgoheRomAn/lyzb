@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html class="overflow-hidden">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>礼仪之邦-购物车</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body class="overflow-hidden">
+<div class="collect-bar register-bar footprint-bar">
+    <h2 class="header-box pos-abs-tl">
+        <a class="go-back-btn sprite-icon" href="javascript:;"></a>
+        购物车
+        <span id="delBtn" class="has-text">编辑</span>
+    </h2>
+
+    <div class="collect-cont" style="overflow: hidden;">
+        <div id="wrapper">
+            <div id="scroller">
+                <div id="pullDown">
+                    <span class="pullDownIcon"></span>
+                    <span class="pullDownLabel">下拉刷新...</span>
+                </div>
+                <!--没有收藏-->
+                <div class="footprint-none shopCar-none" id="shopNoneList">
+                    <img src="img/shopcar-none.png">
+                    <span>购物车是空的</span>
+                    <a href="#">去首页逛逛</a>
+
+                    <div class="related-box list-row">
+                        <h2 class="related-line"><span>猜你喜欢</span></h2>
+                        <ul class="product-list row-2">
+                            <li>
+                                <div class="related-intro">
+                                    <a href="#">
+                                        <label class="related-product"><img src="img/product-img1.jpg"></label>
+                                        <span class="related-name text-clamp-overflow">海南三亚小台农芒果1.5kg海南 三亚小台农芒果1.5kg</span>
+
+                                        <p class="related-price">
+                                            <label><i>￥</i>148.<s>00</s><span>￥159.00</span></label>
+                                            <i class="sprite-icon shopCar-icon"></i>
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="related-intro">
+                                    <a href="#">
+                                        <label class="related-product"><img src="img/menu-icon2.png"></label>
+                                        <span class="related-name text-clamp-overflow">海南三亚小台农芒果1.5kg海南 三亚小台农芒果1.5kg</span>
+
+                                        <p class="related-price">
+                                            <label><i>￥</i>148.<s>00</s><span>￥159.00</span></label>
+                                            <i class="sprite-icon shopCar-icon"></i>
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="related-intro">
+                                    <a href="#">
+                                        <label class="related-product"><img src="img/product-img1.jpg"></label>
+                                        <span class="related-name text-clamp-overflow">海南三亚小台农芒果1.5kg海南 三亚小台农芒果1.5kg</span>
+
+                                        <p class="related-price">
+                                            <label><i>￥</i>148.<s>00</s><span>￥159.00</span></label>
+                                            <i class="sprite-icon shopCar-icon"></i>
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="related-intro">
+                                    <a href="#">
+                                        <label class="related-product"><img src="img/menu-icon2.png"></label>
+                                        <span class="related-name text-clamp-overflow">海南三亚小台农芒果1.5kg海南 三亚小台农芒果1.5kg</span>
+
+                                        <p class="related-price">
+                                            <label><i>￥</i>148.<s>00</s><span>￥159.00</span></label>
+                                            <i class="sprite-icon shopCar-icon"></i>
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="related-intro">
+                                    <a href="#">
+                                        <label class="related-product"><img src="img/product-img1.jpg"></label>
+                                        <span class="related-name text-clamp-overflow">海南三亚小台农芒果1.5kg海南 三亚小台农芒果1.5kg</span>
+
+                                        <p class="related-price">
+                                            <label><i>￥</i>148.<s>00</s><span>￥159.00</span></label>
+                                            <i class="sprite-icon shopCar-icon"></i>
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="related-intro">
+                                    <a href="#">
+                                        <label class="related-product"><img src="img/menu-icon2.png"></label>
+                                        <span class="related-name text-clamp-overflow">海南三亚小台农芒果1.5kg海南 三亚小台农芒果1.5kg</span>
+
+                                        <p class="related-price">
+                                            <label><i>￥</i>148.<s>00</s><span>￥159.00</span></label>
+                                            <i class="sprite-icon shopCar-icon"></i>
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="related-intro">
+                                    <a href="#">
+                                        <label class="related-product"><img src="img/product-img1.jpg"></label>
+                                        <span class="related-name text-clamp-overflow">海南三亚小台农芒果1.5kg海南 三亚小台农芒果1.5kg</span>
+
+                                        <p class="related-price">
+                                            <label><i>￥</i>148.<s>00</s><span>￥159.00</span></label>
+                                            <i class="sprite-icon shopCar-icon"></i>
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="related-intro">
+                                    <a href="#">
+                                        <label class="related-product"><img src="img/menu-icon2.png"></label>
+                                        <span class="related-name text-clamp-overflow">海南三亚小台农芒果1.5kg海南 三亚小台农芒果1.5kg</span>
+
+                                        <p class="related-price">
+                                            <label><i>￥</i>148.<s>00</s><span>￥159.00</span></label>
+                                            <i class="sprite-icon shopCar-icon"></i>
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--收藏数据列表-->
+                <div id="handleList" class="collect-list shopCar-list" style="display: none;">
+                    <ul>
+                        <li class="collect-over">
+                            <label class="checkbox-bar">
+                                <input type="checkbox" value="">
+                                <span></span>
+                            </label>
+
+                            <div class="collect-intro">
+                                <a href="#">
+                                    <label class="collect-img">
+                                        <img src="img/collect-img.jpg">
+                                        <span class="collect-over-img"><img src="img/collect-over.png"></span>
+                                    </label>
+
+                                    <div class="collect-intro-text">
+                                        <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                            压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                        <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                        <div class="number-box pos-abs-br">
+                                            <div class="number-bar">
+                                                <label class="num-btn-box num-btn-cut">
+                                                    <span class="num-cut sprite-icon"></span>
+                                                </label>
+                                                <span class="num-input" data-max="10">
+                                                    <input value="1" type="text" readonly>
+                                                </span>
+                                                <label class="num-btn-box num-btn-add">
+                                                    <span class="num-add sprite-icon"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <div class="collect-list-disk"></div>
+                                <div class="collect-input-disk"></div>
+                            </div>
+                        </li>
+                        <li class="">
+                            <label class="checkbox-bar">
+                                <input type="checkbox" value="">
+                                <span></span>
+                            </label>
+
+                            <div class="collect-intro">
+                                <a href="#">
+                                    <label class="collect-img">
+                                        <img src="img/collect-img.jpg">
+                                        <span class="collect-over-img"><img src="img/collect-over.png"></span>
+                                    </label>
+
+                                    <div class="collect-intro-text">
+                                        <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                            压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                        <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                        <div class="number-box pos-abs-br">
+                                            <div class="number-bar">
+                                                <label class="num-btn-box num-btn-cut">
+                                                    <span class="num-cut sprite-icon"></span>
+                                                </label>
+                                                <span class="num-input" data-max="10">
+                                                    <input value="1" type="text" readonly>
+                                                </span>
+                                                <label class="num-btn-box num-btn-add">
+                                                    <span class="num-add sprite-icon"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <div class="collect-list-disk"></div>
+                                <div class="collect-input-disk"></div>
+                            </div>
+                        </li>
+                        <li class="">
+                            <label class="checkbox-bar">
+                                <input type="checkbox" value="">
+                                <span></span>
+                            </label>
+
+                            <div class="collect-intro">
+                                <a href="#">
+                                    <label class="collect-img">
+                                        <img src="img/collect-img.jpg">
+                                        <span class="collect-over-img"><img src="img/collect-over.png"></span>
+                                    </label>
+
+                                    <div class="collect-intro-text">
+                                        <p class="collect-name text-clamp-overflow">祥云和山茶油家庭装1L压榨祥云和山茶油家庭
+                                            压榨祥云和山茶油家庭装1L压榨祥云和山</p>
+
+                                        <p class="collect-price" data-price="148.00">￥148.00元</p>
+
+                                        <div class="number-box pos-abs-br">
+                                            <div class="number-bar">
+                                                <label class="num-btn-box num-btn-cut">
+                                                    <span class="num-cut sprite-icon"></span>
+                                                </label>
+                                                <span class="num-input" data-max="10">
+                                                    <input value="1" type="text" readonly>
+                                                </span>
+                                                <label class="num-btn-box num-btn-add">
+                                                    <span class="num-add sprite-icon"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <div class="collect-list-disk"></div>
+                                <div class="collect-input-disk"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="pullUp">
+                    <span class="pullUpLabel">加载更多...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="collect-bottom pos-abs-bl">
+        <div id="allCheckBar"
+             style="width: 70px; height: 100%; position: absolute; top: 0; left: 0; z-index: 999;"></div>
+        <div class="collect-handle">
+            <div class="checkbox-box">
+                <label class="checkbox-bar">
+                    <input id="allCheckBox" type="checkbox" value="">
+                    <span></span>
+                </label>
+                全选
+            </div>
+
+            <div class="flex-btn handle-bar" style="display: none;">
+                <a id="footprintCancel" class="flex-btn-left" href="javascript:;"><span>取消</span></a>
+                <a id="footprintDelete" class="flex-btn-right active" href="javascript:;"><span>删除</span></a>
+            </div>
+            <div class="account-bar">
+                <div class="account-text">
+                    <p>合计：<span>￥0.00</span></p>
+                    <label>不含运费</label>
+                </div>
+                <div class="account-btn">
+                    <a id="accountBtn" href="javascript:;"><span>去结算<i></i></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/iscroll-probe.js"></script>
+<script src="js/jquery.fly.min.js"></script>
+<script src="js/box.js"></script>
+<script src="js/public.js?a=0000"></script>
+<script>
+    $(function () {
+        window._isAllCheck = false;
+
+        var shopCarList, shopCarNone;
+        var _footprintType = true;    //购物车。false购物车没有物品，true有购物车列表
+        var _shopNum = 0;     //商品总数
+        var _addShop = 0;   //新增购物车
+
+        //初始化
+        collectFun(_footprintType);
+        function collectFun(type) {
+            if (!type) {
+                $("#delBtn").hide();
+                $(".collect-bar").removeClass("shopCar-bar");
+                $(".footprint-none").show();
+                $(".collect-list").hide();
+                $(".collect-bottom").hide();
+
+                $("#pullDown").show();
+                $("#pullUp").show();
+                if (shopCarList != null) {
+                    shopCarList.destroy();
+                    shopCarList = null;
+                }
+                shopCarNone = publicFuns.newIScrollRefresh("#wrapper", function () {
+                    if (_addShop != 0) {
+                        _addShop = 0;
+                        _footprintType = true;
+                        collectFun(_footprintType);
+                        $("#pullDown").hide();
+                        $("#pullUp").hide();
+                        $.jAlert("刷新成功！", 100, 40, "");
+                    } else {
+                        $.jAlert("没有更多数据！", 150, 50, "j-alert-ani");
+                    }
+                }, loadedFun, 0);
+
+                shopCarNone.scrollTo(0, 0);
+                shopCarNone.refresh();
+            } else {
+                $("#delBtn").show();
+                $(".collect-bar").addClass("shopCar-bar");
+                $(".footprint-none").hide();
+                $(".collect-list").show();
+                $(".collect-bottom").show();
+
+                $("#pullDown").hide();
+                $("#pullUp").hide();
+                if (shopCarNone != null) {
+                    shopCarNone.destroy();
+                    shopCarNone = null;
+                }
+                shopCarList = publicFuns.newIScrollRefresh("#wrapper", "", "", 1);
+                shopCarList.scrollTo(0, 0);
+                shopCarList.refresh();
+            }
+        }
+
+        //加载
+        function loadedFun() {
+            console.log("加载数据成功！");
+            shopCarNone.refresh();
+        }
+
+
+        //显示可以输入的加减法
+        $(document).on("click", ".num-input", shopNumBox);
+        $(document).on("click", ".num-btn-add", "add", calculate);
+        $(document).on("click", ".num-btn-cut", "cut", calculate);
+        function calculate(e) {
+            e.stopPropagation();
+            var _self = this;
+            var _max = 0;
+            switch (e.data) {
+                case "add":
+                    _max = parseInt($(this).prev().attr("data-max"));
+                    publicFuns.numberCalculate($(this).prev(), _max, "add", function () {
+                        if ($(_self).parents("li").find(".checkbox-bar").hasClass("active")) {
+                            _shopNum++;
+                            resultNum(_shopNum);
+                        }
+                    }, "");
+                    break;
+                case "cut":
+                    _max = parseInt($(this).next().attr("data-max"));
+                    publicFuns.numberCalculate($(this).next(), _max, "cut", "", function () {
+                        if ($(_self).parents("li").find(".checkbox-bar").hasClass("active")) {
+                            _shopNum--;
+                            resultNum(_shopNum);
+                        }
+                    });
+                    break;
+            }
+        }
+
+        function shopNumBox() {
+            var _this = this;
+            var _val = parseInt($(_this).find("input").val());
+            publicFuns.showCheckNum(_this, function () {
+                sureFun(_this, _val);
+            })
+        }
+
+        function sureFun(tag, val) {
+            if ($(tag).parents("li").find(".checkbox-bar").hasClass("active")) {
+                _shopNum = _shopNum - (val - parseInt($(tag).find("input").val()));
+            }
+            resultNum(_shopNum);
+        }
+
+        //编辑按钮
+        $("#delBtn").click(function () {
+            var _disk = $(".collect-list-disk");
+            var _handle = $(".handle-bar");
+            var _account = $(".account-bar");
+            _disk.toggleClass("active");
+            if (_disk.hasClass("active")) {
+                $(this).text("完成");
+                _handle.show();
+                _account.hide();
+                $(document).off("click", ".num-input");
+                $(document).off("click", ".num-btn-add");
+                $(document).off("click", ".num-btn-cut");
+            } else {
+                $(this).text("编辑");
+                _account.show();
+                _handle.hide();
+                $(document).on("click", ".num-input", shopNumBox);
+                $(document).on("click", ".num-btn-add", "add", calculate);
+                $(document).on("click", ".num-btn-cut", "cut", calculate);
+            }
+        });
+
+
+        //取消编辑按钮
+        $("#footprintCancel").click(function () {
+            $(".account-bar").show();
+            $(".handle-bar").hide();
+            $(".collect-list-disk").removeClass("active");
+            $(document).on("click", ".num-input", shopNumBox);
+            $(document).on("click", ".num-btn-add", "add", calculate);
+            $(document).on("click", ".num-btn-cut", "cut", calculate);
+            $("#delBtn").text("编辑");
+        });
+
+        //编辑状态下的选择
+        $(document).on("click", ".collect-list-disk", function () {
+            var _tag = $("#handleList");
+            var $this = $(this);
+            $this.parents(".collect-intro").prev().toggleClass("active");
+            if ($this.parents(".collect-intro").prev().hasClass("active")) {
+                $this.parents(".collect-intro").prev().find("input").prop("checked", true);
+                if (parseInt($this.parents("li").find(".num-input input").val()) == 1) {
+                    _shopNum++;
+                } else {
+                    _shopNum = _shopNum + parseInt($this.parents("li").find(".num-input input").val());
+                }
+            } else {
+                $this.parents(".collect-intro").prev().find("input").prop("checked", false);
+                if (parseInt($this.parents("li").find(".num-input input").val()) == 1) {
+                    _shopNum--;
+                } else {
+                    _shopNum = _shopNum - parseInt($this.parents("li").find(".num-input input").val());
+                }
+            }
+            if (_tag.find(".checkbox-bar.active").length == _tag.find("li").length) {
+                $("#allCheckBox").prop("checked", true).parents(".checkbox-bar").addClass("active");
+                window._isAllCheck = true;
+            } else {
+                $("#allCheckBox").prop("checked", false).parents(".checkbox-bar").removeClass("active");
+                window._isAllCheck = false;
+            }
+            resultNum(_shopNum);
+        });
+
+        //input选择
+        $(document).on("click", ".collect-input-disk", function () {
+            var _tag = $("#handleList");
+            var $this = $(this).parents("li").find("input[type='checkbox']");
+            $this.parents(".checkbox-bar").toggleClass("active");
+            if ($this.parents(".checkbox-bar").hasClass("active")) {
+                $this.prop("checked", true);
+            } else {
+                $this.prop("checked", false);
+            }
+            if ($this.prop("checked")) {
+                if (parseInt($this.parents("li").find(".num-input input").val()) == 1) {
+                    _shopNum++;
+                } else {
+                    _shopNum = _shopNum + parseInt($this.parents("li").find(".num-input input").val());
+                }
+            } else {
+                if (parseInt($this.parents("li").find(".num-input input").val()) == 1) {
+                    _shopNum--;
+                } else {
+                    _shopNum = _shopNum - parseInt($this.parents("li").find(".num-input input").val());
+                }
+            }
+            if (_tag.find(".checkbox-bar.active").length == _tag.find("li").length) {
+                $("#allCheckBox").prop("checked", true).parents(".checkbox-bar").addClass("active");
+                window._isAllCheck = true;
+            } else {
+                $("#allCheckBox").prop("checked", false).parents(".checkbox-bar").removeClass("active");
+                window._isAllCheck = false;
+            }
+            resultNum(_shopNum);
+        });
+
+        //全选
+        $("#allCheckBar").click(function () {
+            publicFuns.allChecked("#allCheckBar", "#handleList", function () {
+                var _num = 0;
+                $(".num-input").each(function () {
+                    _num += parseInt($(this).find("input").val());
+                });
+                _shopNum = _num;
+                resultNum(_shopNum);
+            }, function () {
+                var _num = 0;
+                $(".num-input").each(function () {
+                    _num += parseInt($(this).find("input").val());
+                });
+                _shopNum = _shopNum - _num;
+                resultNum(_shopNum);
+            });
+        });
+
+
+        //批量删除
+        $("#footprintDelete").click(function () {
+            var _d = $("#handleList");
+            var _tag = _d.find(".checkbox-bar.active");
+            var _i = _d.find("li").length;
+            var _t_num = _tag.length;
+            if (_t_num == 0) {
+                $.jAlert("请选择要删除的商品！", 200, 50, "j-alert-ani");
+            } else {
+                $.jConfirm(["您确定要删除商品吗？", "确定", "取消"], function () {
+
+                    $(document).on("click", ".num-input", shopNumBox);
+                    $(document).on("click", ".num-btn-add", "add", calculate);
+                    $(document).on("click", ".num-btn-cut", "cut", calculate);
+
+                    $.jAlert("删除成功！", 140, 50, "j-alert-ani");
+                    $(".related-price i").attr("data-click", "0");
+                    _shopNum = 0;
+                    $(".account-text").find("span").text("￥0.00");
+                    $("#accountBtn").find("i").text("");
+
+                    _tag.parents("li").animate({
+                        "left": "-100%"
+                    }, 300, function () {
+
+                        $(this).remove();
+                        $(".handle-bar").hide();
+                        $(".account-bar").show();
+                        $(".collect-list-disk").removeClass("active");
+                        $("#delBtn").text("编辑");
+
+                        if (shopCarList != null) {
+                            shopCarList.refresh();
+                        }
+                        _i = _i - _t_num;
+                        if (_i == 0) {
+                            window._isAllCheck = false;
+                            $("#allCheckBox").prop("checked", false).parents(".checkbox-bar").removeClass("active");
+                            _footprintType = false;
+                            collectFun(_footprintType);
+                            return false;
+                        }
+                    });
+                }, function () {
+                    $(document).on("click", ".num-input", shopNumBox);
+                    $(document).on("click", ".num-btn-add", "add", calculate);
+                    $(document).on("click", ".num-btn-cut", "cut", calculate);
+                }, "", "", "");
+            }
+        });
+
+        //去结算个数
+        function resultNum(n) {
+            var _price = 0;
+            if (n == 0) {
+                $("#accountBtn").find("i").text("");
+            } else {
+                $("#accountBtn").find("i").text("（" + n + "）");
+            }
+            $("#handleList").find("li").each(function () {
+                if ($(this).find(".checkbox-bar").hasClass("active")) {
+                    _price = _price + parseFloat($(this).find(".collect-price").attr("data-price")) * parseFloat($(this).find(".num-input input").val());
+                }
+            });
+            $(".account-text").find("span").text("￥" + parseFloat(_price).toFixed(2) + "");
+        }
+
+        //添加到购物车
+        $(document).on("click", ".shopCar-icon", function (event) {
+            event.stopPropagation();
+            var _this = this;
+            var img = $(_this).parents("li").find(".related-product img").attr("src");
+            var flyer = $('<img class="fly-img" src="' + img + '">');
+            if ($(_this).attr("data-click") == "0") {
+                publicFuns.shopFly(event, flyer, {
+                    left: $(_this).offset().left - 20,
+                    top: $(_this).offset().top - 50
+                }, {
+                    left: $(window).width() / 2,
+                    top: $(window).height() - 10,
+                    width: 5,
+                    height: 5
+                }, function () {
+                    $(_this).attr("data-click", "1");
+                    var _newList_html = "";
+                    $.jAlert("添加成功，请下拉刷新", 200, 50, "j-alert-ani");
+                    var _img = $(_this).parents("li").find(".related-product img").attr("src");
+                    var _name = $(_this).parents("li").find(".related-name").text();
+                    var _newPrice = $(_this).parents("li").find(".related-price label").text().split("￥")[1];
+                    _addShop++;
+                    _newList_html += '<li>';
+                    _newList_html += '  <label class="checkbox-bar"><input type="checkbox" value=""><span></span></label>';
+                    _newList_html += '  <div class="collect-intro">';
+                    _newList_html += '      <a href="#">';
+                    _newList_html += '          <label class="collect-img"><img src="' + _img + '"><span class="collect-over-img"><img src="img/collect-over.png"></span></label>';
+                    _newList_html += '          <div class="collect-intro-text">';
+                    _newList_html += '              <p class="collect-name text-clamp-overflow">' + _name + '</p>';
+                    _newList_html += '              <p class="collect-price" data-price="' + _newPrice + '">￥' + _newPrice + '元</p>';
+                    _newList_html += '              <div class="number-box pos-abs-br">';
+                    _newList_html += '                  <div class="number-bar"><label class="num-btn-box num-btn-cut"><span class="num-cut sprite-icon"></span></label><span class="num-input" data-max="10"><input value="1" type="text" readonly=""></span><label class="num-btn-box num-btn-add"><span class="num-add sprite-icon"></span></label></div>';
+                    _newList_html += '              </div>';
+                    _newList_html += '          </div>';
+                    _newList_html += '      </a>';
+                    _newList_html += '      <div class="collect-list-disk"></div>';
+                    _newList_html += '  </div>';
+                    _newList_html += '</li>';
+                    $("#handleList ul").prepend(_newList_html);
+                });
+            } else {
+                $.jAlert("该商品已在购物车，请刷新查看", 220, 50, "j-alert-ani");
+            }
+        });
+    });
+</script>
+</body>
+</html>

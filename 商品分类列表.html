@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html class="overflow-hidden">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>礼仪之邦-商品分类列表</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body class="overflow-hidden">
+<div class="shopType-bar" style="padding-top: 84px;">
+    <div class="search-title  search-red">
+        <div class="search-box" style="left: 10px;">
+            <i class="sprite-icon search-icon"></i>
+            <input type="text" class="search-input" placeholder="输入关键字搜索商品">
+            <a href="javascript:;" class="link"><i class="sprite-icon icon-no"></i></a>
+        </div>
+        <a href="javascript:;" class="go-search">搜索</a>
+    </div>
+    <div class="swiper-container" id="orderMenu" style="top: 44px;">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide active" data-type="dfts"><span class="special-menu"><img
+                    src="img/special-mrnu.png"></span></div>
+            <div class="swiper-slide" data-type="xxsp">休闲食品</div>
+            <div class="swiper-slide" data-type="jksp">进口食品</div>
+            <div class="swiper-slide" data-type="sxsp">生鲜食品</div>
+            <div class="swiper-slide" data-type="lygh">粮油干货</div>
+            <div class="swiper-slide" data-type="yybj">营养保健</div>
+            <div class="swiper-slide" data-type="jsyl">酒水饮料</div>
+            <div class="swiper-slide" data-type="ctyl">冲调饮料</div>
+            <div class="swiper-slide" data-type="qt">其他</div>
+        </div>
+    </div>
+
+    <div class="shopType-container" style="display: block; width: 100%; height: 100%; position: relative;">
+        <div class="disk-loading" style="display: none;"></div>
+        <div class="shopType-cont" id="sliderID">
+            <div class="shopType-left swiper-container">
+                <div class="shopType-menu swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a class="active" href="javascript:;"><i class="shopType-sprite-icon cx"></i><span>促销</span></a>
+                        <a class="rolling-text" href="javascript:;"><span>海鲜水产文字要滚动啊</span></a>
+                        <a href="javascript:;"><span>肉禽蛋奶奶</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="shopType-right">
+                <div class="shopType-tips pos-abs-tl">符合国家相关要求前提下，预包装食品在配料描述中，无食品添加剂成分的产品。</div>
+                <div class="shopType-intro">
+                    <div class="shopType-intro-cont2 has-order-list">
+                        <div class="tab-loading" style="background: rgba(0,0,0,0.2); display: none;">
+                            <img src="img/loading-LOGO.gif">
+                        </div>
+                        <div id="wrapper">
+                            <div id="scroller">
+                                <div id="pullDown">
+                                    <span class="pullDownIcon"></span>
+                                    <span class="pullDownLabel">下拉刷新...</span>
+                                </div>
+                                <div class="list-row related-box no-margin">
+                                    <ul class="row-2 product-list simple-list" id="shopListData">
+                                        <li>
+                                            <div class="related-intro">
+                                                <a href="#">
+                                                    <label class="related-product"><img
+                                                            src="img/product-img1.jpg"></label>
+                                                    <span class="related-name text-clamp-overflow">海南三亚小台农芒果1.5kg海南 三亚小台农芒果1.5kg</span>
+
+                                                    <p class="related-price">
+                                                        <label><i>￥</i>148.<s>00</s><span>￥159.00</span></label>
+                                                    </p>
+                                                </a>
+                                                <i class="sprite-icon shopCar-icon"></i>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="related-intro">
+                                                <a href="#">
+                                                    <label class="related-product"><img
+                                                            src="img/menu-icon2.png"></label>
+                                                    <span class="related-name text-clamp-overflow">海南三亚小台农芒果1.5kg海南 三亚小台农芒果1.5kg</span>
+
+                                                    <p class="related-price">
+                                                        <label><i>￥</i>148.<s>00</s><span>￥159.00</span></label>
+                                                    </p>
+                                                </a>
+                                                <i class="sprite-icon shopCar-icon"></i>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="related-intro">
+                                                <a href="#">
+                                                    <label class="related-product"><img
+                                                            src="img/product-img1.jpg"></label>
+                                                    <span class="related-name text-clamp-overflow">海南三亚小台农芒果1.5kg海南 三亚小台农芒果1.5kg</span>
+
+                                                    <p class="related-price">
+                                                        <label><i>￥</i>148.<s>00</s><span>￥159.00</span></label>
+                                                    </p>
+                                                </a>
+                                                <i class="sprite-icon shopCar-icon"></i>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="related-intro">
+                                                <a href="#">
+                                                    <label class="related-product"><img
+                                                            src="img/menu-icon2.png"></label>
+                                                    <span class="related-name text-clamp-overflow">海南三亚小台农芒果1.5kg海南 三亚小台农芒果1.5kg</span>
+
+                                                    <p class="related-price">
+                                                        <label><i>￥</i>148.<s>00</s><span>￥159.00</span></label>
+                                                    </p>
+                                                </a>
+                                                <i class="sprite-icon shopCar-icon"></i>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="related-intro">
+                                                <a href="#">
+                                                    <label class="related-product"><img
+                                                            src="img/product-img1.jpg"></label>
+                                                    <span class="related-name text-clamp-overflow">海南三亚小台农芒果1.5kg海南 三亚小台农芒果1.5kg</span>
+
+                                                    <p class="related-price">
+                                                        <label><i>￥</i>148.<s>00</s><span>￥159.00</span></label>
+                                                    </p>
+                                                </a>
+                                                <i class="sprite-icon shopCar-icon"></i>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="related-intro">
+                                                <a href="#">
+                                                    <label class="related-product"><img
+                                                            src="img/menu-icon2.png"></label>
+                                                    <span class="related-name text-clamp-overflow">海南三亚小台农芒果1.5kg海南 三亚小台农芒果1.5kg</span>
+
+                                                    <p class="related-price">
+                                                        <label><i>￥</i>148.<s>00</s><span>￥159.00</span></label>
+                                                    </p>
+                                                </a>
+                                                <i class="sprite-icon shopCar-icon"></i>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="pullUp">
+                                    <span class="pullUpLabel">加载更多...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="index-bto">
+        <div class="list-row list-left">
+            <ul class="row-2">
+                <li><a href="#" class="index-btn active"><i class="sprite-icon"></i>首页</a></li>
+                <li><a href="#" class="sort-btn"><i class="sprite-icon"></i>分类</a></li>
+            </ul>
+        </div>
+        <div class="middle-btn">
+            <a href="#" class=""><i class="sprite-icon"></i>伙拼</a>
+        </div>
+        <div class="list-row list-right">
+            <ul class="row-2">
+                <li><a href="#" class="car-btn"><span class="sprite-icon"></span>购物车</a></li>
+                <li><a href="#" class="mine-btn"><span class="sprite-icon"><i></i></span>我的</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/iscroll-probe.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
+<script src="js/jquery.fly.min.js"></script>
+<script src="js/box.js"></script>
+<script src="js/public.js"></script>
+<!--<script src="js/slide_product.js"></script>-->
+<script type="text/template" id="loadListData">
+    <li>
+        <div class="related-intro">
+            <a href="*%href%*">
+                <label class="related-product"><img src="*%src%*"></label>
+                <span class="related-name text-clamp-overflow">*%name%*</span>
+
+                <p class="related-price">
+                    <label><i>￥</i>*%newPrice%*<span>*%oldPrice%*</span></label>
+                </p>
+            </a>
+            <i class="sprite-icon shopCar-icon"></i>
+        </div>
+    </li>
+</script>
+<script>
+    $(function () {
+
+        var myScroll = publicFuns.newIScrollRefresh("#wrapper", refreshFun, loadFun, 0);
+        var mySwiper = publicFuns.newSwiper(".shopType-left", 3);
+        var orderMune = publicFuns.newSwiper("#orderMenu", 2);
+
+        //刷新页面
+        function refreshFun() {
+            console.log("页面刷新。");
+            $.jAlert("刷新成功", "", "", "");
+            myScroll.refresh();
+        }
+
+        //加载数据
+        function loadFun() {
+            console.log("加载数据。");
+            myScroll.refresh();
+        }
+
+        /**
+         * 调用滑动js----slide_product
+         */
+//        $("#sliderID").slideList({
+//            duration: 300,
+//            ratio: 0.3,
+//            menu: "#orderMenu .swiper-slide",
+//            successFun: function (index) {
+//                $("#orderMenu .swiper-slide").eq(index).trigger("click");
+//                $(".disk-loading").show();
+//            },
+//            errorFun: function () {
+//            }
+//        });
+
+            //底部菜单
+        $(".index-bto").find("a").click(function () {
+            $(".index-bto").find("a").removeClass("active");
+            $(this).addClass("active").css("opacity", "1");
+        });
+
+
+        //购物车抛物线
+        $(document).on("click", ".shopCar-icon", function (event) {
+            event.stopPropagation();
+            var _tag = $(".car-btn");
+            var _num = parseInt(_tag.find("i").text());
+            var _this = this;
+            var img = $(_this).parents(".related-intro").find(".related-product img").attr("src");
+            var flyer = $('<img class="fly-img" src="' + img + '">');
+            publicFuns.shopFly(event, flyer, {
+                left: $(this).parents("li").find(".related-product img").offset().left + 78,
+                top: $(this).parents("li").find(".related-product img").offset().top - 15
+            }, {
+                left: $(window).width() - _tag.width(),
+                top: $(window).height() - $(".index-bto").height(),
+                width: 5,
+                height: 5
+            }, function () {
+                if (_tag.find("i").length == 0) {
+                    _num = 1;
+                    _tag.find(".sprite-icon").append("<i>" + _num + "</i>");
+                } else {
+                    _num++;
+                    _tag.find("i").text(_num);
+                }
+            });
+        });
+
+        //清空输入
+        $(".icon-no").click(function () {
+            publicFuns.clearText($(".search-input"));
+        });
+
+        //菜单切换
+        var _menu = $("#orderMenu");
+        var _tag = _menu.find(".swiper-slide");
+        var _current = _menu.find(".swiper-slide.active");
+        var _orderTips = _current.attr("data-type");
+        var _temp = $("#loadListData");
+        var _loadList = $("#shopListData");
+        _tag.click(function () {
+            var that = this;
+            $(this).addClass("active").siblings().removeClass("active");
+            var _curBar = _menu.find(".swiper-slide.active");
+            var _width = _curBar.offset().left + _curBar[0].offsetWidth;
+            if (_width > $(window).width()) {
+                orderMune.slideNext();
+            } else if (_width < _curBar[0].offsetWidth * 2) {
+                orderMune.slidePrev();
+            }
+            //测试使用
+            _orderTips = $(this).attr("data-type");
+            $(".tab-loading").show();
+            setTimeout(function () {
+                $(".tab-loading").hide();
+                _loadList.fadeOut(50, function () {
+                    $(this).empty().show();
+                    for (var i = 0; i <= 5; i++) {
+                        loadHtml("#", "img/product-img4.jpg", $(that).text() + "列表，商品名称" + (i + 1), "150.", "￥200.50");
+                    }
+                    myScroll.scrollTo(0, 0, 0);
+                })
+            }, 500);
+        });
+
+        //左侧菜单切换
+        var _clearText_;
+        $(document).on("click", ".shopType-menu a", function () {
+            if ($(this).hasClass("rolling-text")) {
+                $(this).css("text-overflow", "initial");
+                var that = this;
+                var _new_width;
+                clearInterval(_clearText_);
+                _clearText_ = setInterval(function () {
+                    var _left = parseInt($(that).find("span").css("left")) || 0;
+                    var _p_width = $(that).width();
+                    var _width = $(that).find("span").width();
+                    _new_width = _p_width >= _width ? _p_width : _width;
+                    if (_left < 0 && Math.abs(_left) > _new_width) {
+                        $(that).find("span").css("left", _p_width + "px");
+                    } else {
+                        $(that).find("span").css("left", (_left - 1) + "px");
+                    }
+                }, 1000 / 30);
+            } else {
+                $("a.rolling-text").css("text-overflow", "ellipsis").find("span").css("left", "0px");
+                clearInterval(_clearText_);
+            }
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+
+        //替换模板内容
+        function loadHtml(href, proImg, proName, newPrice, oldPrice) {
+            var _temHtml = _temp.html().replace("*%href%*", href)
+                    .replace("*%src%*", proImg)
+                    .replace("*%name%*", proName)
+                    .replace("*%newPrice%*", "" + newPrice + "<s>00</s>")
+                    .replace("*%oldPrice%*", oldPrice);
+            addContentList(_temHtml);
+        }
+
+        function addContentList(text, type) {
+            if (type) {
+                _loadList.prepend(text);
+            } else {
+                _loadList.append(text);
+            }
+        }
+    });
+</script>
+</body>
+</html>

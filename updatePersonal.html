@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="overflow-hidden">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>礼仪之邦-升级员工账号</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body class="overflow-hidden">
+<div class="register-bar collect-bar update-bar">
+    <h2 class="header-box pos-abs-tl">
+        <a class="go-back-btn sprite-icon" href="javascript:;"></a>
+        我要创业
+        <span class="sprite-icon has-icon"></span>
+    </h2>
+    <div class="update-banner">
+        <img src="img/update-banner.png">
+    </div>
+    <div class="update-text">
+        <span>只要升级为创业伙伴，您将省钱升到心发慌，赚钱赚到手抽筋。0元即享万千商品经销权，不进货、囤货、发货，轻松开“超市”，安心赚大钱，购买商品还有提成！现在您离创业达人仅有一步，再不来就没机会啦！</span>
+    </div>
+    <div class="update-btn">
+        <a href="javascript:;">
+            <i><img src="img/update-btn.png"></i>
+            立即升级
+        </a>
+    </div>
+
+    <!--升级成功-->
+    <div class="forget-type update-success animated-left" style="overflow: auto;">
+        <div class="update-success-banner">
+            <label><img src="img/update-success-banner.png"></label>
+            <span>恭喜您成功升级为创业账号！</span>
+        </div>
+        <div class="update-success-cont">
+            <span class="text">您的创业账号可以在 http://idso.lyzb.cn 登录使用管理功能， 也可以使用移动端登录：</span>
+            <p><img src="img/update-success-twoCode.png"></p>
+            <label class="tips"><img src="img/update-success-tips.jpg"></label>
+        </div>
+    </div>
+
+</div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/box.js"></script>
+<script src="js/public.js"></script>
+<script>
+    $(function(){
+        //是否升级成功
+        var _isSuccess=true;
+        if(_isSuccess){
+            publicFuns.animateTransform.show(".update-btn",".animated-left")
+        }
+    });
+</script>
+</body>
+</html>

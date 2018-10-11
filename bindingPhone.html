@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html class="overflow-hidden">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>礼仪之邦-手机绑定</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body class="overflow-hidden">
+<div class="register-bar revamp-bar">
+    <h2 class="header-box">
+        <a class="go-back-btn sprite-icon" id="forgetGoBack" href="javascript:;"></a>
+        绑定手机
+        <span class="has-icon sprite-icon"></span>
+    </h2>
+
+    <!--绑定新的手机-->
+    <div class="forget-type forget-submit animated-left active">
+        <!--如果存在phone-tips，为下面的register-cont加上no-margin;，反之去掉-->
+        <div class="phone-tips">升级成为创业伙伴需要绑定您的手机号码，请进行手机绑定</div>
+        <div class="phone-tips">您的手机号码还没有验证，为了您能及时的获取已参团的动态，请进行验证</div>
+        <div class="register-cont  no-margin">
+            <ul>
+                <li class="less-padding">
+                    <div class="register-input line-black no-padding">
+                        <input id="telephone" placeholder="请输入新的手机号码" value="" type="text" maxlength="11">
+                    </div>
+                </li>
+                <li class="no-padding">
+                    <div class="register-input line-black">
+                        <input placeholder="请输入验证码" value="" type="text" maxlength="6">
+                        <span id="newPhoneCode" class="pos-abs-tr code-btn">获取验证码</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="safeCode" class="safeCode-bar" style="display: none;">
+            <div class="safe-content">
+                <span class="pos-abs-tl">验证码</span>
+                <input type="text" value="" placeholder="请输入右侧验证码">
+                <label class="pos-abs-tr"><img src="img/login-code-img.png"></label>
+            </div>
+        </div>
+        <div id="sureBtn" class="login-btn active"><a href="javascript:;">提交</a></div>
+    </div>
+</div>
+
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/box.js"></script>
+<script src="js/public.js"></script>
+<!--<script src="js/form-register.js"></script>-->
+<script>
+    $(function () {
+        var html = $("#safeCode").prop("outerHTML");
+        //获取验证码
+        $("#newPhoneCode").on("click", getCode);
+        function getCode() {
+            publicFuns.testPhone($("#telephone").val(), function () {
+                $("#newPhoneCode").off("click", getCode);
+                $.jCustomEle({
+                    container: {w: 240},
+                    title: {text: "安全校验"},
+                    btn: {
+                        text: ["SB", "傻逼"], //"SB"
+                        ensureFun: function () {
+                            $.jAlert("已发送到手机，注意查收", 200, 50, "");
+                            publicFuns.countDown("#newPhoneCode", 5, function () {
+                                $("#newPhoneCode").on("click", getCode);
+                            });
+                            this.close();
+                        },
+                        cancelFun: function () {
+                            $("#newPhoneCode").on("click", getCode);
+                        }
+                    },
+                    customEle: {
+                        ele: $("#safeCode"),
+                        html: html
+                    },
+                    initBeforeFun: function (opt) {
+                        //console.log(opt.btn);
+                    },
+                    initAfterFun: function (ele) {
+                        //console.log(ele);
+                        $(ele).click(function () {
+                            alert(0);
+                        });
+                    }
+                });
+            });
+        }
+    });
+</script>
+</body>
+</html>

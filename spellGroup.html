@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html class="overflow-hidden">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>礼仪之邦-创业拼团</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body class="overflow-hidden">
+<div class="main-box shopDetails-bar">
+    <div class="shopDetails-content">
+        <div id="wrapper">
+            <div id="scroller">
+                <!--头部-->
+                <header class="header-bar shopDetails-header">
+                    <div class="swiper-container header-banner">
+                        <div class="swiper-wrapper imgBasicCls">
+                            <div class="swiper-slide"><a href="#"><img src="img/product-img1.jpg"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="img/product-img2.jpg"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="img/product-img3.jpg"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="img/product-img4.jpg"></a></div>
+                        </div>
+                        <div class="swiper-pagination header-banner-pagination"></div>
+                    </div>
+                    <a id="goBackBtn" class="opacity-btn go-back-btn" href="javascript:;"><i
+                            class="shop-sprite-icon"></i></a>
+                    <a id="shareBtn" class="opacity-btn share-btn shop-sprite-icon" href="javascript:;"><i
+                            class="shop-sprite-icon"></i></a>
+
+                    <div class="show-shop-type">
+                        <span>浓郁果香</span>
+                        <span class="active">香味纯正</span>
+                        <span>鲜嫩多汁</span>
+                    </div>
+
+                    <div class="shop-intro">
+                        <!--成功失败二选一-->
+                        <!--<i class="group-tips-img"><img src="img/group-success.png"></i>-->
+                        <i class="group-tips-img"><img src="img/group-failure.png"></i>
+
+                        <div class="spellGroup-time none-start-time">
+                            <!--<label>距离拼团结束</label>-->
+                            <label>距离拼团开始</label>
+
+                            <div class="pull-right" id="limitTime">
+                                <span class="timeDay"></span>天<span class="timeHour"></span>时<span
+                                    class="timeMinute"></span>分<span
+                                    class="timeSecond"></span>秒
+                            </div>
+                        </div>
+                        <div class="group-shop-name">
+                            <label class="group-text-name text-overflow">苏州东山白玉枇杷3斤装（单果24g-35g）</label>
+                            <span class="group-text-intro text-clamp-overflow">新农之邦成都双流巧克力草莓，品种选自美国，保证绝对非转基因， 脆嫩多汁，内质丰富。【不催熟、不打蜡、不染色】</span>
+
+                            <div class="group-progress">
+                                <div class="meter red"><span style="width: 30%"></span></div>
+                                <!--犹豫有文字，left最大值：77%；-->
+                                <span class="this-people" style="left: 30%;">已参与5人</span>
+                                <span class="all-people">总参团10人</span>
+                            </div>
+                        </div>
+
+                        <div class="shop-de-price group-de-price clearfix">
+                            <span class="shop-mark">团购价</span>
+
+                            <div class="now-price">
+                                <label><i>￥</i>62.00</label>
+                                <span>市场价：88.50</span>
+                            </div>
+
+                            <div class="group-num">团购数量：1</div>
+                        </div>
+                    </div>
+                </header>
+                <!--中心-->
+                <div class="shopDetails-cont">
+                    <div class="group-row">
+                        <div class="group-rule">
+                            <h2>拼团玩法<a href="#">查看规则<i class="sprite-icon icon-arrow"></i></a></h2>
+
+                            <div class="group-rule-cont clearfix">
+                                <div class="rule-row">
+                                    <i class="shopType-sprite-icon rule-icon1"></i>
+                                    <span>选择<br>心仪产品</span>
+                                </div>
+                                <div class="rule-line"></div>
+                                <div class="rule-row">
+                                    <i class="shopType-sprite-icon rule-icon2"></i>
+                                    <span>支付<br>成功参团</span>
+                                </div>
+                                <div class="rule-line"></div>
+                                <div class="rule-row">
+                                    <i class="shopType-sprite-icon rule-icon3"></i>
+                                    <span>等待<br>会员参团</span>
+                                </div>
+                                <div class="rule-line"></div>
+                                <div class="rule-row">
+                                    <i class="shopType-sprite-icon rule-icon4"></i>
+                                    <span>达到数量<br>拼团成功</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group-row">
+                        <div class="shop-score-list">
+                            <ul>
+                                <li>
+                                    <span>商品评分</span>
+
+                                    <div class="score-bar">
+                                        <i class="shop-sprite-icon"></i>
+                                        <i class="shop-sprite-icon"></i>
+                                        <i class="shop-sprite-icon"></i>
+                                        <i class="shop-sprite-icon"></i>
+                                        <i class="shop-sprite-icon"></i>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>销量</span>
+
+                                    <div class="sale-number">
+                                        <label>已售出<i>103</i>件</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>配送至</span>
+
+                                    <div class="sell-address">
+                                        <label id="checkArea"><i class="shop-sprite-icon"></i>重庆</label>
+                                        <span>有货</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="group-row mar-b10">
+                        <div class="has-arrow-list">
+                            <div class="list-modal">
+                                <a href="shopIntroduce.html">商品介绍</a>
+                                <a href="shopIntroduce.html">支付及配送范围</a>
+                                <a href="shopIntroduce.html">售后保障</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shopDetails-bto pos-abs-bl">
+        <div class="group-over-tips">该拼团已结束</div>
+        <div class="shop-handle list-row group-handle">
+            <ul class="row-1">
+                <li class="shop-handle-btn">
+                    <!--不能团购加上  none-buy-->
+                    <a class="t-car-btn active" href="javascript:;">￥78.00<br>单独团</a>
+                    <a class="t-buy-btn active none-start" href="javascript:;">￥68.00<br>10人团</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--显示-->
+    <div class="showImgBig forget-type animated-left">
+        <h2 class="header-box pos-abs-tl" style="display: none;">
+            <a class="go-back-btn sprite-icon" id="backBtn" href="javascript:;"></a>
+        </h2>
+
+        <div class="swiper-container showProductImg-list">
+            <div class="swiper-wrapper"></div>
+            <div class="swiper-pagination header-banner-pagination"></div>
+        </div>
+    </div>
+
+    <!--配送地址-->
+    <div id="disk" class="disk"></div>
+    <div id="diskCont" class="animated-disk show-address">
+        <h2 class="disk-title">所在地区<a class="close-disk sprite-icon" id="closeDisk" href="javascript:;"></a></h2>
+
+        <div class="disk-cont">
+            <div class="disk-tab clearfix">
+                <a class="disk-tab-option show-modal active" id="province" href="javascript:;"><span>请选择</span></a>
+                <i class="current-line"></i>
+            </div>
+            <div class="disk-tab-cont" id="areaCont">
+                <div id="showArea"></div>
+                <div class="disk-loading"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--拼团未开始-->
+    <div class="disk" id="groupNoneStart">
+        <div class="group-none-cont animated j-alert-ani">
+            <h2>拼团还未开始</h2>
+
+            <div class="group-none-times">
+                <span>离开始</span>
+
+                <div id="noneTime" class="group-disk-time"></div>
+            </div>
+            <a id="timeEnsureBtn" class="group-disk-btn" href="javascript:;">确定</a>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
+<script src="js/area.js"></script>
+<script src="js/box.js"></script>
+<script src="js/public.js"></script>
+<script>
+    $(function () {
+        /**
+         * 拼团状态略多，具体的请核对产品经理
+         * 根据不同的状态，请选择对应的标签显示
+         * 注释信息请删除
+         * @type {number}
+         */
+
+        //没有绑定手机提示
+        $.jConfirm(["您的手机号还未验证，为了能及时获得参团的相关动态，请进行验证", "确定", "不用了"], function () {
+            console.log("跳转到绑定手机页面");
+        }, "", 230, 115, "");
+
+        //进度
+        var allNum = 1600, thisNum = 999;
+        var ratio = thisNum / allNum;
+        var _thisTag = $(".this-people"), _allTag = $(".all-people");
+        $(".meter").find("span").width(ratio * 100 + "%");
+
+        if (ratio * 100 <= 10) {
+            _thisTag.css({
+                "left": "0%"
+            }).text("已参团" + thisNum + "人").show();
+            _allTag.removeClass("active").text("总参团" + allNum + "人");
+        } else if (ratio * 100 >= 77) {
+            _thisTag.hide();
+            _allTag.addClass("active").text("已参团" + thisNum + "人");
+        } else {
+            _thisTag.css({
+                "left": ratio * 100 + "%",
+                "marginLeft": -Math.ceil(_thisTag.width()) / 2 + "px"
+            }).text("已参团" + thisNum + "人").show();
+            _allTag.removeClass("active").text("总参团" + allNum + "人");
+        }
+
+        //未开始提示
+        var _clear_ = 0;
+        $(document).on("click", ".none-start", function () {
+            $("#groupNoneStart").fadeIn(300);
+            var _tag = $("#limitTime");
+            _clear_ = setInterval(function () {
+                if (!_tag.hasClass("game-over")) {
+                    var _html = _tag.html();
+                    $("#noneTime").html(_html);
+                } else {
+                    $("#noneTime").html(_tag.html());
+                    clearInterval(_clear_);
+                }
+            }, 0);
+        });
+
+        $("#timeEnsureBtn").click(function () {
+            $("#groupNoneStart").fadeOut(300, function () {
+                $("#noneTime").html("");
+            });
+            clearInterval(_clear_);
+        });
+
+        //配送地址
+        $("#checkArea").click(function () {
+            $("#disk").fadeIn();
+            $("#diskCont").addClass("active");
+            lineAnimate(36, -20);
+            $(".disk-loading").show();
+            setTimeout(function () {
+                $(".disk-loading").hide();
+                change(0, "0", 1);
+            }, 500);
+        });
+
+        var myScroll = publicFuns.newIScroll("#wrapper");
+        var bannerList = publicFuns.newSwiper(".header-banner", 1);
+
+        //浏览大图
+        $(document).on("click", ".header-banner .swiper-slide", "showImgBig", publicFuns.showProductImg);
+
+        //选择
+        $(".select-style").find("a").click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+
+
+        //倒计时
+        publicFuns.limitTime("#limitTime", "2016/06/13 18:53:05", endFun);
+        function endFun() {
+            console.log("倒计时结束了！");
+            $(".spellGroup-time").find(".pull-right").addClass("game-over");
+        }
+
+        //窗口改变
+        $(window).resize(function () {
+            publicFuns.countRatio(".header-banner", 640, 590);
+            $(".rule-line").width(($(this).width() - 10 * 2 - 54 * 4) / 3);
+            myScroll.refresh();
+        }).trigger("resize");
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="overflow-hidden">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>礼仪之邦-搜索</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body class="overflow-hidden">
+<div class="main-box">
+    <div class="search-bar">
+        <div class="search-title">
+            <a href="javascript:;" class="sprite-icon icon-go-back"></a>
+
+            <div class="search-box">
+                <i class="sprite-icon search-icon"></i>
+                <input type="text" class="search-input" placeholder="输入关键字搜索商品"/>
+            </div>
+            <a href="javascript:;" class="go-search">搜索</a>
+        </div>
+        <div class="search-cont">
+            <div id="wrapper">
+                <div id="scroller">
+                    <div class="search-hot">
+                        <h2>热搜</h2>
+                        <ul class="clearfix">
+                            <li class="hot-li"><a href="javascript:;">眼镜</a></li>
+                            <li class="hot-li"><a href="javascript:;">欧式吊灯</a></li>
+                            <li class="hot-li"><a href="javascript:;">和田玉</a></li>
+                            <li class="hot-li"><a href="javascript:;">子母包</a></li>
+                            <li class="hot-li"><a href="javascript:;">眼镜</a></li>
+                            <li class="hot-li"><a href="javascript:;">欧式吊灯</a></li>
+                            <li class="hot-li"><a href="javascript:;">和田玉</a></li>
+                            <li class="hot-li"><a href="javascript:;">子母包</a></li>
+                            <li class="hot-li"><a href="javascript:;">眼镜</a></li>
+                            <li class="hot-li"><a href="javascript:;">欧式吊灯</a></li>
+                            <li class="hot-li"><a href="javascript:;">和田玉</a></li>
+                            <li class="hot-li"><a href="javascript:;">子母包</a></li>
+                        </ul>
+                    </div>
+                    <div class="line"></div>
+                    <div class="search-history J-searchhistory">
+                        <h2 class="mb-15">历史搜索</h2>
+                        <ul class="history-cont">
+                            <li class="history-li"><a href="javascript:;">车厘子</a></li>
+                            <li class="history-li"><a href="javascript:;">车厘子</a></li>
+                            <li class="history-li"><a href="javascript:;">车厘子</a></li>
+                            <li class="history-li"><a href="javascript:;">车厘子</a></li>
+                            <li class="history-li"><a href="javascript:;">车厘子</a></li>
+                            <li class="history-li"><a href="javascript:;">车厘子</a></li>
+                            <li class="history-li"><a href="javascript:;">车厘子</a></li>
+                            <li class="history-li"><a href="javascript:;">车厘子</a></li>
+                            <li class="history-li"><a href="javascript:;">车厘子</a></li>
+                        </ul>
+                    </div>
+                    <div class="clear-history"><a href="javascript:;" class="J-clearlist">清空历史搜索</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/box.js"></script>
+<script src="js/public.js"></script>
+<script>
+    $(function () {
+        var myScroll = publicFuns.newIScroll("#wrapper");
+        //清空搜索列表
+        $('.J-clearlist').on('click', function () {
+            var _this=$(this).parent();
+            $.jConfirm(["确定情况历史搜索吗？", "确定", "取消"], function () {
+                $(".J-searchhistory").animate({
+                    "left": "-100%"
+                }, 300, function () {
+                    $(this).remove();
+                    _this.remove();
+                    $(".line").remove();
+                    myScroll.refresh();
+                });
+            }, "", "", "", "");
+        });
+    });
+</script>
+</body>
+</html>
